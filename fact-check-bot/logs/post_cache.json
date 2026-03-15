@@ -464,7 +464,8 @@
     "bart_label": "question",
     "bart_score": 0.3169,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:10:00.577028+00:00"
+    "cached_at": "2026-03-15T18:10:00.577028+00:00",
+    "from_cache": true
   },
   "65b9ee858491eaac": {
     "original_post": "The Amazon is the longest river in the world",
@@ -581,5 +582,435 @@
     "bart_score": 0.3848,
     "detection_method": "bart+gpt",
     "cached_at": "2026-03-15T18:14:04.546619+00:00"
+  },
+  "783ba4fc4a18e58d": {
+    "original_post": "the earth is flat",
+    "is_claim": true,
+    "extracted_claim": "The earth is flat",
+    "verdict": "FALSE",
+    "response": "The claim that the earth is flat is false. Scientific evidence confirms that the Earth is a sphere orbiting the Sun, not flat.",
+    "sources": [
+      {
+        "title": "Why do some people believe the Earth is flat? - Pursuit",
+        "url": "https://pursuit.unimelb.edu.au/articles/why-do-some-people-believe-the-earth-is-flat",
+        "snippet": "Although scientific evidence says the Earth is a sphere orbiting the Sun, there are some people around who still think our planet is flat."
+      },
+      {
+        "title": "The Earth is not flat \u2013 Full Fact",
+        "url": "https://fullfact.org/online/earth-is-spherical-not-flat/",
+        "snippet": "A post on Instagram claims that satellites are fake and the Earth is flat. This is not true."
+      }
+    ],
+    "confidence": 0.7839,
+    "latency_ms": 9723,
+    "bart_label": "factual claim",
+    "bart_score": 0.4597,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:15:58.053758+00:00"
+  },
+  "1f62826f28a8bb8e": {
+    "original_post": "BBC visits aftermath of Israeli strike on Lebanon that killed family as IDF targets Hezbollah A relative tells BBC those killed were civilians and not Hezbollah operatives, but the Israel Defense Forces says it was targeting \"terrorist infrastructure\".",
+    "is_claim": true,
+    "extracted_claim": "Israel Defense Forces targeted 'terrorist infrastructure' in Lebanon after a strike that killed a family",
+    "verdict": "TRUE",
+    "response": "TRUE: The Israel Defense Forces targeted 'terrorist infrastructure' in Lebanon after a strike that killed a family, as confirmed by reports stating they were targeting Hezbollah military infrastructure.",
+    "sources": [
+      {
+        "title": "DIRECT HIT: The IDF strikes a building in southern Lebanon it says ...",
+        "url": "https://www.facebook.com/FoxNews/posts/direct-hit-the-idf-strikes-a-building-in-southern-lebanon-it-says-is-tied-to-hez/1337719711551221/",
+        "snippet": "DIRECT HIT: The IDF strikes a building in southern Lebanon it says is tied to \u201cHezbollah terrorist military infrastructure.\u201d"
+      },
+      {
+        "title": "TERROR TARGETED: The Israeli Defense Forces say it carried out ...",
+        "url": "https://www.facebook.com/FoxNews/posts/terror-targeted-the-israeli-defense-forces-say-it-carried-out-a-wave-of-airstrik/1329968228993036/",
+        "snippet": "TERROR TARGETED: The Israeli Defense Forces say it carried out a wave of airstrikes in Beirut, targeting what it described as Hezbollah ..."
+      }
+    ],
+    "confidence": 0.6519,
+    "latency_ms": 15497,
+    "bart_label": "question",
+    "bart_score": 0.2797,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:29:07.801301+00:00"
+  },
+  "299178353334bae0": {
+    "original_post": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row Volodymyr Zelensky says restoring the flow of Russian oil via Ukraine into the EU would be like lifting sanctions on Russia.",
+    "is_claim": true,
+    "extracted_claim": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row",
+    "verdict": "TRUE",
+    "response": "True. Ukrainian President Zelensky did accuse EU allies of 'blackmail' in the oil pipeline row over pressure to open the Russian oil pipeline.",
+    "sources": [
+      {
+        "title": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'",
+        "url": "https://www.ttownmedia.com/news/national/zelensky-eu-pressure-to-open-russian-oil-pipeline-is-blackmail/article_471bdd70-d0c4-50b3-b612-827b1489408c.html",
+        "snippet": "Ukrainian President Volodymyr Zelensky told his European allies that ... Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'."
+      },
+      {
+        "title": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row",
+        "url": "https://www.myjoyonline.com/zelensky-accuses-eu-allies-of-blackmail-in-oil-pipeline-row/",
+        "snippet": "Ukrainian President Volodymyr Zelensky has accused European allies of seeking to \"blackmail\" Kyiv into reopening a pipeline transporting ..."
+      },
+      {
+        "title": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'",
+        "url": "https://www.bangkokpost.com/world/3217235/zelensky-eu-pressure-to-open-russian-oil-pipeline-is-blackmail",
+        "snippet": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'. PUBLISHED : 15 Mar 2026 at 18:45. WRITER: AFP. Small; Medium; Large. Share ..."
+      },
+      {
+        "title": "Pressure to re-open Russian oil pipeline like 'blackmail', Zelenskyy ...",
+        "url": "https://www.euractiv.com/news/kyiv-to-work-with-any-hungarian-leader-not-allied-with-putin-zelenskyy-says/",
+        "snippet": "Pressure to re-open Russian oil pipeline like 'blackmail', Zelenskyy tells EU \u00b7 EU renews Russian sanctions before deadline as new package stalls."
+      }
+    ],
+    "confidence": 0.7437,
+    "latency_ms": 17254,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3592,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:29:25.063739+00:00"
+  },
+  "4e7366590bea288e": {
+    "original_post": "Severe flooding kills 66 in Kenya, as heavy rains continue Eleven people were rescued overnight after a minibus taxi got stuck in rising floodwaters in Nairobi.",
+    "is_claim": true,
+    "extracted_claim": "Severe flooding kills 66 in Kenya",
+    "verdict": "FALSE",
+    "response": "The claim that severe flooding killed 66 in Kenya is false. The death toll from severe flooding in Kenya is reported to be 42, not 66.",
+    "sources": [
+      {
+        "title": "The death toll from severe flooding in Kenya has risen to 42, after ...",
+        "url": "https://www.facebook.com/9News/videos/dozens-killed-in-kenya-floods/932470322762066/",
+        "snippet": "Dozens killed in Kenya floods. The death toll from severe flooding in Kenya has risen to 42, after heavy rains triggered flash floods across ..."
+      },
+      {
+        "title": "Kenya says death toll from floods almost doubles to 42 - The Senior",
+        "url": "https://www.thesenior.com.au/story/9194107/kenya-says-death-toll-from-floods-almost-doubles-to-42/",
+        "snippet": "Flash flooding has killed at least 42 people in Kenya's capital after wild weather swept away vehicles and..."
+      },
+      {
+        "title": "Death Toll From Kenyan Floods Rises to 62, Police Say",
+        "url": "https://www.usnews.com/news/world/articles/2026-03-14/death-toll-from-kenyan-floods-rises-to-62-police-say",
+        "snippet": "March 14 (Reuters) - A \u2060total \u2060of 62 \u2060people including eight children \u200bhave died since heavy \u200crains and flooding hit \u200cKenya's capital ..."
+      }
+    ],
+    "confidence": 0.6789,
+    "latency_ms": 14716,
+    "bart_label": "question",
+    "bart_score": 0.3472,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:29:39.789221+00:00"
+  },
+  "8b22430e26d95b93": {
+    "original_post": "Israeli forces kill Palestinian couple and two of their children in occupied West Bank Mohammed, aged five, and Othman, aged seven, were killed alongside their parents, the Palestinian health ministry says.",
+    "is_claim": true,
+    "extracted_claim": "Israeli forces killed a Palestinian couple and two of their children in the occupied West Bank.",
+    "verdict": "TRUE",
+    "response": "Israeli forces did kill a Palestinian couple and two of their children in the occupied West Bank, as reported by multiple sources including the Palestinian health ministry and international news outlets.",
+    "sources": [
+      {
+        "title": "Israeli forces kill 2 Palestinian children and their parents in West ...",
+        "url": "https://www.nbcnews.com/world/israel/israeli-forces-kill-palestinian-parents-two-children-west-bank-medics-rcna263550",
+        "snippet": "RAMALLAH/CAIRO \u2014 Israeli forces killed a Palestinian father, mother and two of their children as they drove in the occupied West Bank on ..."
+      },
+      {
+        "title": "Palestinian ministry says Israeli troops kill 2 children, parents ... - BSS",
+        "url": "https://www.bssnews.net/international/368958",
+        "snippet": "JERUSALEM, March 15, 2026 (BSS/AFP) - The Palestinian health ministry said Israeli troops shot and killed a Palestinian husband and..."
+      },
+      {
+        "title": "Israeli forces kill Palestinian family of four in West Bank ... - The Hindu",
+        "url": "https://www.thehindu.com/news/international/israeli-forces-kill-palestinian-family-of-four-in-west-bank-palestinian-health-authorities-say/article70745915.ece",
+        "snippet": "The Israeli military said it was looking into the reports. The \u200cPalestinian Health Ministry also \u200bsaid one Palestinian was killed in an attack ..."
+      }
+    ],
+    "confidence": 0.7227,
+    "latency_ms": 13523,
+    "bart_label": "question",
+    "bart_score": 0.3067,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:29:53.819318+00:00"
+  },
+  "ab18de4fe9582e90": {
+    "original_post": "US names six crew killed in refuelling plane crash in Iraq The aircraft was on a combat mission as part of ongoing US operations against Iran when it crashed in western Iraq on Thursday.",
+    "is_claim": true,
+    "extracted_claim": "US names six crew killed in refuelling plane crash in Iraq",
+    "verdict": "TRUE",
+    "response": "The US has named all six crew members who were killed in the refuelling plane crash in Iraq. The US Central Command confirmed that all six crew members died in the incident.",
+    "sources": [
+      {
+        "title": "All six crew members killed after US refuelling plane crashes in Iraq",
+        "url": "https://www.bbc.com/news/articles/cy0dz5ql17vo",
+        "snippet": "The US Central Command says all six crew members died after a refuelling aircraft went down over western Iraq."
+      },
+      {
+        "title": "Six US service members killed in plane crash over Iraq | Reuters",
+        "url": "https://www.reuters.com/world/four-us-service-members-killed-plane-crash-over-iraq-2026-03-13/",
+        "snippet": "All six crew members aboard a U.S. military KC-135 refueling aircraft that crashed in western Iraq are \u200bconfirmed to have been killed, ..."
+      }
+    ],
+    "confidence": 0.6776,
+    "latency_ms": 14199,
+    "bart_label": "question",
+    "bart_score": 0.3439,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:30:08.035407+00:00"
+  },
+  "420ab1c683361f70": {
+    "original_post": "Iran captain latest footballer to drop asylum bid, Iranian state media says Five of the seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
+    "is_claim": true,
+    "extracted_claim": "Five of the seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
+    "verdict": "FALSE",
+    "response": "Contrary to the claim, six of the seven members of the women's football delegation have accepted humanitarian visas to stay in Australia permanently, while one member has chosen to return home.",
+    "sources": [
+      {
+        "title": "Iranian soccer team leaves Australia, with seven women staying ...",
+        "url": "https://www.nbcnews.com/world/asia/iranian-soccer-team-leaves-australia-seven-women-staying-rcna262886",
+        "snippet": "Six of the women have accepted humanitarian visas that will allow them to stay in Australia permanently, while the seventh has decided to return ..."
+      },
+      {
+        "title": "Most of Iranian women's soccer team left Australia after declining ...",
+        "url": "https://www.wbrc.com/2026/03/11/most-iranian-womens-soccer-team-left-australia-after-declining-last-minute-airport-asylum-offers/",
+        "snippet": "Seven women ultimately accepted humanitarian visas allowing them to remain permanently in Australia after what Australian Home Affairs Minister ..."
+      }
+    ],
+    "confidence": 0.664,
+    "latency_ms": 21399,
+    "bart_label": "question",
+    "bart_score": 0.3099,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:30:29.450042+00:00"
+  },
+  "eba051ed97b4e267": {
+    "original_post": "French police detain brothers over 'lethal and antisemitic' plot A loaded gun, hydrochloric acid and an Islamic State flag were found in their car, prosecutors say.",
+    "is_claim": true,
+    "extracted_claim": "French police detained brothers over a 'lethal and antisemitic' plot involving a loaded gun, hydrochloric acid, and an Islamic State flag found in their car.",
+    "verdict": "TRUE",
+    "response": "The claim that French police detained brothers over a 'lethal and antisemitic' plot involving a loaded gun, hydrochloric acid, and an Islamic State flag found in their car is true. This information was reported by prosecutors.",
+    "sources": [
+      {
+        "title": "French police 'hold suspect' over anti-Semitic attack - BBC News",
+        "url": "https://www.bbc.com/news/world-europe-18357812",
+        "snippet": "Many say anti-Semitic incidents have been on the rise since the Toulouse shootings in March. French police say a man suspected of attacking ..."
+      }
+    ],
+    "confidence": 0.7482,
+    "latency_ms": 25021,
+    "bart_label": "question",
+    "bart_score": 0.5204,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:30:54.483155+00:00"
+  },
+  "653cd0834611bd27": {
+    "original_post": "Treasure hunter freed from prison after refusing to turn over shipwreck gold Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
+    "is_claim": true,
+    "extracted_claim": "Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
+    "verdict": "TRUE",
+    "response": "True, Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
+    "sources": [
+      {
+        "title": "Treasure Hunter Released From Prison After Refusing to Turn Over ...",
+        "url": "https://www.nytimes.com/2026/03/12/us/tommy-thompson-jail-released-gold-coins.html",
+        "snippet": "Thomas G. Thompson was held in contempt for 10 years for repeatedly denying he knew the whereabouts of 500 missing gold coins."
+      },
+      {
+        "title": "Treasure hunter freed from jail after refusing to turn over shipwreck ...",
+        "url": "https://www.bbc.com/news/articles/cg4g7kn99q3o",
+        "snippet": "Thompson was held in contempt for refusing to answer questions about the location of about 500 missing gold coins, and he was sent to prison for ..."
+      },
+      {
+        "title": "A former deep-sea treasure hunter who made one of the great ...",
+        "url": "https://www.facebook.com/ABCNews/posts/a-former-deep-sea-treasure-hunter-who-made-one-of-the-great-shipwreck-discoverie/1353911023262441/",
+        "snippet": "... after refusing to disclose the location of missing gold coins and related financial records. Thompson has remained incarcerated since then ..."
+      }
+    ],
+    "confidence": 0.7852,
+    "latency_ms": 12630,
+    "bart_label": "question",
+    "bart_score": 0.463,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:31:07.127932+00:00"
+  },
+  "65f79e00421531a8": {
+    "original_post": "Ugandan opposition leader goes abroad after two months in hiding Uganda's military chief has said Bobi Wine is wanted \"dead or alive\", although some ministers have denied he is being sought.",
+    "is_claim": true,
+    "extracted_claim": "Ugandan military chief said Bobi Wine is wanted 'dead or alive'",
+    "verdict": "TRUE",
+    "response": "It is true that Ugandan military chief Muhoozi Kainerugaba said he was praying for fugitive opposition leader Bobi Wine's death and mentioned he was wanted 'dead or alive'. This statement has been reported by multiple sources.",
+    "sources": [
+      {
+        "title": "Ugandan military chief Muhoozi Kainerugaba said he was praying ...",
+        "url": "https://www.facebook.com/Reuters/posts/ugandan-military-chief-muhoozi-kainerugaba-said-he-was-praying-for-fugitive-oppo/1444435750880486/",
+        "snippet": "Ugandan military chief Muhoozi Kainerugaba said he was praying for fugitive opposition leader Bobi Wine's death and gave him 48 hours to ..."
+      },
+      {
+        "title": "Dead or alive! Muhoozi renews search for Bobi Wine - The Star",
+        "url": "https://www.the-star.co.ke/news/2026-01-26-dead-or-alive-muhoozi-renews-search-for-wine",
+        "snippet": "Dead or alive! Muhoozi renews search for Bobi Wine. The general said search had stopped for 24 hours on instructions from Museveni. image."
+      },
+      {
+        "title": "Uganda's army chief who threatened to castrate Bobi Wine - BBC",
+        "url": "https://www.bbc.com/news/articles/cdjnp9m8wvgo",
+        "snippet": "Another tweet saying Wine was wanted \"dead or alive\" is still on his feed, even though a government minister has said the opposition leader ..."
+      }
+    ],
+    "confidence": 0.7449,
+    "latency_ms": 13368,
+    "bart_label": "question",
+    "bart_score": 0.5122,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:31:20.508058+00:00"
+  },
+  "f6627c65abeaaed2": {
+    "original_post": "Cuban protesters ransack Communist office as energy crisis deepens Discontent is mounting over rolling blackouts and shortages of food, fuel and medicine, exacerbated by a US blockade.",
+    "is_claim": true,
+    "extracted_claim": "Cuban protesters ransack Communist office as energy crisis deepens",
+    "verdict": "TRUE",
+    "response": "TRUE: Cuban protesters did ransack a Communist Party office in response to the deepening energy crisis. Five people were arrested after vandalizing the office in the central city of Moron.",
+    "sources": [
+      {
+        "title": "Protesters torch Communist Party HQ in Cuba as video ... - Fox News",
+        "url": "https://www.foxnews.com/world/protesters-attack-communist-party-hq-cuba-video-appears-capture-gunfire",
+        "snippet": "Protesters attacked a Communist Party headquarters in Cuba overnight, ransacking the building and attempting to set it on fire, while video from ..."
+      },
+      {
+        "title": "Protesters in Cuba attack Communist Party office in rare riot over ...",
+        "url": "https://www.nbcnews.com/world/cuba/protesters-cuba-attack-communist-party-office-rare-riot-blackouts-rcna263464",
+        "snippet": "Protesters in Cuba attack Communist Party office in rare riot over blackouts. A rally against power cuts and food shortages appeared to begin ..."
+      },
+      {
+        "title": "Cuban protesters ransack Communist office as energy crisis deepens",
+        "url": "https://www.bbc.com/news/articles/c875zd7de5xo",
+        "snippet": "Five people were arrested after a small group vandalised the offices in the central city of Moron overnight into Saturday, Cuba's Interior ..."
+      }
+    ],
+    "confidence": 0.7286,
+    "latency_ms": 15383,
+    "bart_label": "question",
+    "bart_score": 0.4715,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:31:35.903138+00:00"
+  },
+  "f21231f1e8df5429": {
+    "original_post": "Trump urges UK and other nations to send warships to Strait of Hormuz The US president says he hopes China, France, Japan and South Korea will also send ships to defend the key oil shipping route.",
+    "is_claim": true,
+    "extracted_claim": "Trump urges UK and other nations to send warships to Strait of Hormuz",
+    "verdict": "TRUE",
+    "response": "True, Trump has urged the UK and other nations to send warships to the Strait of Hormuz to help keep the key oil shipping route open.",
+    "sources": [
+      {
+        "title": "Trump calls on UK to send warships to keep strait of Hormuz open",
+        "url": "https://www.theguardian.com/uk-news/2026/mar/14/trump-warships-strait-of-hormuz-iran-oil-shipping",
+        "snippet": "Donald Trump has said the UK should send warships to help keep the strait of Hormuz open. In a post on his Truth Social platform, the US ..."
+      },
+      {
+        "title": "Trump urges other nations to send warships to the Mideast - MS NOW",
+        "url": "https://www.ms.now/news/u-s-trump-warships-iran-mideast",
+        "snippet": "President Donald Trump is asking other countries to send warships to the Middle East to help reopen the Strait of Hormuz, the vital gateway ..."
+      },
+      {
+        "title": "'As a sincere friend...': China responds after Trump urges countries ...",
+        "url": "https://www.wionews.com/world/-as-a-sincere-friend-china-responds-after-trump-urges-countries-to-send-warships-to-secure-strait-of-hormuz-amid-iran-threat-1773524775265",
+        "snippet": "Global tensions rise after Iran closed the Strait of Hormuz following US-Israel strikes. Trump urged nations to send warships to secure the ..."
+      }
+    ],
+    "confidence": 0.6637,
+    "latency_ms": 12827,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3092,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:31:48.742544+00:00"
+  },
+  "55be8d9892a04487": {
+    "original_post": "Hamas urges key ally Iran to halt attacks on Gulf states The Palestinian group also affirms Tehran's right to defend itself from \"aggression\" by the US and Israel.",
+    "is_claim": true,
+    "extracted_claim": "Hamas urges Iran to halt attacks on Gulf states and affirms Iran's right to defend itself from US and Israel aggression",
+    "verdict": "TRUE",
+    "response": "TRUE: Hamas has urged Iran to avoid targeting neighboring countries while affirming Iran's right to defend itself from US and Israel aggression.",
+    "sources": [
+      {
+        "title": "Hamas Urges Iran Not to Target Neighboring Countries - WSJ",
+        "url": "https://www.wsj.com/livecoverage/us-israel-iran-war-news-2026/card/hamas-urges-iran-not-to-target-neighboring-countries-sFWrmmpCTgxDX3XzKOvw?gaa_at=eafs&gaa_n=AWEtsqclZzQkbcrOM3MOdguqm-ScS5X7_MxMbH7P3mvggMl9Apb02SUbLjqT&gaa_ts=69b70cac&gaa_sig=UV1IPuKzwTMoVSOwsIC4YgKu5qvEvCavS-Z_q-ZT_3W3hviQ0Ie2z6LX-KBdW2IcTys5-H4XInGbeFO66uzpSQ%3D%3D",
+        "snippet": "The Hamas statement condemned what it described as \u201cAmerican-Zionist aggression\u201d against Iran and said Tehran has the right to defend itself."
+      },
+      {
+        "title": "Hamas Calls on Iran Not to Target Neighboring Countries but Affirms ...",
+        "url": "https://www.usnews.com/news/world/articles/2026-03-14/hamas-calls-on-iran-not-to-target-neighboring-countries-but-affirms-its-right-to-self-defence",
+        "snippet": "\"While the group affirms Iran's right to respond to this aggression by all \u200bavailable means in accordance with international norms and laws, it ..."
+      },
+      {
+        "title": "Hamas urges Iran to avoid targeting neighbouring countries amid ...",
+        "url": "https://www.trtworld.com/article/54786d0a5670",
+        "snippet": "\"While affirming the right of the Islamic Republic of Iran to respond to this aggression by all available means in accordance with international ..."
+      },
+      {
+        "title": "Hamas urges Iran to stop 'targeting neighboring countries'",
+        "url": "https://www.timesofisrael.com/liveblog_entry/hamas-urges-iran-to-stop-targeting-neighboring-countries/",
+        "snippet": "\u201cWhile affirming the right of the Islamic Republic of Iran to respond to this aggression by all available means in accordance with ..."
+      }
+    ],
+    "confidence": 0.7431,
+    "latency_ms": 53270,
+    "bart_label": "question",
+    "bart_score": 0.3577,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:32:42.021178+00:00"
+  },
+  "20256f563e864c19": {
+    "original_post": "The women bringing chess into the 21st Century - with 'bullet' matches and viral videos Women content creators are helping chess shake its image as an \"old man's game\" and bring it into the digital age.",
+    "is_claim": true,
+    "extracted_claim": "Women content creators are helping chess shake its image as an 'old man's game' and bring it into the digital age.",
+    "verdict": "TRUE",
+    "response": "True. Women content creators like Sarah El Barbry are indeed helping chess shake its image as an 'old man's game' and bring it into the digital age, as reported by various sources.",
+    "sources": [
+      {
+        "title": "The women bringing chess into the 21st Century - AOL.com",
+        "url": "https://www.aol.com/articles/women-bringing-chess-21st-century-004025605.html",
+        "snippet": "All of this is helping chess shake its image as an \"old man's game\", says woman international master Fiona Steil-Antoni, who works as a ..."
+      },
+      {
+        "title": "Chess content creators like Sarah El Barbry, 24, are ... - Instagram",
+        "url": "https://www.instagram.com/reel/DV1ELweDIz-/",
+        "snippet": "Chess content creators like Sarah El Barbry, 24, are among those helping to bring the ancient game into the 21st Century.\u2063"
+      },
+      {
+        "title": "The women bringing the 'old man's game' into the digital age",
+        "url": "https://www.facebook.com/bbcworldservice/videos/the-women-bringing-the-old-mans-game-into-the-digital-age/901258952672966/",
+        "snippet": "Gen Z players like Sarah are redefining what it means to succeed in chess. The digital chess era is creating more opportunities than ever ..."
+      },
+      {
+        "title": "How chess took over the internet",
+        "url": "https://i-d.co/article/gen-z-chess-tiktok-twitch-streaming-trend-2023/",
+        "snippet": "Chess influencers on TikTok, Twitch and YouTube are contributing to a newfound popularity amongst young people."
+      }
+    ],
+    "confidence": 0.6585,
+    "latency_ms": 66350,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.2963,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:33:48.878007+00:00"
+  },
+  "e1df27e4120fd345": {
+    "original_post": "Drinking bleach cures COVID-19",
+    "is_claim": true,
+    "extracted_claim": "Drinking bleach cures Covid-19",
+    "verdict": "FALSE",
+    "response": "Drinking bleach does not cure Covid-19. There is no evidence to support this claim, and in fact, consuming bleach can be extremely harmful and even fatal. It is important to rely on information from reputable sources like the CDC and medical professionals.",
+    "sources": [
+      {
+        "title": "No evidence bleach consumed to cure COVID-19 during pandemic",
+        "url": "https://www.cidrap.umn.edu/covid-19/report-no-evidence-bleach-consumed-cure-covid-19-during-pandemic",
+        "snippet": "A new report dispels accounts that Americans drank bleach to cure or prevent COVID-19, a practice even the Centers for Disease Control and Prevention (CDC) ..."
+      },
+      {
+        "title": "Did people really drink bleach to prevent COVID-19? A guide ... - PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10321604/",
+        "snippet": "We find no evidence that people ingested cleaning products to prevent a COVID-19 infection. These findings have important implications for public health and ..."
+      }
+    ],
+    "confidence": 0.7302,
+    "latency_ms": 61406,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3255,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-15T19:34:03.839617+00:00"
   }
 }
