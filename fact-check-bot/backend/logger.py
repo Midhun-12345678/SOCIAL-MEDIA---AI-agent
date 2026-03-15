@@ -5,7 +5,13 @@ from backend.models import CheckResponse
 from backend.config import LOG_FILE
 
 
-def log_check(result: CheckResponse) -> None:
+def log_check(
+    result: CheckResponse,
+    platform: str | None = None,
+    platform_post_id: str | None = None,
+    author: str | None = None,
+    source_url: str | None = None,
+) -> None:
     os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
     if os.path.exists(LOG_FILE):
@@ -32,7 +38,11 @@ def log_check(result: CheckResponse) -> None:
         "sources": [
             {"title": s.title, "url": s.url, "snippet": s.snippet}
             for s in result.sources
-        ]
+        ],
+        "platform": platform,
+        "platform_post_id": platform_post_id,
+        "author": author,
+        "source_url": source_url,
     }
 
     logs.append(entry)

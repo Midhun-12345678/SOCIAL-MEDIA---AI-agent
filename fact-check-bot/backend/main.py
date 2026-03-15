@@ -8,7 +8,7 @@ import time
 
 from backend.models import CheckRequest, CheckResponse, Verdict
 from backend.claim_detector import detect_claim
-from backend.retriever import retrieve_evidence
+from backend.retrieval import hybrid_retrieve
 from backend.rag_generator import generate_response
 from backend.logger import log_check, get_logs
 from backend.ingestion import ingest_single_post, get_simulated_feed, PostCache
@@ -43,10 +43,37 @@ async def lifespan(app: FastAPI):
             None, _load_spacy
         )
     )
-    
+
+    # Pre-load retrieval models (embedder + reranker + FAISS index)
+    from backend.retrieval.embedder import preload_model as preload_embedder
+    from backend.retrieval.reranker import preload_reranker
+    from backend.retrieval.hybrid_retriever import preload_index
+    await asyncio.gather(
+        asyncio.get_event_loop().run_in_executor(None, preload_embedder),
+        asyncio.get_event_loop().run_in_executor(None, preload_reranker),
+        asyncio.get_event_loop().run_in_executor(None, preload_index),
+    )
+    logger.info("Retrieval models loaded (embedder + reranker + FAISS index)")
+
     bart_ready = ZeroShotClassifier.get_instance().is_available
     logger.info(f"BART model ready: {bart_ready}")
+
+    # Start social media ingestion if enabled
+    from backend.config import INGESTION_ENABLED
+    if INGESTION_ENABLED:
+        from backend.social import start_ingestion
+        await start_ingestion(cache)
+        logger.info("Social media ingestion layer started")
+    else:
+        logger.info("Social media ingestion disabled (set INGESTION_ENABLED=true to enable)")
+
     yield
+
+    # Shutdown ingestion
+    if INGESTION_ENABLED:
+        from backend.social import stop_ingestion
+        await stop_ingestion()
+
     logger.info("Server shutting down.")
 
 
@@ -57,12 +84,13 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+from backend.config import ALLOWED_ORIGINS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["content-type"],
 )
 
 cache = PostCache()
@@ -108,7 +136,7 @@ async def check_post(request: CheckRequest):
         return result
 
     sources = await asyncio.get_event_loop().run_in_executor(
-        None, retrieve_evidence, detection.extracted_claim, 5
+        None, hybrid_retrieve, detection.extracted_claim, 5
     )
 
     verdict, response_text, gpt_confidence, used_sources = await asyncio.get_event_loop().run_in_executor(
@@ -298,7 +326,7 @@ async def websocket_check(websocket: WebSocket):
                 "message": "Searching web for evidence..."
             })
             sources = await asyncio.get_event_loop().run_in_executor(
-                None, retrieve_evidence, detection.extracted_claim, 5
+                None, hybrid_retrieve, detection.extracted_claim, 5
             )
             await websocket.send_json({
                 "stage": "retrieving",

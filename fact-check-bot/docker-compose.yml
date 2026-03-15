@@ -1,0 +1,43 @@
+services:
+  # ── Backend (FastAPI) ──
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: backend
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+      - ./logs:/app/logs
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:3000
+      - FAISS_INDEX_PATH=data/faiss_index.bin
+      - DOCUMENT_STORE_PATH=data/document_store.json
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # ── Frontend (Next.js) ──
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: frontend
+    command: sh -c "npm start -- -p 3000"
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_WS_URL=ws://localhost:8000/ws
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped

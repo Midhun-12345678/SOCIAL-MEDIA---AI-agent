@@ -350,5 +350,350 @@
         "snippet": "Team India players celebrate with the trophy after winning the T20 World Cup 2026. ... India posted 255 for 5, the highest total in a T20 World ..."
       }
     ]
+  },
+  {
+    "timestamp": "2026-03-15T17:46:27.781648+00:00",
+    "original_post": "india will lose a billion worth crude oil next year",
+    "is_claim": true,
+    "extracted_claim": "India will lose a billion worth crude oil next year",
+    "verdict": "UNVERIFIABLE",
+    "response": "The claim that India will lose a billion worth of crude oil next year cannot be verified with the provided evidence. While there are concerns about India's crude oil supply amid global oil shocks and high oil prices, there is no specific information confirming a billion-dollar loss.",
+    "confidence": 0.1375,
+    "latency_ms": 19523,
+    "bart_label": "question",
+    "bart_score": 0.3438,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Is India's Crude Oil Supply in Danger Amid West Asia Crisis? Myth ...",
+        "url": "https://www.timesnownews.com/india/fact-check-is-indias-crude-oil-supply-in-danger-amid-west-asia-crisis-myth-debunked-article-153818662",
+        "snippet": "Myth Vs. Fact. Myth: India's crude oil supply is in danger because of the situation in West Asia."
+      },
+      {
+        "title": "Explainer: How persistently high oil prices could impact India's ...",
+        "url": "https://www.reuters.com/business/energy/how-persistently-high-oil-prices-could-impact-indias-vulnerable-economy-2026-03-12/",
+        "snippet": "India is considered to be \u200bamong the most vulnerable to a global oil shock as it imports nearly 90% of its crude requirements and about \u200c50% of ..."
+      },
+      {
+        "title": "Is India's crude oil supply in danger amid West Asia crisis? Myth ...",
+        "url": "https://www.msn.com/en-in/news/India/fact-check-is-india-s-crude-oil-supply-in-danger-amid-west-asia-crisis-myth-debunked/ar-AA1YtA44",
+        "snippet": "Amid the conflict in West Asia, concerns arose regarding the security of India's crude oil supply. However, the Press Information Bureau ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:08:57.272735+00:00",
+    "original_post": "Elon Musk bought Twitter for 44 billion dollars",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.6152,
+    "latency_ms": 2146,
+    "bart_label": "emotional expression",
+    "bart_score": 0.3848,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:09:14.652821+00:00",
+    "original_post": "Drinking water cures cancer",
+    "is_claim": true,
+    "extracted_claim": "Drinking water cures cancer",
+    "verdict": "FALSE",
+    "response": "There is no scientific evidence to support the claim that drinking water cures cancer. In fact, various sources debunk the idea that specific types of water, like alkaline or coconut water, can treat or cure cancer.",
+    "confidence": 0.733,
+    "latency_ms": 17356,
+    "bart_label": "factual claim",
+    "bart_score": 0.3324,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Truth Check: Coconut Water Does Not Treat Cancer - Medanta",
+        "url": "https://www.medanta.org/patient-education-blog/truth-check-coconut-water-does-not-treat-cancer",
+        "snippet": "Unfortunately, these claims are false. There is no scientific evidence that coconut water can cure cancer or even slow its progress."
+      },
+      {
+        "title": "Alkaline water and cancer - Nutrition Program - UNC Lineberger",
+        "url": "https://unclineberger.org/nutrition/alkaline-water-and-cancer/",
+        "snippet": "A very common question we get as Certified Oncology Dietitians is, \u201cShould I drink alkaline water to starve my cancer cells\u201d?"
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:09:30.800309+00:00",
+    "original_post": "The Earth is flat",
+    "is_claim": true,
+    "extracted_claim": "The Earth is flat",
+    "verdict": "TRUE",
+    "response": "The claim that 'The Earth is flat' is FALSE. Scientific evidence overwhelmingly supports the fact that the Earth is a sphere orbiting the Sun.",
+    "confidence": 0.7753,
+    "latency_ms": 16131,
+    "bart_label": "factual claim",
+    "bart_score": 0.4383,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Why do some people believe the Earth is flat? - Pursuit",
+        "url": "https://pursuit.unimelb.edu.au/articles/why-do-some-people-believe-the-earth-is-flat",
+        "snippet": "Although scientific evidence says the Earth is a sphere orbiting the Sun, there are some people around who still think our planet is flat."
+      },
+      {
+        "title": "The Earth is not flat \u2013 Full Fact",
+        "url": "https://fullfact.org/online/earth-is-spherical-not-flat/",
+        "snippet": "A post on Instagram claims that satellites are fake and the Earth is flat. This is not true."
+      },
+      {
+        "title": "Modern flat Earth beliefs - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
+        "snippet": "Anti-scientific beliefs in a flat Earth are promoted by a number of organizations and individuals. The claims of modern flat Earth proponents are not based ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:09:32.283517+00:00",
+    "original_post": "I love pizza so much",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.3919,
+    "latency_ms": 1458,
+    "bart_label": "emotional expression",
+    "bart_score": 0.6081,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:09:46.378689+00:00",
+    "original_post": "NASA faked the moon landing",
+    "is_claim": true,
+    "extracted_claim": "NASA faked the moon landing",
+    "verdict": "FALSE",
+    "response": "The claim that NASA faked the moon landing is false. Multiple pieces of evidence, including Apollo landing footage and live images from NASA, disprove this conspiracy theory. There is no credible support for the idea that the moon landing was faked.",
+    "confidence": 0.7128,
+    "latency_ms": 14082,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.4321,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Apollo landing footage would have been impossible to fake. A film ...",
+        "url": "https://www.pbs.org/newshour/science/apollo-landing-footage-would-have-been-impossible-to-fake-a-film-expert-explains-why",
+        "snippet": "A common theory is that film director Stanley Kubrick helped NASA fake the historic footage of its six successful moon landings."
+      },
+      {
+        "title": "Fact Check: Washington Post images of 1969 moon landing taken ...",
+        "url": "https://www.reuters.com/fact-check/washington-post-images-1969-moon-landing-taken-nasa-live-feed-2024-02-27/",
+        "snippet": "... NASA's live footage, disproving social media posts citing the Post's publication of the images as proof that the lunar landing was a hoax."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:10:00.572748+00:00",
+    "original_post": "Water boils at 100 degrees Celsius at sea level",
+    "is_claim": true,
+    "extracted_claim": "Water boils at 100 degrees Celsius at sea level",
+    "verdict": "FALSE",
+    "response": "The claim that water boils at 100 degrees Celsius at sea level is false. The boiling point of water varies with barometric pressure, so at different altitudes, the boiling point changes. For example, at sea level, water boils at 100 degrees Celsius, but at higher altitudes, it can boil at lower temperatures.",
+    "confidence": 0.6668,
+    "latency_ms": 14176,
+    "bart_label": "question",
+    "bart_score": 0.3169,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Boiling point of water varies with barometric pressure - Facebook",
+        "url": "https://www.facebook.com/groups/660491344082992/posts/3454452828020149/",
+        "snippet": "Raindrops, while most people know that water boils at 100 \u00b0C (212 \u00b0F), this is at the normal conditions of sea level."
+      },
+      {
+        "title": "Since water boils at lower temperatures at high altitudes ... - Reddit",
+        "url": "https://www.reddit.com/r/askscience/comments/125nly5/since_water_boils_at_lower_temperatures_at_high/",
+        "snippet": "At sea level water boils at 100 \u00b0C, but at a couple km's altitude it will never reach that because it starts boiling at, let's say, 90 \u00b0C. 1 ..."
+      },
+      {
+        "title": "High altitude boiling water experiment - unexpected results - YouTube",
+        "url": "https://www.youtube.com/watch?v=LZsDYIJFdyo",
+        "snippet": "... Water at sea level boils at 212 degrees Fahrenheit; at 5000 feet above sea level, the boiling point is 203 degrees F (95 C). Up at 10000 feet, ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:10:20.513512+00:00",
+    "original_post": "The Amazon is the longest river in the world",
+    "is_claim": true,
+    "extracted_claim": "The Amazon is the longest river in the world",
+    "verdict": "FALSE",
+    "response": "The claim that the Amazon is the longest river in the world is false. While the Amazon is the largest river by volume, the Nile River in Africa is considered the longest river in the world.",
+    "confidence": 0.7619,
+    "latency_ms": 19926,
+    "bart_label": "factual claim",
+    "bart_score": 0.4047,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "The Nile is the world's longest river? The Amazon would like a word.",
+        "url": "https://www.unionleader.com/the-nile-is-the-worlds-longest-river-the-amazon-would-like-a-word/article_f31e3f17-0414-5b8e-babb-b0db1b718a62.html",
+        "snippet": "In the final count, the Amazon came out on top, narrowly: 4,344 miles to 4,257. Headlines declared the Amazon the longest river the world. But ..."
+      },
+      {
+        "title": "Amazon Longer Than Nile River, Scientists Say | National Geographic",
+        "url": "https://www.nationalgeographic.com/science/article/amazon-longer-than-nile-river",
+        "snippet": "The Amazon is considered the world's largest river by volume, but scientists have believed it is slightly shorter than Africa's Nile."
+      },
+      {
+        "title": "Is The Amazon River Longer Than The Nile? - Rainforest Cruises",
+        "url": "https://www.rainforestcruises.com/guides/is-the-amazon-river-longer-than-the-nile",
+        "snippet": "For most of the last century, the Nile has been considered the world's longest river, at 4,132 miles (6,650 km) compared to the Amazon's 3,976 ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:10:34.750601+00:00",
+    "original_post": "The speed of light is 299792458 meters per second",
+    "is_claim": true,
+    "extracted_claim": "The speed of light is 299792458 meters per second",
+    "verdict": "TRUE",
+    "response": "TRUE: The speed of light is indeed 299792458 meters per second, as it is a defined constant in physics. This value is the exact speed of light in a vacuum.",
+    "confidence": 0.7513,
+    "latency_ms": 14199,
+    "bart_label": "factual claim",
+    "bart_score": 0.3783,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Why is the speed of light exactly 299792458 meters per second ...",
+        "url": "https://www.reddit.com/r/AskPhysics/comments/he0nz6/why_is_the_speed_of_light_exactly_299792458/",
+        "snippet": "The speed of light is exactly 299792458 meters per second because this is how the SI units for meter and second are implicitly defined. I am ..."
+      },
+      {
+        "title": "How fast does light travel? | The speed of light - Space",
+        "url": "https://www.space.com/15830-light-speed.html",
+        "snippet": "The speed of light traveling through a vacuum is exactly 299,792,458 meters (983,571,056 feet) per second. That's about 186,282 miles per second ..."
+      },
+      {
+        "title": "The speed of light is estimated to be 299792458 meters per second ...",
+        "url": "https://www.quora.com/The-speed-of-light-is-estimated-to-be-299792458-meters-per-second-but-is-it-possible-to-measure-the-speed-of-light-more-accurately-than-that-Id-like-to-know-at-least-to-the-first-decimal-place",
+        "snippet": "The speed of light is exactly 299,792,458 m/s because that is how a meter is defined. A meter is defined as the distance light travels in 1/ ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:10:50.006332+00:00",
+    "original_post": "COVID vaccines contain microchips that track your location",
+    "is_claim": true,
+    "extracted_claim": "Covid vaccines contain microchips that track your location",
+    "verdict": "FALSE",
+    "response": "There is no evidence to support the claim that COVID vaccines contain microchips to track your location. This conspiracy theory has been debunked by multiple sources.",
+    "confidence": 0.6688,
+    "latency_ms": 15226,
+    "bart_label": "factual claim",
+    "bart_score": 0.322,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Video claims COVID-19 vaccinated people emit Bluetooth signals",
+        "url": "https://publichealthcollaborative.org/alerts/video-claims-covid-19-vaccinated-people-emit-bluetooth-signals/",
+        "snippet": "A video circulating on social media promotes the conspiracy theory that COVID-19 vaccines cause people to emit and receive Bluetooth signals."
+      },
+      {
+        "title": "Myths and facts about the vax \u2014 debunking common COVID-19 ...",
+        "url": "https://wilfordhall.tricare.mil/News-Gallery/Articles/Article/3444174/myths-and-facts-about-the-vax-debunking-common-covid-19-vaccine-myths",
+        "snippet": "Myth: The COVID-19 vaccine can cause problems with breast tissue and lead to breast cancer. Truth: There is no evidence that COVID-19 vaccines cause problems ..."
+      },
+      {
+        "title": "Myths & Facts About COVID-19 Vaccines - CDC",
+        "url": "https://www.cdc.gov/covid/vaccines/myths-facts.html?CDC_AAref_Val",
+        "snippet": "FACT: COVID-19 vaccination causes a more predictable immune response than an infection with the virus that causes COVID-19. Woman in hospital ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:14:04.540304+00:00",
+    "original_post": "Elon Musk bought Twitter for 44 billion dollars",
+    "is_claim": true,
+    "extracted_claim": "Elon Musk bought Twitter for 44 billion dollars",
+    "verdict": "TRUE",
+    "response": "Elon Musk did buy Twitter for roughly $44 billion, as confirmed by multiple sources.",
+    "confidence": 0.7539,
+    "latency_ms": 20107,
+    "bart_label": "emotional expression",
+    "bart_score": 0.3848,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Elon Musk reaches agreement to acquire Twitter for about $44 billion",
+        "url": "https://www.pbs.org/newshour/economy/elon-musk-reaches-agreement-to-acquire-twitter-for-about-44-billion",
+        "snippet": "Elon Musk reached an agreement to buy Twitter for roughly $44 billion on Monday, promising a more lenient touch to policing content on the social media ..."
+      },
+      {
+        "title": "Twitter confirms completion of Elon Musk's $44 billion acquisition deal",
+        "url": "https://www.cnn.com/2022/10/28/tech/elon-musk-twitter-deal-close",
+        "snippet": "Elon Musk has completed his $44 billion acquisition of Twitter, the company confirmed in a securities filing Friday."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-15T18:14:06.134444+00:00",
+    "original_post": "I love pizza so much",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.3919,
+    "latency_ms": 1551,
+    "bart_label": "emotional expression",
+    "bart_score": 0.6081,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
   }
 ]

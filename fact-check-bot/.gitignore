@@ -1,0 +1,49 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environment ──
+.venv/
+venv/
+ENV/
+
+# ── Environment / Secrets ──
+.env
+.env.local
+.env.production
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Testing ──
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ── Runtime Data (generated at startup) ──
+data/faiss_index.bin
+data/document_store.json
+logs/checks.json
+logs/post_cache.json
+
+# ── Node / Frontend ──
+node_modules/
+.next/
+out/
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+
+# ── OS ──
+.DS_Store
+Thumbs.db

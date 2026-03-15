@@ -1,0 +1,82 @@
+# ── Stage 1: Backend ──
+FROM python:3.11-slim AS backend
+
+WORKDIR /app
+
+# System deps for spaCy, faiss, newspaper3k
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libxml2-dev \
+    libxslt1-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Download spaCy model at build time
+RUN python -m spacy download en_core_web_sm
+
+COPY backend/ ./backend/
+
+# ── Stage 2: Frontend ──
+FROM node:20-alpine AS frontend
+
+WORKDIR /app/frontend
+
+COPY frontend/package.json frontend/package-lock.json* ./
+RUN npm install --production=false
+
+COPY frontend/ .
+
+# Build-time env vars for Next.js (overridable at runtime via docker-compose)
+ARG NEXT_PUBLIC_WS_URL=ws://localhost:8000/ws
+ARG NEXT_PUBLIC_API_URL=http://localhost:8000
+ENV NEXT_PUBLIC_WS_URL=$NEXT_PUBLIC_WS_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
+RUN npm run build
+
+# ── Stage 3: Production Runtime ──
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Runtime system deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libxml2 \
+    libxslt1.1 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js for Next.js production server
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy Python packages from backend stage
+COPY --from=backend /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=backend /usr/local/bin /usr/local/bin
+
+# Copy backend code
+COPY --from=backend /app/backend ./backend/
+COPY requirements.txt .
+
+# Copy built frontend
+COPY --from=frontend /app/frontend/.next ./frontend/.next
+COPY --from=frontend /app/frontend/public ./frontend/public
+COPY --from=frontend /app/frontend/package.json ./frontend/package.json
+COPY --from=frontend /app/frontend/node_modules ./frontend/node_modules
+
+# Create runtime directories
+RUN mkdir -p logs data
+
+# Copy startup script
+COPY start.sh .
+RUN chmod +x start.sh
+
+EXPOSE 8000 3000
+
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+CMD ["./start.sh"]
