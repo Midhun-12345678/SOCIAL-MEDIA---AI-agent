@@ -1,0 +1,354 @@
+[
+  {
+    "timestamp": "2026-03-15T07:55:12.100444+00:00",
+    "original_post": "The Great Wall of China is the only man-made structure visible from space",
+    "is_claim": true,
+    "extracted_claim": "The Great Wall of China is the only man-made structure visible from space",
+    "verdict": "FALSE",
+    "response": "The claim that the Great Wall of China is the only man-made structure visible from space is false. Astronauts have reported that other man-made structures, such as city lights, highways, and bridges, are also visible from space.",
+    "confidence": 0.6485,
+    "latency_ms": 35997,
+    "bart_label": "factual claim",
+    "bart_score": 0.4212,
+    "detection_method": "bart+gpt",
+    "sources": []
+  },
+  {
+    "timestamp": "2026-03-15T08:02:23.998647+00:00",
+    "original_post": "elon musk has increased the layoff at meta",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.6088,
+    "latency_ms": 286,
+    "bart_label": "emotional expression",
+    "bart_score": 0.3912,
+    "detection_method": "bart_filtered",
+    "sources": []
+  },
+  {
+    "timestamp": "2026-03-15T08:04:52.835752+00:00",
+    "original_post": "elon musk has increased the layoff at meta",
+    "is_claim": true,
+    "extracted_claim": "Elon Musk has increased the layoff at Meta",
+    "verdict": "FALSE",
+    "response": "There is no evidence to support the claim that Elon Musk has increased layoffs at Meta. In fact, Elon Musk stated that there are no plans for layoffs at his companies and that they will be increasing headcount.",
+    "confidence": 0.6965,
+    "latency_ms": 7663,
+    "bart_label": "emotional expression",
+    "bart_score": 0.3912,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "As companies go for AI layoffs, Elon Musk says: We are not planning ...",
+        "url": "https://timesofindia.indiatimes.com/technology/as-companies-go-for-ai-layoffs-elon-musk-says-we-are-not-planning-any-layoffs-in-fact-we-will-increase-our-headcount-but-/articleshow/129571297.cms",
+        "snippet": "\"We're not planning any layoffs or reductions in personnel,\" he said. \"In fact, we will increase our headcount.\" But Musk immediately followed ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T08:09:09.289858+00:00",
+    "original_post": "india has high layoff than 2025",
+    "is_claim": true,
+    "extracted_claim": "India has higher layoffs than in 2025",
+    "verdict": "TRUE",
+    "response": "It is true that India had higher layoffs in 2025, with over 6,000 employees being laid off by Indian GCCs and even more layoffs reported in the IT sector.",
+    "confidence": 0.6574,
+    "latency_ms": 6693,
+    "bart_label": "question",
+    "bart_score": 0.2935,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "In addition to thousands laid off by Indian Outsourcers, GCCs have ...",
+        "url": "https://www.reddit.com/r/cscareerquestions/comments/1r2syta/in_addition_to_thousands_laid_off_by_indian/",
+        "snippet": "In addition to thousands laid off by Indian Outsourcers, GCCs have laid off over 6,000 in India in 2025. What does it tell us about IT sector?"
+      },
+      {
+        "title": "Indian GCCs cut over 6,000 jobs in 2025 as parent companies face ...",
+        "url": "https://www.moneycontrol.com/news/business/information-technology/indian-gccs-cut-over-6-000-jobs-in-2025-as-parent-companies-face-macro-pressure-13825047.html",
+        "snippet": "Over 5,500\u20136,000 GCC employees in India were laid off in 2025 across sectors \u00b7 Technicolor's closure cut 3,000 jobs; Ford and Fidelity also ..."
+      },
+      {
+        "title": "India's white-collar job market cracks in 2025 - The Financial Express",
+        "url": "https://www.financialexpress.com/business/news/indias-white-collar-job-market-cracks-in-2025-over-10000-layoffs-hit-it-startups-and-media/4093649/",
+        "snippet": "In July, India's largest IT services exporter announced about 2% job cut, and this included its global workforce. As per an Indian Express ..."
+      },
+      {
+        "title": "Why India's IT sector is shedding jobs - CNBC",
+        "url": "https://www.cnbc.com/2025/08/04/indias-it-layoffs-spark-fears-ai-is-hurting-jobs-in-critical-sector.html",
+        "snippet": "India's largest private sector employer, Tata Consultancy Services, announced last month that it would cut more than 12,000 jobs."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T08:13:17.894787+00:00",
+    "original_post": "cpvid is coming again",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.6976,
+    "latency_ms": 2451,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3024,
+    "detection_method": "bart_filtered",
+    "sources": []
+  },
+  {
+    "timestamp": "2026-03-15T08:14:13.583539+00:00",
+    "original_post": "FCB has increased the worth of 44 billion dollars this year",
+    "is_claim": true,
+    "extracted_claim": "FCB has increased its worth by $44 billion this year",
+    "verdict": "FALSE",
+    "response": "There is no evidence to support the claim that FCB has increased its worth by $44 billion this year. While there are reports of Barcelona's financial situation improving, there is no indication of such a massive increase in their worth.",
+    "confidence": 0.6726,
+    "latency_ms": 9298,
+    "bart_label": "factual claim",
+    "bart_score": 0.3314,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Barcelona get salary cap boost as financial struggles ease - ESPN",
+        "url": "https://www.espn.com/soccer/story/_/id/43904793/barcelona-get-salary-cap-boost-financial-struggles-ease",
+        "snippet": "Barcelona's financial situation continues to improve after LaLiga confirmed their annual spending cap is now over \u20ac463 million ($483.7m), ..."
+      },
+      {
+        "title": "V\u00edctor Font: \"The reality is that in the last 5 years, Bar\u00e7a has spent ...",
+        "url": "https://www.facebook.com/fabrizioromanoherewego/posts/-v%C3%ADctor-font-the-reality-is-that-in-the-last-5-years-bar%C3%A7a-has-%F0%9D%90%AC%F0%9D%90%A9%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD-%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%9E-%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%A7-%F0%9D%9F%8F/1588670446393774/",
+        "snippet": "... Barcelona have been earning $861.68 million every year. Barcelona's current valuation is $5.65 billion. The future of FC Barcelona will be ..."
+      },
+      {
+        "title": "FC Barcelona confirms its economic recovery - Bar\u00e7a Foundation",
+        "url": "https://foundation.fcbarcelona.com/en/news/4377638/fc-barcelona-confirms-its-economic-recovery",
+        "snippet": "The Club's results reflect a solid financial structure and a reduction in debt to \u20ac469 million, \u20ac90 million less than the previous financial ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T09:13:57.387833+00:00",
+    "original_post": "Man city has increased the worth of 444 billion dollars this year",
+    "is_claim": true,
+    "extracted_claim": "Man City has increased in worth by $444 billion this year",
+    "verdict": "FALSE",
+    "response": "The claim that Manchester City has increased in worth by $444 billion this year is false. According to Forbes and other sources, Manchester City's value is around $4.8 to $5.3 billion, not $444 billion.",
+    "confidence": 0.6807,
+    "latency_ms": 7518,
+    "bart_label": "factual claim",
+    "bart_score": 0.3517,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Manchester City on the Forbes Soccer Team Valuations List",
+        "url": "https://www.forbes.com/teams/manchester-city/",
+        "snippet": "Manchester City Team Value 1 Enterprise values (equity plus net debt) based on May 17, 2024 exchange rates. $5.3B(\u00a34.1B)"
+      },
+      {
+        "title": "Manchester City group worth $4.8 billion after Silver Lake buy 10 ...",
+        "url": "https://www.espn.com/soccer/story/_/id/37579223/manchester-city-group-worth-48-billion-silver-lake-buy-10-percent",
+        "snippet": "Manchester City has sold a $500 million stake to private equity firm Silver Lake, valuing Abu Dhabi-controlled City Football Group (CFG) at $4.8 billion."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T09:45:40.411841+00:00",
+    "original_post": "Man united has increased the worth of 4 billion dollars this year",
+    "is_claim": true,
+    "extracted_claim": "Manchester United's worth increased by $4 billion this year",
+    "verdict": "FALSE",
+    "response": "The claim that Manchester United's worth increased by $4 billion this year is false. Their estimated value is around $6.55 billion, not $4 billion. While they are one of the most valuable football clubs, the increase was not as large as claimed.",
+    "confidence": 0.6585,
+    "latency_ms": 6544,
+    "bart_label": "question",
+    "bart_score": 0.2963,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Manchester United are currently the MOST VALUABLE football club ...",
+        "url": "https://www.facebook.com/fabrizioromanoherewego/posts/-%F0%9D%90%81%F0%9D%90%91%F0%9D%90%84%F0%9D%90%80%F0%9D%90%8A%F0%9D%90%88%F0%9D%90%8D%F0%9D%90%86-manchester-united-are-currently-the-most-valuable-football-club-in-eng/1530550418872444/",
+        "snippet": "JUST IN: Manchester United are now the 2nd most valuable club in the world with an estimated value of $6.6B \ud83c\udfdf\ufe0f The Red Devils recorded $834M ..."
+      },
+      {
+        "title": "Manchester United's Staggering Worth: More Than Just a Club, It's a ...",
+        "url": "https://www.oreateai.com/blog/manchester-uniteds-staggering-worth-more-than-just-a-club-its-a-global-powerhouse/2b6bc8375dfb67754920132b6d6c1764",
+        "snippet": "Manchester United's worth is estimated at $6.55 billion, driven by strong profits, a massive global fanbase, and the Premier League's ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T10:12:48.775022+00:00",
+    "original_post": "Einstein failed math in school",
+    "is_claim": true,
+    "extracted_claim": "Einstein failed math in school",
+    "verdict": "FALSE",
+    "response": "The claim that Einstein failed math in school is false. There is no evidence to support this claim, and in fact, Einstein was a mathematical prodigy who excelled in the subject.",
+    "confidence": 0.7446,
+    "latency_ms": 6634,
+    "bart_label": "question",
+    "bart_score": 0.3614,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Did Einstein Really Fail Math? | Ripley's Believe It or Not!",
+        "url": "https://www.ripleys.com/stories/einstein-fail-math",
+        "snippet": "The common rumor that he failed a math test way back in fourth grade is simply untrue. The trouble he did have came when he took the entrance exams."
+      },
+      {
+        "title": "Science myths: did Einstein fail his fourth grade math class?",
+        "url": "https://theeconomyofmeaning.com/2013/07/27/science-myths-did-einstein-failed-his-fourth-grade-math-class/",
+        "snippet": "\u201cI never failed in mathematics,\u201d he replied, correctly. \u201cBefore I was fifteen I had mastered differential and integral calculus.\u201d"
+      },
+      {
+        "title": "How did Albert Einstein flunk math and still end up so smart?",
+        "url": "https://www.wtamu.edu/~cbaird/sq/2012/11/18/how-did-albert-einstein-flunk-math-and-still-end-up-so-smart/",
+        "snippet": "There is no record of Einstein flunking or ever getting low marks in math. Albert Einstein was an all-around good student with exceptional ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T10:26:26.544091+00:00",
+    "original_post": "\"Einstein failed math in school\"",
+    "is_claim": true,
+    "extracted_claim": "Einstein failed math in school",
+    "verdict": "FALSE",
+    "response": "The claim that Einstein failed math in school is false. There is no evidence to support this, and in fact, Einstein was a mathematical prodigy who excelled in the subject.",
+    "confidence": 0.6918,
+    "latency_ms": 9293,
+    "bart_label": "question",
+    "bart_score": 0.3794,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Did Einstein Really Fail Math? | Ripley's Believe It or Not!",
+        "url": "https://www.ripleys.com/stories/einstein-fail-math",
+        "snippet": "The common rumor that he failed a math test way back in fourth grade is simply untrue. The trouble he did have came when he took the entrance exams."
+      },
+      {
+        "title": "Is it true that Albert Einstein failed in mathematics many times during ...",
+        "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1okz0fd/is_it_true_that_albert_einstein_failed_in/",
+        "snippet": "No, he was a mathematical prodigy. The myth was probably made up by a teacher wanting to console some poor bastard that took out a ..."
+      },
+      {
+        "title": "Science myths: did Einstein fail his fourth grade math class?",
+        "url": "https://theeconomyofmeaning.com/2013/07/27/science-myths-did-einstein-failed-his-fourth-grade-math-class/",
+        "snippet": "\u201cI never failed in mathematics,\u201d he replied, correctly. \u201cBefore I was fifteen I had mastered differential and integral calculus.\u201d"
+      },
+      {
+        "title": "How did Albert Einstein flunk math and still end up so smart?",
+        "url": "https://www.wtamu.edu/~cbaird/sq/2012/11/18/how-did-albert-einstein-flunk-math-and-still-end-up-so-smart/",
+        "snippet": "There is no record of Einstein flunking or ever getting low marks in math. Albert Einstein was an all-around good student with exceptional ..."
+      },
+      {
+        "title": "Did Einstein really fail math? - History - HowStuffWorks",
+        "url": "https://history.howstuffworks.com/history-vs-myth/did-einstein-really-fail-math.htm",
+        "snippet": "While it's true Einstein failed the exam, he didn't fail the math portion. He did, however, bomb the botany, zoology and language sections."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T10:50:48.616738+00:00",
+    "original_post": "The Great Wall of China is visible from space",
+    "is_claim": true,
+    "extracted_claim": "The Great Wall of China is visible from space",
+    "verdict": "FALSE",
+    "response": "The claim that the Great Wall of China is visible from space is false. Reports from astronauts and fact-checking sources confirm that the Great Wall is not visible from space.",
+    "confidence": 0.7798,
+    "latency_ms": 9805,
+    "bart_label": "factual claim",
+    "bart_score": 0.4494,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "No, You Can't See the Great Wall of China from Space",
+        "url": "https://www.scientificamerican.com/article/no-you-cant-see-the-great-wall-of-china-from-space/",
+        "snippet": "Reports of Earth-orbiting astronauts glimpsing the Great Wall of China and many other artificial structures are wildly exaggerated."
+      },
+      {
+        "title": "Is the Great Wall of China Visible from the Moon? | Snopes.com",
+        "url": "https://www.snopes.com/fact-check/great-wall-from-moon/",
+        "snippet": "Long-held common belief holds that the Great Wall of China is the only man-made object visible from the moon."
+      },
+      {
+        "title": "TIL the Great Wall of China is not actually visible from space, its just ...",
+        "url": "https://www.reddit.com/r/todayilearned/comments/1kg3uwe/til_the_great_wall_of_china_is_not_actually/",
+        "snippet": "I suspect it got reversed at one point. The actual fact is that \"in order to see the entire Great Wall at once, you would need to be in space.\"."
+      },
+      {
+        "title": "Great Wall of China is visible from space: Fact or myth?",
+        "url": "https://timesofindia.indiatimes.com/life-style/travel/news/great-wall-of-china-is-visible-from-space-fact-or-myth/articleshow/128671144.cms",
+        "snippet": "The enduring myth of the Great Wall of China being visible from space is debunked. Despite its immense length, the Wall's narrow width and ..."
+      },
+      {
+        "title": "Can you see the Great Wall of China from space?",
+        "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
+        "snippet": "The truth is that the Great Wall of China cannot be seen from space. To be more precise, it can't easily be seen with the naked eye. The myth ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T12:38:02.130354+00:00",
+    "original_post": "india will has huge loss in world war 3",
+    "is_claim": true,
+    "extracted_claim": "India will have a huge loss in World War 3",
+    "verdict": "UNVERIFIABLE",
+    "response": "The claim that India will have a huge loss in World War 3 is unverifiable as there is no concrete evidence or indication that such a war is currently happening or will happen in the future.",
+    "confidence": 0.154,
+    "latency_ms": 8043,
+    "bart_label": "emotional expression",
+    "bart_score": 0.385,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Is India actively participating in the Third World War?",
+        "url": "https://www.quora.com/Is-India-actively-participating-in-the-Third-World-War",
+        "snippet": "There is a political scenario floating since January-2017, 1. In Donald Trump Tenure 2016\u20132020, American Government authorities confirmed ..."
+      },
+      {
+        "title": "India's World War 3 Plan",
+        "url": "https://www.youtube.com/watch?v=-bA71tK0scY",
+        "snippet": "India is an exponentially more capable military power than Pakistan a modern conflict between the two nations would inevitably be to India's favor."
+      },
+      {
+        "title": "Nuclear World War 3, a real threat? What is India's view?",
+        "url": "https://www.indiatoday.in/newsmo/video/nuclear-world-war-3-a-real-threat-what-is-indias-view-homeland-2517473-2024-03-20",
+        "snippet": "As countries add to nuclear arsenal, What is India's view on WW3? Can India help stop a global nuclear war? Pooja Shali explains in this episode of Homeland."
+      },
+      {
+        "title": "How does India fit into World War 3?",
+        "url": "https://www.quora.com/How-does-India-fit-into-World-War-3",
+        "snippet": "India has always stayed neutral in complicated geopolitical situations. We have maintained good relations with US, Russia, Japan, Iran, Saudi ..."
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-15T12:39:32.341404+00:00",
+    "original_post": "indian cricket team has huge gross of 50 million in 2026",
+    "is_claim": true,
+    "extracted_claim": "Indian cricket team has a gross revenue of 50 million in 2026",
+    "verdict": "FALSE",
+    "response": "The Indian cricket team did not have a gross revenue of 50 million in 2026. The BCCI rewarded Team India with Rs 131 crore after the T20 World Cup, which is approximately $17.5 million, not 50 million.",
+    "confidence": 0.6739,
+    "latency_ms": 7953,
+    "bart_label": "question",
+    "bart_score": 0.3347,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "How much has BCCI rewarded Team India for recent ICC ...",
+        "url": "https://sports.yahoo.com/articles/rs-125-cr-rs-131-191000867.html",
+        "snippet": "The story of Shohei Ohtani's first game on the international stage: 'OK, this kid is disgusting'. Ohtani first appeared for Japan as an 18 ..."
+      },
+      {
+        "title": "BCCI's \u20b9131 crore reward sparks debate",
+        "url": "https://www.msn.com/en-in/news/insight/bcci-s-131-crore-reward-sparks-debate/gm-GM05023A1B?gemSnapshotKey=GM05023A1B-snapshot-86&uxmode=ruby",
+        "snippet": "Shubman Gill set to be named cricketer of the year at BCCI annual gala ... ICC Men's T20 World Cup 2026 Prize Money: India earns \u20b921.9 Crore, full ..."
+      },
+      {
+        "title": "BCCI announces Rs 131 crore reward for India after T20 ...",
+        "url": "https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/bcci-announces-rs-131-crore-reward-for-india-after-t20-world-cup-2026-triumph/articleshow/129378140.cms",
+        "snippet": "Team India players celebrate with the trophy after winning the T20 World Cup 2026. ... India posted 255 for 5, the highest total in a T20 World ..."
+      }
+    ]
+  }
+]
