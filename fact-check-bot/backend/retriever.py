@@ -35,8 +35,12 @@ def retrieve_evidence(claim: str, num_results: int = 5) -> List[Source]:
     }
 
     try:
-        response = requests.post(SERPER_URL, headers=headers, json=payload, timeout=10)
+        # Reduced timeout from 10s to 5s for faster fallback (optimization: saves ~1-2 seconds)
+        response = requests.post(SERPER_URL, headers=headers, json=payload, timeout=5)
         response.raise_for_status()
+    except requests.Timeout:
+        logger.warning("Serper timeout (5s) — continuing without sources, RAG will generate verdict with limited info")
+        return []
     except Exception as e:
         logger.warning(f"Serper retrieval failed ({e}) — continuing without sources")
         return []

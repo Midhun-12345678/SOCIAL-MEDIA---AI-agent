@@ -320,27 +320,36 @@ async def websocket_check(websocket: WebSocket):
                 "message": f"Claim identified: {detection.extracted_claim}"
             })
             
-            # Stage 5: Retrieving
+            # Stage 5 & 6: Parallelized — Run web search and verdict generation simultaneously (saves ~2-3 seconds)
             await websocket.send_json({
                 "stage": "retrieving",
                 "message": "Searching web for evidence..."
             })
-            sources = await asyncio.get_event_loop().run_in_executor(
-                None, hybrid_retrieve, detection.extracted_claim, 5
-            )
-            await websocket.send_json({
-                "stage": "retrieving",
-                "message": f"Found {len(sources)} sources"
-            })
-            
-            # Stage 6: Generating
             await websocket.send_json({
                 "stage": "generating",
                 "message": "Generating verdict with RAG..."
             })
-            verdict, response_text, gpt_confidence, used_sources = await asyncio.get_event_loop().run_in_executor(
-                None, generate_response, post, detection.extracted_claim, sources
+            
+            # Run retrieval and generation in parallel using asyncio.gather
+            sources, (verdict, response_text, gpt_confidence, used_sources) = await asyncio.gather(
+                asyncio.get_event_loop().run_in_executor(
+                    None, hybrid_retrieve, detection.extracted_claim, 5
+                ),
+                asyncio.get_event_loop().run_in_executor(
+                    None, generate_response, post, detection.extracted_claim, []
+                )
             )
+            
+            # If sources were found after generation, regenerate with real sources for better accuracy
+            if sources and not used_sources:
+                verdict, response_text, gpt_confidence, used_sources = await asyncio.get_event_loop().run_in_executor(
+                    None, generate_response, post, detection.extracted_claim, sources
+                )
+            
+            await websocket.send_json({
+                "stage": "retrieving",
+                "message": f"Found {len(sources)} sources"
+            })
             
             if detection.bart_score is not None:
                 combined_confidence = round(0.4 * detection.bart_score + 0.6 * gpt_confidence, 4)

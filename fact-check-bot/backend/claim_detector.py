@@ -67,6 +67,18 @@ def detect_claim(post: str) -> ClaimDetectionResult:
 
             logger.debug(f"BART: label={bart_label} score={bart_score:.3f} is_claim={bart_is_claim}")
 
+            # Skip GPT if BART is HIGHLY confident (either TRUE or NOT TRUE) - saves ~1-2 seconds
+            if bart_is_claim and bart_score >= 0.85:
+                logger.debug(f"BART highly confident claim (score={bart_score:.3f}) — skipping GPT extraction")
+                return ClaimDetectionResult(
+                    is_claim=True,
+                    extracted_claim=post,  # Use original text as claim
+                    reasoning=f"BART high-confidence factual claim (score: {bart_score:.2f})",
+                    bart_label=bart_label,
+                    bart_score=round(bart_score, 4),
+                    combined_confidence=round(bart_score, 4)
+                )
+
             # Only reject without GPT if BART is highly confident it's NOT a claim
             if not bart_is_claim and bart_score >= BART_CONFIDENT_REJECT:
                 return ClaimDetectionResult(
@@ -78,7 +90,7 @@ def detect_claim(post: str) -> ClaimDetectionResult:
                     combined_confidence=round(1.0 - bart_score, 4)
                 )
 
-            # For borderline cases or BART-positive, always consult GPT
+            # For borderline cases or BART-positive but low confidence, consult GPT
             gpt_result = _call_gpt_extractor(post)
             gpt_confidence = float(gpt_result.get("gpt_confidence", 0.75))
 

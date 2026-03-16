@@ -12,6 +12,9 @@ build/
 .venv/
 venv/
 ENV/
+env/
+venv/
+
 
 # ── Environment / Secrets ──
 .env
@@ -47,3 +50,26 @@ frontend/out/
 # ── OS ──
 .DS_Store
 Thumbs.db
+# .gitignore (add to end)
+
+# ── Deployment ──
+.env.production
+.env.staging
+*.pem
+*.key
+deploy.log
+render.yaml
+railway.toml
+
+# ── Large/Generated Files ──
+*.bin
+faiss_index.*
+.next/
+dist/
+build/
+
+# ── OS ──
+.DS_Store
+*.swp
+pycache/
+*.tmp
