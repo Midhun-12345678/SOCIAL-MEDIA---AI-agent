@@ -31,28 +31,51 @@ def _load_spacy():
         logger.warning(f"spaCy pre-load failed ({e}) — NER will be skipped at runtime")
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    logger.info("Server starting — loading models...")
-    
+async def _load_models_background():
+    """Load heavy ML models in background after server starts."""
+    logger.info("Loading ML models in background...")
+
+    loop = asyncio.get_event_loop()
+
     await asyncio.gather(
-        asyncio.get_event_loop().run_in_executor(
-            None, ZeroShotClassifier.get_instance
-        ),
-        asyncio.get_event_loop().run_in_executor(
-            None, _load_spacy
-        )
+        loop.run_in_executor(None, ZeroShotClassifier.get_instance),
+        loop.run_in_executor(None, _load_spacy),
     )
 
-    # Pre-load retrieval models (embedder + reranker + FAISS index)
     from backend.retrieval.embedder import preload_model as preload_embedder
     from backend.retrieval.reranker import preload_reranker
     from backend.retrieval.hybrid_retriever import preload_index
+
     await asyncio.gather(
-        asyncio.get_event_loop().run_in_executor(None, preload_embedder),
-        asyncio.get_event_loop().run_in_executor(None, preload_reranker),
-        asyncio.get_event_loop().run_in_executor(None, preload_index),
+        loop.run_in_executor(None, preload_embedder),
+        loop.run_in_executor(None, preload_reranker),
+        loop.run_in_executor(None, preload_index),
     )
+
+    logger.info("All ML models loaded successfully")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logger.info("Server starting...")
+
+    # Start model loading in background (non-blocking)
+    asyncio.create_task(_load_models_background())
+
+    from backend.config import INGESTION_ENABLED
+
+    if INGESTION_ENABLED:
+        from backend.social import start_ingestion
+        await start_ingestion(cache)
+        logger.info("Social media ingestion layer started")
+
+    yield
+
+    if INGESTION_ENABLED:
+        from backend.social import stop_ingestion
+        await stop_ingestion()
+
+    logger.info("Server shutting down")
     logger.info("Retrieval models loaded (embedder + reranker + FAISS index)")
 
     bart_ready = ZeroShotClassifier.get_instance().is_available
@@ -94,7 +117,9 @@ app.add_middleware(
 )
 
 cache = PostCache()
-
+@app.get("/ready")
+def ready():
+    return {"status": "ready"}
 
 @app.get("/")
 def root():
