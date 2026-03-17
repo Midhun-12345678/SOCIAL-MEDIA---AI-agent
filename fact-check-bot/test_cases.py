@@ -1,164 +1,388 @@
-"""
-Quick CLI test runner - runs the most critical tests without pytest.
-Usage: python test_cases.py
-"""
-
-import sys
-import os
+import json
 import time
-import traceback
+from statistics import mean
+from typing import Any, Dict, List, Optional
 
-sys.path.insert(0, os.path.dirname(__file__))
-
-PASS = 0
-FAIL = 0
-SKIP = 0
+import requests
 
 
-def run_test(name, fn):
-    global PASS, FAIL, SKIP
+API_URL = "https://midhunpa-fact-check-bot.hf.space/check"
+
+
+"""Standalone script to exercise the live /check endpoint.
+
+Request/response contract (derived from backend models):
+
+POST /check
+  Request JSON body (backend.models.CheckRequest):
+    { "post": <str> }
+
+  Response JSON body (backend.models.CheckResponse serialized):
+    {
+      "original_post": <str>,
+      "is_claim": <bool>,
+      "extracted_claim": <str | null>,
+      "verdict": <str>,          # Enum backend.models.Verdict
+      "response": <str>,
+      "sources": [               # Optional list of source objects
+         {"title": <str>, "url": <str>, "snippet": <str>},
+      ],
+      "confidence": <float>,
+      "latency_ms": <int>,       # Backend-measured latency
+      "bart_label": <str | null>,
+      "bart_score": <float | null>,
+      "detection_method": <str | null>
+    }
+
+This harness measures its own end-to-end latency using time.perf_counter()
+in addition to the backend-provided latency_ms.
+
+Verdict normalization
+---------------------
+The backend uses enum values: "TRUE", "FALSE", "UNVERIFIABLE", "NOT_A_CLAIM".
+For comparison with expected verdicts, we normalize API responses into
+canonical labels:
+
+  TRUE          -> "TRUE"
+  FALSE         -> "FALSE"
+  UNVERIFIABLE  -> "UNVERIFIABLE"
+  NOT_A_CLAIM   -> "NOT A CLAIM"
+
+We also accept case variations and spaces/underscores (e.g. "not a claim",
+"NOT_A_CLAIM") and map them to "NOT A CLAIM".
+"""
+
+
+TEST_CASES: List[Dict[str, Any]] = [
+    # FALSE claims
+    {
+        "id": 1,
+        "text": "COVID vaccines contain microchips that track your location",
+        "expected_verdict": "FALSE",
+        "category": "FALSE",
+    },
+    {
+        "id": 2,
+        "text": "The Great Wall of China is visible from space",
+        "expected_verdict": "FALSE",
+        "category": "FALSE",
+    },
+    {
+        "id": 3,
+        "text": "Einstein failed math in school",
+        "expected_verdict": "FALSE",
+        "category": "FALSE",
+    },
+    {
+        "id": 4,
+        "text": "Napoleon was only 5 feet 2 inches tall",
+        "expected_verdict": "FALSE",
+        "category": "FALSE",
+    },
+    {
+        "id": 5,
+        "text": "Humans only use 10% of their brain",
+        "expected_verdict": "FALSE",
+        "category": "FALSE",
+    },
+
+    # TRUE claims
+    {
+        "id": 6,
+        "text": "Elon Musk bought Twitter for $44 billion in 2022",
+        "expected_verdict": "TRUE",
+        "category": "TRUE",
+    },
+    {
+        "id": 7,
+        "text": "The Amazon River is the largest river by discharge",
+        "expected_verdict": "TRUE",
+        "category": "TRUE",
+    },
+    {
+        "id": 8,
+        "text": "Mount Everest is the tallest mountain above sea level",
+        "expected_verdict": "TRUE",
+        "category": "TRUE",
+    },
+    {
+        "id": 9,
+        "text": "Water boils at 100 degrees Celsius at sea level",
+        "expected_verdict": "TRUE",
+        "category": "TRUE",
+    },
+    {
+        "id": 10,
+        "text": "The US has won the most Olympic gold medals in history",
+        "expected_verdict": "TRUE",
+        "category": "TRUE",
+    },
+
+    # UNVERIFIABLE claims
+    {
+        "id": 11,
+        "text": "5G towers are causing health problems in nearby residents",
+        "expected_verdict": "UNVERIFIABLE",
+        "category": "UNVERIFIABLE",
+    },
+    {
+        "id": 12,
+        "text": "The government is hiding evidence of alien contact",
+        "expected_verdict": "UNVERIFIABLE",
+        "category": "UNVERIFIABLE",
+    },
+
+    # NOT A CLAIM
+    {
+        "id": 13,
+        "text": "omg this pizza is so good i cant even rn",
+        "expected_verdict": "NOT A CLAIM",
+        "category": "NOT A CLAIM",
+    },
+    {
+        "id": 14,
+        "text": "what time does the library close on sundays?",
+        "expected_verdict": "NOT A CLAIM",
+        "category": "NOT A CLAIM",
+    },
+    {
+        "id": 15,
+        "text": "Monday should be illegal lmao",
+        "expected_verdict": "NOT A CLAIM",
+        "category": "NOT A CLAIM",
+    },
+]
+
+
+def normalize_verdict(verdict_raw: Any) -> Optional[str]:
+    """Normalize API verdict strings to canonical labels for comparison.
+
+    Canonical labels used in this script:
+      - "TRUE"
+      - "FALSE"
+      - "UNVERIFIABLE"
+      - "NOT A CLAIM"
+
+    The backend's enum uses "NOT_A_CLAIM"; we map that (and case/spacing
+    variations) to "NOT A CLAIM".
+    """
+
+    if verdict_raw is None:
+        return None
+
+    v = str(verdict_raw).strip()
+    if not v:
+        return None
+
+    upper = v.upper()
+
+    # Normalize various NOT A CLAIM spellings
+    if upper in {"NOT_A_CLAIM", "NOT A CLAIM", "NOT-A-CLAIM"}:
+        return "NOT A CLAIM"
+
+    if upper in {"TRUE", "FALSE", "UNVERIFIABLE"}:
+        return upper
+
+    # Fallback: upper-case string as-is
+    return upper
+
+
+def safe_get_confidence(data: Dict[str, Any]) -> Optional[float]:
+    value = data.get("confidence")
+    if value is None:
+        return None
     try:
-        result = fn()
-        if result == "SKIP":
-            print(f"  [SKIP] {name}")
-            SKIP += 1
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def run_test_case(case: Dict[str, Any]) -> Dict[str, Any]:
+    """Run a single test case against the live API.
+
+    Returns a result dictionary with at least the following keys:
+      - id, text, expected_verdict, actual_verdict, category
+      - passed (bool)
+      - confidence (float | None)
+      - latency_ms (float | None)          # client-measured
+      - api_latency_ms (int | None)        # if present in response
+      - sources_count (int)
+      - error (str | None)
+    """
+
+    payload = {"post": case["text"]}
+    start = time.perf_counter()
+
+    result: Dict[str, Any] = {
+        "id": case["id"],
+        "text": case["text"],
+        "expected_verdict": case["expected_verdict"],
+        "actual_verdict": None,
+        "category": case["category"],
+        "passed": False,
+        "confidence": None,
+        "latency_ms": None,
+        "api_latency_ms": None,
+        "sources_count": 0,
+        "error": None,
+    }
+
+    try:
+        response = requests.post(API_URL, json=payload, timeout=60)
+        elapsed_ms = (time.perf_counter() - start) * 1000.0
+        result["latency_ms"] = elapsed_ms
+
+        if not (200 <= response.status_code < 300):
+            # Non-success HTTP status
+            result["error"] = f"HTTP {response.status_code}: {response.text[:200]}"
+            return result
+
+        try:
+            data = response.json()
+        except ValueError as exc:  # JSON decode error
+            result["error"] = f"JSON decode error: {exc}"
+            return result
+
+        raw_verdict = data.get("verdict")
+        normalized_verdict = normalize_verdict(raw_verdict)
+
+        if normalized_verdict is None:
+            result["error"] = "Missing or invalid 'verdict' in response"
+            return result
+
+        result["actual_verdict"] = normalized_verdict
+        result["confidence"] = safe_get_confidence(data)
+
+        sources = data.get("sources")
+        if isinstance(sources, list):
+            result["sources_count"] = len(sources)
         else:
-            print(f"  [PASS] {name}")
-            PASS += 1
-    except Exception as e:
-        print(f"  [FAIL] {name}: {e}")
-        traceback.print_exc()
-        FAIL += 1
+            result["sources_count"] = 0
+
+        api_latency = data.get("latency_ms")
+        if isinstance(api_latency, (int, float)):
+            result["api_latency_ms"] = int(api_latency)
+
+        # PASS if normalized verdict exactly matches expected
+        result["passed"] = normalized_verdict == case["expected_verdict"]
+
+    except requests.RequestException as exc:
+        result["error"] = f"Request error: {exc}"
+
+    return result
 
 
-def test_normalize():
-    from backend.ingestion import normalize_text
-    norm = normalize_text("OMG u won't BELIEVE this!!! https://t.co/abc @user #breaking")
-    assert "https://" not in norm
-    assert "you" in norm
+def summarize_results(results: List[Dict[str, Any]]) -> Dict[str, Any]:
+    total_tests = len(results)
+    passed = sum(1 for r in results if r.get("passed"))
+    failed = total_tests - passed
+    pass_rate = (passed / total_tests * 100.0) if total_tests > 0 else 0.0
 
-
-def test_embed_shape():
-    from backend.retrieval.embedder import embed_query
-    import numpy as np
-    vec = embed_query("Einstein failed math")
-    assert vec.shape == (384,)
-    assert vec.dtype == np.float32
-
-
-def test_chunker():
-    from backend.retrieval.chunker import chunk_text
-    text = " ".join(["word"] * 1200)
-    chunks = chunk_text(text, {"src": "test"}, chunk_size=500, overlap=50)
-    assert len(chunks) == 3
-
-
-def test_vector_index():
-    import numpy as np
-    import tempfile
-    from backend.retrieval.vector_index import VectorIndex
-    with tempfile.TemporaryDirectory() as td:
-        idx = VectorIndex(dim=384, index_path=os.path.join(td, "t.bin"))
-        vecs = np.random.rand(3, 384).astype(np.float32)
-        idx.add(vecs)
-        assert idx.total_vectors == 3
-        results = idx.search(vecs[0], top_k=1)
-        assert results[0][0] == 0
-
-
-def test_doc_store():
-    import tempfile
-    from backend.retrieval.document_store import DocumentStore, StoredDocument
-    with tempfile.TemporaryDirectory() as td:
-        store = DocumentStore(store_path=os.path.join(td, "s.json"))
-        store.add_documents([
-            StoredDocument(chunk_text="hello", source="test", url="http://x.com", title="X")
-        ])
-        assert store.size == 1
-        assert store.has_url("http://x.com")
-        assert not store.has_url("http://y.com")
-
-
-def test_reranker():
-    from backend.retrieval.reranker import rerank
-    from backend.models import Source
-    sources = [
-        Source(title="A", url="http://a.com", snippet="The weather is nice today."),
-        Source(title="B", url="http://b.com", snippet="Einstein was a genius physicist."),
+    successful_latencies = [
+        r["latency_ms"]
+        for r in results
+        if r.get("latency_ms") is not None and not r.get("error")
     ]
-    result = rerank("Einstein physics", sources, top_k=2)
-    assert len(result) == 2
+    avg_latency_ms = mean(successful_latencies) if successful_latencies else None
+
+    # Per-category statistics
+    categories: Dict[str, Dict[str, int]] = {}
+    for r in results:
+        cat = r.get("category", "UNKNOWN")
+        bucket = categories.setdefault(cat, {"total": 0, "passed": 0, "failed": 0})
+        bucket["total"] += 1
+        if r.get("passed"):
+            bucket["passed"] += 1
+        else:
+            bucket["failed"] += 1
+
+    summary: Dict[str, Any] = {
+        "total_tests": total_tests,
+        "passed": passed,
+        "failed": failed,
+        "pass_rate": round(pass_rate, 2),
+        "average_latency_ms": round(avg_latency_ms, 2) if avg_latency_ms is not None else None,
+        "per_category": categories,
+    }
+
+    return summary
 
 
-def test_dedup():
-    from backend.social.dedup import DedupTracker
-    d = DedupTracker(ttl_hours=1)
-    d.mark_seen("reddit", "p1")
-    assert d.is_seen("reddit", "p1")
-    assert not d.is_seen("reddit", "p2")
+def print_results(results: List[Dict[str, Any]], summary: Dict[str, Any]) -> None:
+    print("=" * 80)
+    print("FACT-CHECK BOT LIVE API TESTS")
+    print("Endpoint:", API_URL)
+    print("=" * 80)
+    print()
+
+    # Per-test details
+    for r in results:
+        status = "PASS" if r.get("passed") else "FAIL"
+        print(f"Test {r['id']:>2} [{r['category']}]: {status}")
+        print(f"  Text: {r['text']}")
+        print(f"  Expected verdict: {r['expected_verdict']}")
+        print(f"  Actual verdict:   {r.get('actual_verdict')}")
+        print(f"  Confidence:       {r.get('confidence')}")
+        print(f"  Latency (ms):     {r.get('latency_ms'):.2f}" if isinstance(r.get("latency_ms"), (int, float)) else f"  Latency (ms):     {r.get('latency_ms')}")
+        print(f"  API latency (ms): {r.get('api_latency_ms')}")
+        print(f"  Sources count:    {r.get('sources_count')}")
+        if r.get("error"):
+            print(f"  ERROR: {r['error']}")
+        print("-" * 80)
+
+    # Summary
+    print()
+    print("SUMMARY")
+    print("=" * 80)
+    print(f"Total tests: {summary['total_tests']}")
+    print(f"Passed:      {summary['passed']}")
+    print(f"Failed:      {summary['failed']}")
+    print(f"Pass rate:   {summary['pass_rate']:.2f}%")
+    if summary.get("average_latency_ms") is not None:
+        print(f"Avg latency (ms) across successful requests: {summary['average_latency_ms']:.2f}")
+    else:
+        print("Avg latency (ms) across successful requests: N/A")
+
+    print()
+    print("RESULTS BY CATEGORY")
+    print("=" * 80)
+    for cat, stats in summary.get("per_category", {}).items():
+        print(f"Category {cat}:")
+        print(f"  Total:  {stats['total']}")
+        print(f"  Passed: {stats['passed']}")
+        print(f"  Failed: {stats['failed']}")
+        print("-" * 80)
 
 
-def test_article_fetcher_invalid():
-    from backend.retrieval.article_fetcher import fetch_article
-    assert fetch_article("") is None
-    assert fetch_article("not-a-url") is None
+def write_results_json(results: List[Dict[str, Any]], summary: Dict[str, Any]) -> None:
+    """Write structured test results to fact-check-bot/test_results.json.
+
+    The script is intended to be run from the fact-check-bot/ directory, so we
+    write to ./test_results.json here. From the project root this resolves to
+    fact-check-bot/test_results.json as required.
+    """
+
+    payload = {
+        "summary": summary,
+        "tests": results,
+    }
+
+    with open("test_results.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-def test_claim_detection():
-    from backend.claim_detector import detect_claim
-    r1 = detect_claim("I love pizza")
-    if r1.is_claim:
-        return "SKIP"  # GPT might disagree
-    r2 = detect_claim("COVID vaccines cause infertility")
-    assert r2.is_claim
+def main() -> None:
+    results: List[Dict[str, Any]] = []
 
+    for case in TEST_CASES:
+        result = run_test_case(case)
+        results.append(result)
 
-def test_full_pipeline_api():
-    import requests
-    try:
-        r = requests.get("http://127.0.0.1:8000/", timeout=3)
-        if r.status_code != 200:
-            return "SKIP"
-    except Exception:
-        return "SKIP"
-
-    r = requests.post(
-        "http://127.0.0.1:8000/check",
-        json={"post": "The Earth is flat"},
-        timeout=30,
-    )
-    result = r.json()
-    assert "verdict" in result
-    assert "confidence" in result
-    assert "response" in result
-    assert result["verdict"] in ["TRUE", "FALSE", "UNVERIFIABLE", "NOT_A_CLAIM"]
-    assert 0.0 <= result["confidence"] <= 1.0
+    summary = summarize_results(results)
+    print_results(results, summary)
+    write_results_json(results, summary)
 
 
 if __name__ == "__main__":
-    print("\n=== Fact-Check Bot - Quick Test Suite ===\n")
+    main()
 
-    start = time.time()
-
-    print("[Component Tests]")
-    run_test("Text normalization", test_normalize)
-    run_test("Embedding shape (384d)", test_embed_shape)
-    run_test("Chunker (500w, 50 overlap)", test_chunker)
-    run_test("FAISS vector index", test_vector_index)
-    run_test("Document store + has_url", test_doc_store)
-    run_test("Reranker ordering", test_reranker)
-    run_test("Dedup tracker", test_dedup)
-    run_test("Article fetcher (invalid URL)", test_article_fetcher_invalid)
-
-    print("\n[Pipeline Tests]")
-    run_test("Claim detection (BART+GPT)", test_claim_detection)
-    run_test("Full pipeline via API", test_full_pipeline_api)
-
-    elapsed = time.time() - start
-    total = PASS + FAIL + SKIP
-    print(f"\n{'='*50}")
-    print(f"Results: {PASS} passed, {FAIL} failed, {SKIP} skipped ({total} total)")
-    print(f"Time: {elapsed:.1f}s")
-    print(f"{'='*50}\n")
-
-    sys.exit(1 if FAIL > 0 else 0)

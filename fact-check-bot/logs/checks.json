@@ -5140,5 +5140,567 @@
     "platform_post_id": "rss_5a3123eecedc28d3",
     "author": null,
     "source_url": "https://www.bbc.com/news/articles/c8r17knnz5vo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "timestamp": "2026-03-17T11:00:46.027569+00:00",
+    "original_post": "RFK Jr.\u2019s anti-vaccine changes to CDC vaccine guidance blocked by judge Ruling temporarily blocks changes to vaccine recommendations and an advisory board.",
+    "is_claim": true,
+    "extracted_claim": "RFK Jr.'s anti-vaccine changes to CDC vaccine guidance blocked by judge",
+    "verdict": "TRUE",
+    "response": "TRUE: A judge has indeed blocked RFK Jr.'s proposed changes to the CDC vaccine guidance, including alterations to the childhood vaccine schedule.",
+    "confidence": 1.0,
+    "latency_ms": 70236,
+    "bart_label": null,
+    "bart_score": null,
+    "detection_method": "gpt_only",
+    "sources": [
+      {
+        "title": "Judge blocks parts of RFK Jr.'s vaccine agenda, including new ...",
+        "url": "https://www.cbsnews.com/news/judge-blocks-parts-of-rfk-jrs-vaccine-agenda-including-new-childhood-vaccine-schedule/",
+        "snippet": "A judge blocked a set of changes to the childhood vaccine schedule recommended by allies of Health and Human Services Secretary Robert F."
+      },
+      {
+        "title": "Judge blocks RFK Jr. from scaling back childhood vaccine ... - PBS",
+        "url": "https://www.pbs.org/newshour/health/judge-blocks-rfk-jr-from-scaling-back-childhood-vaccine-recommendations",
+        "snippet": "A federal judge on Monday temporarily blocked federal health officials from cutting the number of vaccines recommended for every child, ..."
+      },
+      {
+        "title": "Judge blocks changes to US government vaccine recommendations",
+        "url": "https://apnews.com/article/kennedy-acip-vaccines-cdc-fc758951019f41d2f5e81e4e2faa22d3",
+        "snippet": "A federal judge in Boston has blocked federal health officials from cutting the number of vaccines recommended for every child, and says ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_1ac9450daea0e7a3",
+    "author": "Beth Mole",
+    "source_url": "https://arstechnica.com/health/2026/03/judge-temporarily-blocks-rfk-jr-s-changes-to-cdc-vaccine-recommendations/"
+  },
+  {
+    "timestamp": "2026-03-17T11:01:06.797431+00:00",
+    "original_post": "Elon Musk's xAI sued for turning three girls' real photos into AI CSAM Discord user led cops to Grok-generated CSAM of real girls, lawsuit says.",
+    "is_claim": true,
+    "extracted_claim": "Elon Musk's xAI sued for turning three girls' real photos into AI CSAM",
+    "verdict": "TRUE",
+    "response": "True, Elon Musk's xAI, specifically the AI tool Grok, has been sued for turning real photos of three girls into AI-generated child sexual abuse material (CSAM). This action has led to legal consequences and investigations.",
+    "confidence": 0.7426,
+    "latency_ms": 20305,
+    "bart_label": "question",
+    "bart_score": 0.4314,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "AI tool Grok used to create child sexual abuse imagery, watchdog says",
+        "url": "https://www.theguardian.com/technology/2026/jan/08/ai-chatbot-grok-used-to-create-child-sexual-abuse-imagery-watchdog-says",
+        "snippet": "IWF analysts said the images would be considered child sexual abuse material (CSAM) under UK law. \u201cWe can confirm our analysts have discovered ..."
+      },
+      {
+        "title": "California orders Musk's xAI to stop allowing fake sexualized images ...",
+        "url": "https://www.axios.com/2026/01/16/xai-california-elon-musk-deepfakes-children-grok",
+        "snippet": "... images and child sexual abuse material (CSAM), including explicit images or videos of minors. An error has occurred. Taking you inside the AI ..."
+      },
+      {
+        "title": "Elon Musk's Grok AI appears to have made child sexual imagery ...",
+        "url": "https://www.bbc.com/news/articles/cvg1mzlryxeo",
+        "snippet": "\"We are extremely concerned about the ease and speed with which people can apparently generate photo-realistic child sexual abuse material (CSAM) ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_41c78d200ed4cfbd",
+    "author": "Ashley Belanger",
+    "source_url": "https://arstechnica.com/tech-policy/2026/03/elon-musks-xai-sued-for-turning-three-girls-real-photos-into-ai-csam/"
+  },
+  {
+    "timestamp": "2026-03-17T11:01:07.872457+00:00",
+    "original_post": "National Academies of Sciences says no to demands it remove climate info State attorneys general won't get climate chapter removed from a legal manual.",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.2691,
+    "latency_ms": 946,
+    "bart_label": "question",
+    "bart_score": 0.7309,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_c58a7ddfd0fe2323",
+    "author": "John Timmer",
+    "source_url": "https://arstechnica.com/science/2026/03/national-academies-of-sciences-resisting-pressure-to-pull-climate-info/"
+  },
+  {
+    "timestamp": "2026-03-17T11:01:26.251795+00:00",
+    "original_post": "New \"vibe coded\" AI translation tool splits the video game preservation community Creator apologizes after using Patreon funds for Gemini-powered magazine scan processor.",
+    "is_claim": true,
+    "extracted_claim": "Creator used Patreon funds for Gemini-powered magazine scan processor",
+    "verdict": "TRUE",
+    "response": "The creator did use Patreon funds for a Gemini-powered magazine scan processor, as reported. They have apologized for this action.",
+    "confidence": 0.6922,
+    "latency_ms": 18210,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3806,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Ars Technica - Serving the Technologist since 1998. News, reviews ...",
+        "url": "https://arstechnica.com/",
+        "snippet": "New \u201cvibe coded\u201d AI translation tool splits the video game preservation community. Creator apologizes after using Patreon funds for Gemini-powered magazine scan ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_80f3ee55c327bc4c",
+    "author": "Kyle Orland",
+    "source_url": "https://arstechnica.com/ai/2026/03/new-vibe-coded-ai-translation-tool-splits-the-video-game-preservation-community/"
+  },
+  {
+    "timestamp": "2026-03-17T11:01:35.286325+00:00",
+    "original_post": "Trump and his FCC chair demand more positive news coverage of Iran war Carr makes evidence-free claim of \"hoaxes and news distortions.\" Trump is thrilled.",
+    "is_claim": true,
+    "extracted_claim": "Trump and his FCC chair demand more positive news coverage of Iran war",
+    "verdict": "TRUE",
+    "response": "True. President Trump, Defense Secretary Pete Hegseth, and FCC Chair Brendan Carr have criticized the media over their coverage of the war in Iran, with Carr even threatening broadcasters' licenses over negative reporting.",
+    "confidence": 0.7127,
+    "latency_ms": 8935,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.4317,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "FCC chair threatens broadcasters' licenses over negative coverage ...",
+        "url": "https://www.wvtf.org/2026-03-16/fcc-chair-threatens-broadcasters-licenses-over-negative-coverage-of-the-war-in-iran",
+        "snippet": "President Trump, Defense Secretary Pete Hegseth and FCC Chair Brendan Carr have assailed the media over coverage of the war in Iran."
+      },
+      {
+        "title": "FCC chair invites bipartisan backlash as MAGA battle with press ...",
+        "url": "https://thehill.com/homenews/administration/5786490-fcc-chair-threatens-broadcasters/",
+        "snippet": "FCC chair Brendan Carr's threat to crack down on broadcasters over coverage of the U.S. war in Iran raises concerns about media intimidation ..."
+      },
+      {
+        "title": "FCC chair threatens to revoke broadcasters' licenses amid Trump comments on Iran coverage",
+        "url": "https://www.nbcnews.com/news/us-news/fcc-chair-threatens-revoke-broadcasters-licenses-trump-comments-iran-c-rcna263535",
+        "snippet": "Federal Communications Commission Chairman Brendan Carr on Saturday renewed his criticism and threats against broadcasters over their content, this time with President Donald Trump\u2019s criticism of Iran war reporting as the backdrop. Broadcasters who air \u201cfake news\u201d must \u201ccorrect course before their license renewals come up,\u201d Carr posted on X, in remarks accompanied by a screenshot of Trump\u2019s Truth Social post earlier in the day accusing the New York Times, Wall Street Journal and \u201cother lowlife \u2018"
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_66b8a034c366ca5f",
+    "author": "Jon Brodkin",
+    "source_url": "https://arstechnica.com/tech-policy/2026/03/trump-and-his-fcc-chair-demand-more-positive-news-coverage-of-iran-war/"
+  },
+  {
+    "timestamp": "2026-03-17T11:01:52.157976+00:00",
+    "original_post": "OpenAI\u2019s own mental health experts unanimously opposed \u201cnaughty\u201d ChatGPT launch OpenAI draws a line between AI \u201csmut\u201d and porn. Experts fear it\u2019s all unhealthy.",
+    "is_claim": true,
+    "extracted_claim": "OpenAI\u2019s mental health experts unanimously opposed ChatGPT's 'naughty' launch due to concerns about unhealthy content.",
+    "verdict": "TRUE",
+    "response": "True, OpenAI's mental health experts did unanimously oppose ChatGPT's 'naughty' launch due to concerns about unhealthy content. There were internal alarms about emotional dependence and unhealthy attachments to the AI chatbot.",
+    "confidence": 0.7571,
+    "latency_ms": 16741,
+    "bart_label": "question",
+    "bart_score": 0.5428,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "OpenAI's own mental health experts unanimously opposed \u201cnaughty ...",
+        "url": "https://arstechnica.com/tech-policy/2026/03/chatgpt-may-soon-become-sexy-suicide-coach-openai-advisor-reportedly-warned/",
+        "snippet": "OpenAI draws a line between AI \u201csmut\u201d and porn. Experts fear it's all unhealthy."
+      },
+      {
+        "title": "Report: Amid safety failures, ChatGPT's planned \u201cadult mode ...",
+        "url": "https://sherwood.news/tech/safety-failures-chatgpts-planned-adult-mode-caused-concern-misclassified-12-percent-minors-adults/",
+        "snippet": "Internal alarms sounded within OpenAI about the now delayed X-rated mode. Concerns centered around unhealthy emotional dependence and an ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_f090b83830077998",
+    "author": "Ashley Belanger",
+    "source_url": "https://arstechnica.com/tech-policy/2026/03/chatgpt-may-soon-become-sexy-suicide-coach-openai-advisor-reportedly-warned/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:05.610297+00:00",
+    "original_post": "Driving the $375,000 Porsche race car that debuted as a $12 DLC in iRacing Porsche's new 911 Cup debuted in iRacing, and then we took it out on the track.",
+    "is_claim": true,
+    "extracted_claim": "Porsche's new 911 Cup debuted in iRacing",
+    "verdict": "TRUE",
+    "response": "True, Porsche's new 911 Cup (992.2) has debuted in iRacing, as announced by iRacing on their official Facebook page. The new car was released for iRacers who already have the Porsche 911 GT3 Cup (992.1).",
+    "confidence": 0.6591,
+    "latency_ms": 13355,
+    "bart_label": "question",
+    "bart_score": 0.2978,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "We are thrilled to announce that the Porsche 911 Cup (992.2) will ...",
+        "url": "https://www.facebook.com/iracing/posts/we-are-thrilled-to-announce-that-the-porsche-911-cup-9922-will-debut-on-iracing-/1298631252303099/",
+        "snippet": "Upon the release of the Porsche 911 Cup (992.2), the new car will be granted to all iRacers who already have the Porsche 911 GT3 Cup (992.1)."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_6626c5447beff8e3",
+    "author": "Tim Stevens",
+    "source_url": "https://arstechnica.com/cars/2026/03/from-pixels-to-pavement-testing-the-new-porsche-911-cup-in-iracing-and-irl/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:08.094650+00:00",
+    "original_post": "F1 in China: I've never seen so many people in those grandstands Formula 1's new style of racing puts on an entertaining sprint weekend in Shanghai.",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.5984,
+    "latency_ms": 2376,
+    "bart_label": "factual claim",
+    "bart_score": 0.4016,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_36b6a28ee0b15358",
+    "author": "Jonathan M. Gitlin",
+    "source_url": "https://arstechnica.com/cars/2026/03/f1-in-china-ive-never-seen-so-many-people-in-those-grandstands/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:21.796881+00:00",
+    "original_post": "Apple\u2019s AirPods Max 2 bring H2 chip, boosted ANC in April for $549 Apple's over-head headphones get an update after over five years.",
+    "is_claim": true,
+    "extracted_claim": "Apple\u2019s AirPods Max 2 will be released in April with an H2 chip and improved ANC for $549.",
+    "verdict": "TRUE",
+    "response": "True. Apple's AirPods Max 2 with an H2 chip and improved ANC will be released in April for $549, as reported by multiple sources.",
+    "confidence": 0.7188,
+    "latency_ms": 13597,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.2971,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Apple unveils AirPods Max 2 with H2 chip, upgraded ... - 9to5Mac",
+        "url": "https://9to5mac.com/2026/03/16/apple-unveils-airpods-max-2-with-h2-chip-live-translation-more/",
+        "snippet": "AirPods Max 2 cost $549 and will be available to order starting Wednesday, March 25 before shipping in early April. The new model comes in ..."
+      },
+      {
+        "title": "Apple drops a surprise AirPods Max 2 update - Macworld",
+        "url": "https://www.macworld.com/article/3089722/apple-drops-a-surprise-airpods-max-2-update.html",
+        "snippet": "Macworld reports Apple released AirPods Max 2 after five years, featuring the H2 chip and significant audio upgrades while maintaining the ..."
+      },
+      {
+        "title": "Apple launches AirPods Max 2 with improved noise cancellation",
+        "url": "https://mashable.com/article/airpods-max-2-announced",
+        "snippet": "Apple has launched the Airpods Max 2, an improved version of its flagship, over-the-ear headphones."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_f433943850bace1d",
+    "author": "Scharon Harding",
+    "source_url": "https://arstechnica.com/gadgets/2026/03/apples-airpods-max-2-release-with-h2-chip-boosted-anc-in-april-for-549/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:22.460706+00:00",
+    "original_post": "100 years later, where is Robert Goddard's first liquid-fueled rocket? \"He didn't preserve it as a sacred object... \"",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.05879999999999996,
+    "latency_ms": 565,
+    "bart_label": "question",
+    "bart_score": 0.9412,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_0878b9a4d003c534",
+    "author": "Robert Pearlman",
+    "source_url": "https://arstechnica.com/space/2026/03/100-years-later-where-is-robert-goddards-first-liquid-fuel-rocket/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:23.184912+00:00",
+    "original_post": "No accountability: Bills would ban liability lawsuits for climate change This is the latest front in the battle over climate lawsuits.",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.2581,
+    "latency_ms": 628,
+    "bart_label": "question",
+    "bart_score": 0.7419,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_f4335a2cddd75016",
+    "author": "Dana Drugmand, Inside Climate News",
+    "source_url": "https://arstechnica.com/tech-policy/2026/03/emerging-legislation-would-shield-polluters-from-liability-for-climate-change/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:43.258026+00:00",
+    "original_post": "The science of how fireflies stay in sync Engineers have uncovered the mathematical rules fireflies follow to sync up their flashes.",
+    "is_claim": true,
+    "extracted_claim": "Engineers have uncovered the mathematical rules fireflies follow to sync up their flashes",
+    "verdict": "TRUE",
+    "response": "Engineers have indeed uncovered the mathematical rules fireflies follow to sync up their flashes, as confirmed by multiple scientific studies and research articles.",
+    "confidence": 0.7677,
+    "latency_ms": 19919,
+    "bart_label": "question",
+    "bart_score": 0.5692,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "The science of how fireflies stay in sync - Ars Technica",
+        "url": "https://arstechnica.com/science/2026/03/the-science-of-how-fireflies-stay-in-sync/",
+        "snippet": "Scientists have discovered that male fireflies in a South Carolina swamp follow local interaction rules to synchronize their flashing mating ..."
+      },
+      {
+        "title": "Scientists uncover the secret timing behind glowing fireflies",
+        "url": "https://www.earth.com/news/scientists-uncover-the-secret-timing-behind-glowing-fireflies/",
+        "snippet": "Researchers have discovered the mathematical pattern that allows thousands of synchronized fireflies light up the night."
+      },
+      {
+        "title": "How Do Fireflies Flash in Sync? Studies Suggest a New Answer.",
+        "url": "https://www.quantamagazine.org/how-do-fireflies-flash-in-sync-studies-suggest-a-new-answer-20220920/",
+        "snippet": "Field research suggests a new explanation for the synchronized flashing in fireflies and confirms that a novel form of \u201cchimeric\u201d synchrony occurs naturally."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_e0361563e790dc77",
+    "author": "Jennifer Ouellette",
+    "source_url": "https://arstechnica.com/science/2026/03/the-science-of-how-fireflies-stay-in-sync/"
+  },
+  {
+    "timestamp": "2026-03-17T11:02:45.643079+00:00",
+    "original_post": "A century after the first rocket launch, Ars staffers pick their favorites \"I realized that if something went wrong up there, things might go very badly down here.\"",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.5719000000000001,
+    "latency_ms": 2240,
+    "bart_label": "question",
+    "bart_score": 0.4281,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_4cf1b102113d5363",
+    "author": "Eric Berger",
+    "source_url": "https://arstechnica.com/space/2026/03/a-century-after-the-first-rocket-launch-ars-staffers-pick-their-favorites/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:06.796415+00:00",
+    "original_post": "elon musk has raised about 20 billion dollars in meta",
+    "is_claim": true,
+    "extracted_claim": "Elon Musk has raised about 20 billion dollars in Meta.",
+    "verdict": "TRUE",
+    "response": "True, Elon Musk's artificial intelligence company xAI has raised $20 billion in funding, as reported by Mashable and Reuters.",
+    "confidence": 0.7364,
+    "latency_ms": 15699,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.491,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Elon Musk's xAI raises $20 billion as Grok is investigated ... - Mashable",
+        "url": "https://mashable.com/article/xai-20-billion-grok",
+        "snippet": "Elon Musk's artificial intelligence company xAI has raised $20 billion in an upsized Series E funding round, the company announced on Tuesday."
+      },
+      {
+        "title": "Elon Musk's xAI Holdings in talks to raise $20 billion from investors ...",
+        "url": "https://www.reuters.com/business/media-telecom/elon-musks-xai-holdings-talks-raise-20-billion-investors-bloomberg-news-reports-2025-04-26/",
+        "snippet": "Elon Musk's xAI Holdings is in talks with investors to raise roughly $20 billion in funding for his newly combined artificial intelligence ..."
+      }
+    ],
+    "platform": null,
+    "platform_post_id": null,
+    "author": null,
+    "source_url": null
+  },
+  {
+    "timestamp": "2026-03-17T11:03:07.160974+00:00",
+    "original_post": "An engineering thesis disguised as a coupe: A history of the Honda Prelude Technology like four-wheel steering and variable valve timing debuted in the Prelude.",
+    "is_claim": true,
+    "extracted_claim": "Technology like four-wheel steering and variable valve timing debuted in the Honda Prelude.",
+    "verdict": "TRUE",
+    "response": "True. The Honda Prelude debuted technologies like four-wheel steering and variable valve timing.",
+    "confidence": 0.7445,
+    "latency_ms": 21416,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3613,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "An engineering thesis disguised as a coupe: A history of the Honda ...",
+        "url": "https://arstechnica.com/cars/2026/03/an-engineering-thesis-disguised-as-a-coupe-a-history-of-the-honda-prelude/",
+        "snippet": "In 1993, Honda introduced the Prelude VTEC, shorthand for Variable Valve Timing and Lift Electronic Control, a name that would soon enter the ..."
+      },
+      {
+        "title": "Before NSX and S2000, Honda's Prelude Introduced New Tech to ...",
+        "url": "https://www.aol.com/articles/nsx-s2000-honda-prelude-introduced-013000751.html",
+        "snippet": "This generation introduced Honda's mechanical four-wheel steering system, a revolutionary piece of technology so good that auto pundits at the time noted ..."
+      },
+      {
+        "title": "Before NSX and S2000, Honda's Prelude Introduced New Tech to ...",
+        "url": "https://www.autoblog.com/features/before-nsx-and-s2000-hondas-prelude-introduced-new-tech-to-the-masses",
+        "snippet": "Past Preludes introduced ABS, four-wheel steering, and VTEC, setting engineering benchmarks. The new Prelude inherits a legacy of innovation and ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_76f92e6facdbf724",
+    "author": "Larry Printz",
+    "source_url": "https://arstechnica.com/cars/2026/03/an-engineering-thesis-disguised-as-a-coupe-a-history-of-the-honda-prelude/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:24.555130+00:00",
+    "original_post": "Staff complain that xAI is flailing because of constant upheaval Staff complain that the constant upheaval is destroying morale.",
+    "is_claim": true,
+    "extracted_claim": "Constant upheaval is causing morale issues among staff working with xAI.",
+    "verdict": "TRUE",
+    "response": "True, staff working with xAI have expressed concerns about constant upheaval causing morale issues. Reports indicate that the constant upheaval is indeed affecting morale among employees.",
+    "confidence": 0.6486,
+    "latency_ms": 17291,
+    "bart_label": "emotional expression",
+    "bart_score": 0.2714,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Staff complain that xAI is flailing because of constant upheaval - Pixelift",
+        "url": "https://pixelift.pl/en/news/staff-complain-that-xai-is-flailing-because-of-constant-upheaval-20260314-en",
+        "snippet": "Staff complain that the constant upheaval is destroying morale ... Staff complain that xAI is flailing because of constant upheaval. P."
+      },
+      {
+        "title": "Staff complain that xAI is flailing because of constant upheaval - Reddit",
+        "url": "https://www.reddit.com/r/musked/comments/1ru2roz/staff_complain_that_xai_is_flailing_because_of/",
+        "snippet": "Staff complain that xAI is flailing because of constant upheaval | Staff complain that the constant upheaval is destroying morale."
+      },
+      {
+        "title": "xAI employees say Musk's chaos is killing the company inside",
+        "url": "https://www.instagram.com/p/DV3yXejoMI9/",
+        "snippet": "Staff at Elon Musk's AI venture xAI report plummeting morale amid relentless internal restructuring. Employees describe a chaotic work ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_1bb73fde0abc0624",
+    "author": "Stephen Morris and Cristina Criddle, Financial Times",
+    "source_url": "https://arstechnica.com/ai/2026/03/staff-complain-that-xai-is-flailing-because-of-constant-upheaval/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:27.384040+00:00",
+    "original_post": "NASA officials sidestepped questions on Artemis II risks\u2014there's a reason why \"This ought to make for some good reading,\" NASA's mission management team chair said.",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.48419999999999996,
+    "latency_ms": 2639,
+    "bart_label": "question",
+    "bart_score": 0.5158,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_bb62f546ab9031c6",
+    "author": "Stephen Clark",
+    "source_url": "https://arstechnica.com/space/2026/03/flying-to-the-moon-for-the-first-time-in-54-years-is-risky-but-how-risky/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:39.003695+00:00",
+    "original_post": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum She made a full recovery, despite the maggots.",
+    "is_claim": true,
+    "extracted_claim": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum",
+    "verdict": "TRUE",
+    "response": "A woman did indeed sneeze out maggots after fly larvae got trapped in her deviated septum. The larvae were identified as late-stage sheep bot fly larvae. She made a full recovery despite the incident.",
+    "confidence": 0.6975,
+    "latency_ms": 11553,
+    "bart_label": "emotional expression",
+    "bart_score": 0.3937,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Woman sneezes out maggots after fly larvae get trapped in her ...",
+        "url": "https://arstechnica.com/health/2026/03/woman-sneezes-out-maggots-after-fly-larvae-get-trapped-in-her-deviated-septum/",
+        "snippet": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum ... They were, in fact, late-stage sheep bot fly larvae. She ..."
+      },
+      {
+        "title": "Woman Gets Infested by Maggots, Sneezes Them Out - Gizmodo",
+        "url": "https://gizmodo.com/the-biologically-implausible-case-of-the-woman-who-sneezed-maggots-2000733255",
+        "snippet": "The 58-year-old woman's nasal and sinus cavities were infested by sheep bot fly larvae caught ... The so-called worms were actually maggots, or ..."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_7dc4ef7b18bf60a3",
+    "author": "Beth Mole",
+    "source_url": "https://arstechnica.com/health/2026/03/woman-sneezes-out-maggots-after-fly-larvae-get-trapped-in-her-deviated-septum/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:53.539698+00:00",
+    "original_post": "Slay the Spire 2 is a bit too familiar for its own good Early Access impressions: New characters shine, but it feels like we've done this before.",
+    "is_claim": true,
+    "extracted_claim": "Slay the Spire 2 feels too familiar in Early Access",
+    "verdict": "TRUE",
+    "response": "TRUE: Early Access impressions of Slay the Spire 2 suggest that while new characters shine, the game feels too familiar and like something that has been done before.",
+    "confidence": 0.6643,
+    "latency_ms": 14449,
+    "bart_label": "question",
+    "bart_score": 0.3108,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "Slay the Spire 2 is a bit too familiar for its own good - Ars Technica",
+        "url": "https://arstechnica.com/gaming/2026/03/slay-the-spire-2-is-a-bit-too-familiar-for-its-own-good/",
+        "snippet": "Slay the Spire 2 is a bit too familiar for its own good. Early Access impressions: New characters shine, but it feels like we've done this ..."
+      },
+      {
+        "title": "Slay the Spire 2 early access review: \"Instantly familiar, but already ...",
+        "url": "https://www.gamesradar.com/slay-the-spire-2-review/",
+        "snippet": "Slay the Spire 2 early access review: \"Instantly familiar, but already bursting with new ideas\""
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_e6f2c8d72ff7a132",
+    "author": "Kyle Orland",
+    "source_url": "https://arstechnica.com/gaming/2026/03/slay-the-spire-2-is-a-bit-too-familiar-for-its-own-good/"
+  },
+  {
+    "timestamp": "2026-03-17T11:03:54.000240+00:00",
+    "original_post": "Figuring out why AIs get flummoxed by some games When winning depends on intuiting a mathematical function, AIs come up short.",
+    "is_claim": false,
+    "extracted_claim": null,
+    "verdict": "NOT_A_CLAIM",
+    "response": "This post does not appear to contain a verifiable factual claim.",
+    "confidence": 0.1502,
+    "latency_ms": 384,
+    "bart_label": "question",
+    "bart_score": 0.8498,
+    "detection_method": "bart_filtered",
+    "sources": [],
+    "platform": "rss",
+    "platform_post_id": "rss_699d9f79cad154ea",
+    "author": "John Timmer",
+    "source_url": "https://arstechnica.com/ai/2026/03/figuring-out-why-ais-get-flummoxed-by-some-games/"
+  },
+  {
+    "timestamp": "2026-03-17T11:04:07.413638+00:00",
+    "original_post": "Google Fiber will be sold to private equity firm and merge with cable company GFiber and Astound to merge with Alphabet, selling majority stake to Stonepeak.",
+    "is_claim": true,
+    "extracted_claim": "Google Fiber will be sold to private equity firm and merge with cable company GFiber and Astound to merge with Alphabet, selling majority stake to Stonepeak.",
+    "verdict": "TRUE",
+    "response": "True, Google Fiber will be sold to a private equity firm and merge with cable company GFiber and Astound. The majority stake will be owned by Stonepeak, with Alphabet retaining a minority stake.",
+    "confidence": 0.7044,
+    "latency_ms": 13334,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.411,
+    "detection_method": "bart+gpt",
+    "sources": [
+      {
+        "title": "GFiber and Astound to Combine - Broadband Breakfast",
+        "url": "https://broadbandbreakfast.com/gfiber-and-astound-to-combine/",
+        "snippet": "GFiber and Astound to Combine. Investment firm Stonepeak will be the majority owner, with Alphabet retaining a 'significant minority' stake."
+      },
+      {
+        "title": "Google Fiber will be sold to private equity firm and merge with cable ...",
+        "url": "https://www.reddit.com/r/technology/comments/1rt0u2f/google_fiber_will_be_sold_to_private_equity_firm/",
+        "snippet": "Alphabet and Astound owner Stonepeak announced \u201can agreement to combine GFiber with Astound Broadband, creating a leading independent fiber ..."
+      },
+      {
+        "title": "GFiber and Stonepeak's Astound to combine, creating a leading ...",
+        "url": "https://stonepeak.com/news/gfiber-and-stonepeaks-astound-to-combine-creating-a-leading-independent-broadband-provider",
+        "snippet": "Stonepeak to become majority shareholder in new venture combining GFiber and Astound Broadband; Alphabet to retain minority stake."
+      }
+    ],
+    "platform": "rss",
+    "platform_post_id": "rss_684c94eda54a12df",
+    "author": "Jon Brodkin",
+    "source_url": "https://arstechnica.com/tech-policy/2026/03/google-fiber-will-be-sold-to-private-equity-firm-and-merge-with-cable-company/"
   }
 ]

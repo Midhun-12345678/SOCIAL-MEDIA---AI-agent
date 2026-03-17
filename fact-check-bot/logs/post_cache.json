@@ -1,2364 +1,382 @@
 {
-  "7a20c44a0fff9cc6": {
-    "original_post": "The Great Wall of China is visible from space",
+  "3951b7de8fafd759": {
+    "original_post": "RFK Jr.\u2019s anti-vaccine changes to CDC vaccine guidance blocked by judge Ruling temporarily blocks changes to vaccine recommendations and an advisory board.",
     "is_claim": true,
-    "extracted_claim": "The Great Wall of China is visible from space",
-    "verdict": "FALSE",
-    "response": "The claim that the Great Wall of China is visible from space is false. Reports from astronauts and fact-checking sources confirm that the Great Wall is not visible from space.",
-    "sources": [
-      {
-        "title": "No, You Can't See the Great Wall of China from Space",
-        "url": "https://www.scientificamerican.com/article/no-you-cant-see-the-great-wall-of-china-from-space/",
-        "snippet": "Reports of Earth-orbiting astronauts glimpsing the Great Wall of China and many other artificial structures are wildly exaggerated."
-      },
-      {
-        "title": "Is the Great Wall of China Visible from the Moon? | Snopes.com",
-        "url": "https://www.snopes.com/fact-check/great-wall-from-moon/",
-        "snippet": "Long-held common belief holds that the Great Wall of China is the only man-made object visible from the moon."
-      },
-      {
-        "title": "TIL the Great Wall of China is not actually visible from space, its just ...",
-        "url": "https://www.reddit.com/r/todayilearned/comments/1kg3uwe/til_the_great_wall_of_china_is_not_actually/",
-        "snippet": "I suspect it got reversed at one point. The actual fact is that \"in order to see the entire Great Wall at once, you would need to be in space.\"."
-      },
-      {
-        "title": "Great Wall of China is visible from space: Fact or myth?",
-        "url": "https://timesofindia.indiatimes.com/life-style/travel/news/great-wall-of-china-is-visible-from-space-fact-or-myth/articleshow/128671144.cms",
-        "snippet": "The enduring myth of the Great Wall of China being visible from space is debunked. Despite its immense length, the Wall's narrow width and ..."
-      },
-      {
-        "title": "Can you see the Great Wall of China from space?",
-        "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
-        "snippet": "The truth is that the Great Wall of China cannot be seen from space. To be more precise, it can't easily be seen with the naked eye. The myth ..."
-      }
-    ],
-    "confidence": 0.7798,
-    "latency_ms": 9805,
-    "bart_label": "factual claim",
-    "bart_score": 0.4494,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T10:50:48.619081+00:00",
-    "from_cache": true
-  },
-  "2f111e4678082a26": {
-    "original_post": "india will has huge loss in world war 3",
-    "is_claim": true,
-    "extracted_claim": "India will have a huge loss in World War 3",
-    "verdict": "UNVERIFIABLE",
-    "response": "The claim that India will have a huge loss in World War 3 is unverifiable as there is no concrete evidence or indication that such a war is currently happening or will happen in the future.",
-    "sources": [
-      {
-        "title": "Is India actively participating in the Third World War?",
-        "url": "https://www.quora.com/Is-India-actively-participating-in-the-Third-World-War",
-        "snippet": "There is a political scenario floating since January-2017, 1. In Donald Trump Tenure 2016\u20132020, American Government authorities confirmed ..."
-      },
-      {
-        "title": "India's World War 3 Plan",
-        "url": "https://www.youtube.com/watch?v=-bA71tK0scY",
-        "snippet": "India is an exponentially more capable military power than Pakistan a modern conflict between the two nations would inevitably be to India's favor."
-      },
-      {
-        "title": "Nuclear World War 3, a real threat? What is India's view?",
-        "url": "https://www.indiatoday.in/newsmo/video/nuclear-world-war-3-a-real-threat-what-is-indias-view-homeland-2517473-2024-03-20",
-        "snippet": "As countries add to nuclear arsenal, What is India's view on WW3? Can India help stop a global nuclear war? Pooja Shali explains in this episode of Homeland."
-      },
-      {
-        "title": "How does India fit into World War 3?",
-        "url": "https://www.quora.com/How-does-India-fit-into-World-War-3",
-        "snippet": "India has always stayed neutral in complicated geopolitical situations. We have maintained good relations with US, Russia, Japan, Iran, Saudi ..."
-      }
-    ],
-    "confidence": 0.154,
-    "latency_ms": 8043,
-    "bart_label": "emotional expression",
-    "bart_score": 0.385,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T12:38:02.135666+00:00"
-  },
-  "ce82467aee6b0240": {
-    "original_post": "indian cricket team has huge gross of 50 million in 2026",
-    "is_claim": true,
-    "extracted_claim": "Indian cricket team has a gross revenue of 50 million in 2026",
-    "verdict": "FALSE",
-    "response": "The Indian cricket team did not have a gross revenue of 50 million in 2026. The BCCI rewarded Team India with Rs 131 crore after the T20 World Cup, which is approximately $17.5 million, not 50 million.",
-    "sources": [
-      {
-        "title": "How much has BCCI rewarded Team India for recent ICC ...",
-        "url": "https://sports.yahoo.com/articles/rs-125-cr-rs-131-191000867.html",
-        "snippet": "The story of Shohei Ohtani's first game on the international stage: 'OK, this kid is disgusting'. Ohtani first appeared for Japan as an 18 ..."
-      },
-      {
-        "title": "BCCI's \u20b9131 crore reward sparks debate",
-        "url": "https://www.msn.com/en-in/news/insight/bcci-s-131-crore-reward-sparks-debate/gm-GM05023A1B?gemSnapshotKey=GM05023A1B-snapshot-86&uxmode=ruby",
-        "snippet": "Shubman Gill set to be named cricketer of the year at BCCI annual gala ... ICC Men's T20 World Cup 2026 Prize Money: India earns \u20b921.9 Crore, full ..."
-      },
-      {
-        "title": "BCCI announces Rs 131 crore reward for India after T20 ...",
-        "url": "https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/bcci-announces-rs-131-crore-reward-for-india-after-t20-world-cup-2026-triumph/articleshow/129378140.cms",
-        "snippet": "Team India players celebrate with the trophy after winning the T20 World Cup 2026. ... India posted 255 for 5, the highest total in a T20 World ..."
-      }
-    ],
-    "confidence": 0.6739,
-    "latency_ms": 7953,
-    "bart_label": "question",
-    "bart_score": 0.3347,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T12:39:32.349470+00:00"
-  },
-  "8132be63bfa63622": {
-    "original_post": "india will lose a billion worth crude oil next year",
-    "is_claim": true,
-    "extracted_claim": "India will lose a billion worth crude oil next year",
-    "verdict": "UNVERIFIABLE",
-    "response": "The claim that India will lose a billion worth of crude oil next year cannot be verified with the provided evidence. While there are concerns about India's crude oil supply amid global oil shocks and high oil prices, there is no specific information confirming a billion-dollar loss.",
-    "sources": [
-      {
-        "title": "Is India's Crude Oil Supply in Danger Amid West Asia Crisis? Myth ...",
-        "url": "https://www.timesnownews.com/india/fact-check-is-indias-crude-oil-supply-in-danger-amid-west-asia-crisis-myth-debunked-article-153818662",
-        "snippet": "Myth Vs. Fact. Myth: India's crude oil supply is in danger because of the situation in West Asia."
-      },
-      {
-        "title": "Explainer: How persistently high oil prices could impact India's ...",
-        "url": "https://www.reuters.com/business/energy/how-persistently-high-oil-prices-could-impact-indias-vulnerable-economy-2026-03-12/",
-        "snippet": "India is considered to be \u200bamong the most vulnerable to a global oil shock as it imports nearly 90% of its crude requirements and about \u200c50% of ..."
-      },
-      {
-        "title": "Is India's crude oil supply in danger amid West Asia crisis? Myth ...",
-        "url": "https://www.msn.com/en-in/news/India/fact-check-is-india-s-crude-oil-supply-in-danger-amid-west-asia-crisis-myth-debunked/ar-AA1YtA44",
-        "snippet": "Amid the conflict in West Asia, concerns arose regarding the security of India's crude oil supply. However, the Press Information Bureau ..."
-      }
-    ],
-    "confidence": 0.1375,
-    "latency_ms": 19523,
-    "bart_label": "question",
-    "bart_score": 0.3438,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T17:46:27.787875+00:00"
-  },
-  "d365eabdf5af35ee": {
-    "original_post": "Drinking water cures cancer",
-    "is_claim": true,
-    "extracted_claim": "Drinking water cures cancer",
-    "verdict": "FALSE",
-    "response": "There is no scientific evidence to support the claim that drinking water cures cancer. In fact, various sources debunk the idea that specific types of water, like alkaline or coconut water, can treat or cure cancer.",
-    "sources": [
-      {
-        "title": "Truth Check: Coconut Water Does Not Treat Cancer - Medanta",
-        "url": "https://www.medanta.org/patient-education-blog/truth-check-coconut-water-does-not-treat-cancer",
-        "snippet": "Unfortunately, these claims are false. There is no scientific evidence that coconut water can cure cancer or even slow its progress."
-      },
-      {
-        "title": "Alkaline water and cancer - Nutrition Program - UNC Lineberger",
-        "url": "https://unclineberger.org/nutrition/alkaline-water-and-cancer/",
-        "snippet": "A very common question we get as Certified Oncology Dietitians is, \u201cShould I drink alkaline water to starve my cancer cells\u201d?"
-      }
-    ],
-    "confidence": 0.733,
-    "latency_ms": 17356,
-    "bart_label": "factual claim",
-    "bart_score": 0.3324,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:09:14.655291+00:00"
-  },
-  "46fcf9a262f1bc86": {
-    "original_post": "The Earth is flat",
-    "is_claim": true,
-    "extracted_claim": "The Earth is flat",
+    "extracted_claim": "RFK Jr.'s anti-vaccine changes to CDC vaccine guidance blocked by judge",
     "verdict": "TRUE",
-    "response": "The claim that 'The Earth is flat' is FALSE. Scientific evidence overwhelmingly supports the fact that the Earth is a sphere orbiting the Sun.",
+    "response": "TRUE: A judge has indeed blocked RFK Jr.'s proposed changes to the CDC vaccine guidance, including alterations to the childhood vaccine schedule.",
     "sources": [
       {
-        "title": "Why do some people believe the Earth is flat? - Pursuit",
-        "url": "https://pursuit.unimelb.edu.au/articles/why-do-some-people-believe-the-earth-is-flat",
-        "snippet": "Although scientific evidence says the Earth is a sphere orbiting the Sun, there are some people around who still think our planet is flat."
+        "title": "Judge blocks parts of RFK Jr.'s vaccine agenda, including new ...",
+        "url": "https://www.cbsnews.com/news/judge-blocks-parts-of-rfk-jrs-vaccine-agenda-including-new-childhood-vaccine-schedule/",
+        "snippet": "A judge blocked a set of changes to the childhood vaccine schedule recommended by allies of Health and Human Services Secretary Robert F."
       },
       {
-        "title": "The Earth is not flat \u2013 Full Fact",
-        "url": "https://fullfact.org/online/earth-is-spherical-not-flat/",
-        "snippet": "A post on Instagram claims that satellites are fake and the Earth is flat. This is not true."
+        "title": "Judge blocks RFK Jr. from scaling back childhood vaccine ... - PBS",
+        "url": "https://www.pbs.org/newshour/health/judge-blocks-rfk-jr-from-scaling-back-childhood-vaccine-recommendations",
+        "snippet": "A federal judge on Monday temporarily blocked federal health officials from cutting the number of vaccines recommended for every child, ..."
       },
       {
-        "title": "Modern flat Earth beliefs - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
-        "snippet": "Anti-scientific beliefs in a flat Earth are promoted by a number of organizations and individuals. The claims of modern flat Earth proponents are not based ..."
+        "title": "Judge blocks changes to US government vaccine recommendations",
+        "url": "https://apnews.com/article/kennedy-acip-vaccines-cdc-fc758951019f41d2f5e81e4e2faa22d3",
+        "snippet": "A federal judge in Boston has blocked federal health officials from cutting the number of vaccines recommended for every child, and says ..."
       }
     ],
-    "confidence": 0.7753,
-    "latency_ms": 16131,
-    "bart_label": "factual claim",
-    "bart_score": 0.4383,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:09:30.804138+00:00"
+    "confidence": 1.0,
+    "latency_ms": 70236,
+    "bart_label": null,
+    "bart_score": null,
+    "detection_method": "gpt_only",
+    "cached_at": "2026-03-17T11:00:46.211453+00:00"
   },
-  "6042036b2a545af8": {
-    "original_post": "NASA faked the moon landing",
+  "be4c0f3d7bfc0dfd": {
+    "original_post": "Elon Musk's xAI sued for turning three girls' real photos into AI CSAM Discord user led cops to Grok-generated CSAM of real girls, lawsuit says.",
     "is_claim": true,
-    "extracted_claim": "NASA faked the moon landing",
-    "verdict": "FALSE",
-    "response": "The claim that NASA faked the moon landing is false. Multiple pieces of evidence, including Apollo landing footage and live images from NASA, disprove this conspiracy theory. There is no credible support for the idea that the moon landing was faked.",
+    "extracted_claim": "Elon Musk's xAI sued for turning three girls' real photos into AI CSAM",
+    "verdict": "TRUE",
+    "response": "True, Elon Musk's xAI, specifically the AI tool Grok, has been sued for turning real photos of three girls into AI-generated child sexual abuse material (CSAM). This action has led to legal consequences and investigations.",
     "sources": [
       {
-        "title": "Apollo landing footage would have been impossible to fake. A film ...",
-        "url": "https://www.pbs.org/newshour/science/apollo-landing-footage-would-have-been-impossible-to-fake-a-film-expert-explains-why",
-        "snippet": "A common theory is that film director Stanley Kubrick helped NASA fake the historic footage of its six successful moon landings."
+        "title": "AI tool Grok used to create child sexual abuse imagery, watchdog says",
+        "url": "https://www.theguardian.com/technology/2026/jan/08/ai-chatbot-grok-used-to-create-child-sexual-abuse-imagery-watchdog-says",
+        "snippet": "IWF analysts said the images would be considered child sexual abuse material (CSAM) under UK law. \u201cWe can confirm our analysts have discovered ..."
       },
       {
-        "title": "Fact Check: Washington Post images of 1969 moon landing taken ...",
-        "url": "https://www.reuters.com/fact-check/washington-post-images-1969-moon-landing-taken-nasa-live-feed-2024-02-27/",
-        "snippet": "... NASA's live footage, disproving social media posts citing the Post's publication of the images as proof that the lunar landing was a hoax."
+        "title": "California orders Musk's xAI to stop allowing fake sexualized images ...",
+        "url": "https://www.axios.com/2026/01/16/xai-california-elon-musk-deepfakes-children-grok",
+        "snippet": "... images and child sexual abuse material (CSAM), including explicit images or videos of minors. An error has occurred. Taking you inside the AI ..."
+      },
+      {
+        "title": "Elon Musk's Grok AI appears to have made child sexual imagery ...",
+        "url": "https://www.bbc.com/news/articles/cvg1mzlryxeo",
+        "snippet": "\"We are extremely concerned about the ease and speed with which people can apparently generate photo-realistic child sexual abuse material (CSAM) ..."
       }
     ],
-    "confidence": 0.7128,
-    "latency_ms": 14082,
+    "confidence": 0.7426,
+    "latency_ms": 20305,
+    "bart_label": "question",
+    "bart_score": 0.4314,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-17T11:01:06.864692+00:00"
+  },
+  "01969dc77daf53e6": {
+    "original_post": "New \"vibe coded\" AI translation tool splits the video game preservation community Creator apologizes after using Patreon funds for Gemini-powered magazine scan processor.",
+    "is_claim": true,
+    "extracted_claim": "Creator used Patreon funds for Gemini-powered magazine scan processor",
+    "verdict": "TRUE",
+    "response": "The creator did use Patreon funds for a Gemini-powered magazine scan processor, as reported. They have apologized for this action.",
+    "sources": [
+      {
+        "title": "Ars Technica - Serving the Technologist since 1998. News, reviews ...",
+        "url": "https://arstechnica.com/",
+        "snippet": "New \u201cvibe coded\u201d AI translation tool splits the video game preservation community. Creator apologizes after using Patreon funds for Gemini-powered magazine scan ..."
+      }
+    ],
+    "confidence": 0.6922,
+    "latency_ms": 18210,
     "bart_label": "joke or sarcasm",
-    "bart_score": 0.4321,
+    "bart_score": 0.3806,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:09:46.383622+00:00"
+    "cached_at": "2026-03-17T11:01:26.320419+00:00"
   },
-  "a4fd5a5419d90921": {
-    "original_post": "Water boils at 100 degrees Celsius at sea level",
+  "a3eb934c298f45cd": {
+    "original_post": "Trump and his FCC chair demand more positive news coverage of Iran war Carr makes evidence-free claim of \"hoaxes and news distortions.\" Trump is thrilled.",
     "is_claim": true,
-    "extracted_claim": "Water boils at 100 degrees Celsius at sea level",
-    "verdict": "FALSE",
-    "response": "The claim that water boils at 100 degrees Celsius at sea level is false. The boiling point of water varies with barometric pressure, so at different altitudes, the boiling point changes. For example, at sea level, water boils at 100 degrees Celsius, but at higher altitudes, it can boil at lower temperatures.",
-    "sources": [
-      {
-        "title": "Boiling point of water varies with barometric pressure - Facebook",
-        "url": "https://www.facebook.com/groups/660491344082992/posts/3454452828020149/",
-        "snippet": "Raindrops, while most people know that water boils at 100 \u00b0C (212 \u00b0F), this is at the normal conditions of sea level."
-      },
-      {
-        "title": "Since water boils at lower temperatures at high altitudes ... - Reddit",
-        "url": "https://www.reddit.com/r/askscience/comments/125nly5/since_water_boils_at_lower_temperatures_at_high/",
-        "snippet": "At sea level water boils at 100 \u00b0C, but at a couple km's altitude it will never reach that because it starts boiling at, let's say, 90 \u00b0C. 1 ..."
-      },
-      {
-        "title": "High altitude boiling water experiment - unexpected results - YouTube",
-        "url": "https://www.youtube.com/watch?v=LZsDYIJFdyo",
-        "snippet": "... Water at sea level boils at 212 degrees Fahrenheit; at 5000 feet above sea level, the boiling point is 203 degrees F (95 C). Up at 10000 feet, ..."
-      }
-    ],
-    "confidence": 0.6668,
-    "latency_ms": 14176,
-    "bart_label": "question",
-    "bart_score": 0.3169,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:10:00.577028+00:00",
-    "from_cache": true
-  },
-  "65b9ee858491eaac": {
-    "original_post": "The Amazon is the longest river in the world",
-    "is_claim": true,
-    "extracted_claim": "The Amazon is the longest river in the world",
-    "verdict": "FALSE",
-    "response": "The claim that the Amazon is the longest river in the world is false. While the Amazon is the largest river by volume, the Nile River in Africa is considered the longest river in the world.",
-    "sources": [
-      {
-        "title": "The Nile is the world's longest river? The Amazon would like a word.",
-        "url": "https://www.unionleader.com/the-nile-is-the-worlds-longest-river-the-amazon-would-like-a-word/article_f31e3f17-0414-5b8e-babb-b0db1b718a62.html",
-        "snippet": "In the final count, the Amazon came out on top, narrowly: 4,344 miles to 4,257. Headlines declared the Amazon the longest river the world. But ..."
-      },
-      {
-        "title": "Amazon Longer Than Nile River, Scientists Say | National Geographic",
-        "url": "https://www.nationalgeographic.com/science/article/amazon-longer-than-nile-river",
-        "snippet": "The Amazon is considered the world's largest river by volume, but scientists have believed it is slightly shorter than Africa's Nile."
-      },
-      {
-        "title": "Is The Amazon River Longer Than The Nile? - Rainforest Cruises",
-        "url": "https://www.rainforestcruises.com/guides/is-the-amazon-river-longer-than-the-nile",
-        "snippet": "For most of the last century, the Nile has been considered the world's longest river, at 4,132 miles (6,650 km) compared to the Amazon's 3,976 ..."
-      }
-    ],
-    "confidence": 0.7619,
-    "latency_ms": 19926,
-    "bart_label": "factual claim",
-    "bart_score": 0.4047,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:10:20.516996+00:00"
-  },
-  "5ac14cdf7d4cf718": {
-    "original_post": "The speed of light is 299792458 meters per second",
-    "is_claim": true,
-    "extracted_claim": "The speed of light is 299792458 meters per second",
+    "extracted_claim": "Trump and his FCC chair demand more positive news coverage of Iran war",
     "verdict": "TRUE",
-    "response": "TRUE: The speed of light is indeed 299792458 meters per second, as it is a defined constant in physics. This value is the exact speed of light in a vacuum.",
+    "response": "True. President Trump, Defense Secretary Pete Hegseth, and FCC Chair Brendan Carr have criticized the media over their coverage of the war in Iran, with Carr even threatening broadcasters' licenses over negative reporting.",
     "sources": [
       {
-        "title": "Why is the speed of light exactly 299792458 meters per second ...",
-        "url": "https://www.reddit.com/r/AskPhysics/comments/he0nz6/why_is_the_speed_of_light_exactly_299792458/",
-        "snippet": "The speed of light is exactly 299792458 meters per second because this is how the SI units for meter and second are implicitly defined. I am ..."
+        "title": "FCC chair threatens broadcasters' licenses over negative coverage ...",
+        "url": "https://www.wvtf.org/2026-03-16/fcc-chair-threatens-broadcasters-licenses-over-negative-coverage-of-the-war-in-iran",
+        "snippet": "President Trump, Defense Secretary Pete Hegseth and FCC Chair Brendan Carr have assailed the media over coverage of the war in Iran."
       },
       {
-        "title": "How fast does light travel? | The speed of light - Space",
-        "url": "https://www.space.com/15830-light-speed.html",
-        "snippet": "The speed of light traveling through a vacuum is exactly 299,792,458 meters (983,571,056 feet) per second. That's about 186,282 miles per second ..."
+        "title": "FCC chair invites bipartisan backlash as MAGA battle with press ...",
+        "url": "https://thehill.com/homenews/administration/5786490-fcc-chair-threatens-broadcasters/",
+        "snippet": "FCC chair Brendan Carr's threat to crack down on broadcasters over coverage of the U.S. war in Iran raises concerns about media intimidation ..."
       },
       {
-        "title": "The speed of light is estimated to be 299792458 meters per second ...",
-        "url": "https://www.quora.com/The-speed-of-light-is-estimated-to-be-299792458-meters-per-second-but-is-it-possible-to-measure-the-speed-of-light-more-accurately-than-that-Id-like-to-know-at-least-to-the-first-decimal-place",
-        "snippet": "The speed of light is exactly 299,792,458 m/s because that is how a meter is defined. A meter is defined as the distance light travels in 1/ ..."
-      }
-    ],
-    "confidence": 0.7513,
-    "latency_ms": 14199,
-    "bart_label": "factual claim",
-    "bart_score": 0.3783,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:10:34.755442+00:00",
-    "from_cache": true
-  },
-  "4e47d81f526d96ab": {
-    "original_post": "COVID vaccines contain microchips that track your location",
-    "is_claim": true,
-    "extracted_claim": "Covid vaccines contain microchips that track your location",
-    "verdict": "FALSE",
-    "response": "There is no evidence to support the claim that COVID vaccines contain microchips to track your location. This conspiracy theory has been debunked by multiple sources.",
-    "sources": [
-      {
-        "title": "Video claims COVID-19 vaccinated people emit Bluetooth signals",
-        "url": "https://publichealthcollaborative.org/alerts/video-claims-covid-19-vaccinated-people-emit-bluetooth-signals/",
-        "snippet": "A video circulating on social media promotes the conspiracy theory that COVID-19 vaccines cause people to emit and receive Bluetooth signals."
-      },
-      {
-        "title": "Myths and facts about the vax \u2014 debunking common COVID-19 ...",
-        "url": "https://wilfordhall.tricare.mil/News-Gallery/Articles/Article/3444174/myths-and-facts-about-the-vax-debunking-common-covid-19-vaccine-myths",
-        "snippet": "Myth: The COVID-19 vaccine can cause problems with breast tissue and lead to breast cancer. Truth: There is no evidence that COVID-19 vaccines cause problems ..."
-      },
-      {
-        "title": "Myths & Facts About COVID-19 Vaccines - CDC",
-        "url": "https://www.cdc.gov/covid/vaccines/myths-facts.html?CDC_AAref_Val",
-        "snippet": "FACT: COVID-19 vaccination causes a more predictable immune response than an infection with the virus that causes COVID-19. Woman in hospital ..."
-      }
-    ],
-    "confidence": 0.6688,
-    "latency_ms": 15226,
-    "bart_label": "factual claim",
-    "bart_score": 0.322,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:10:50.010807+00:00"
-  },
-  "dc64720c002d5edf": {
-    "original_post": "Elon Musk bought Twitter for 44 billion dollars",
-    "is_claim": true,
-    "extracted_claim": "Elon Musk bought Twitter for 44 billion dollars",
-    "verdict": "TRUE",
-    "response": "Elon Musk did buy Twitter for roughly $44 billion, as confirmed by multiple sources.",
-    "sources": [
-      {
-        "title": "Elon Musk reaches agreement to acquire Twitter for about $44 billion",
-        "url": "https://www.pbs.org/newshour/economy/elon-musk-reaches-agreement-to-acquire-twitter-for-about-44-billion",
-        "snippet": "Elon Musk reached an agreement to buy Twitter for roughly $44 billion on Monday, promising a more lenient touch to policing content on the social media ..."
-      },
-      {
-        "title": "Twitter confirms completion of Elon Musk's $44 billion acquisition deal",
-        "url": "https://www.cnn.com/2022/10/28/tech/elon-musk-twitter-deal-close",
-        "snippet": "Elon Musk has completed his $44 billion acquisition of Twitter, the company confirmed in a securities filing Friday."
-      }
-    ],
-    "confidence": 0.7539,
-    "latency_ms": 20107,
-    "bart_label": "emotional expression",
-    "bart_score": 0.3848,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T18:14:04.546619+00:00"
-  },
-  "783ba4fc4a18e58d": {
-    "original_post": "the earth is flat",
-    "is_claim": true,
-    "extracted_claim": "The earth is flat",
-    "verdict": "FALSE",
-    "response": "The claim that the earth is flat is false. Scientific evidence confirms that the Earth is a sphere orbiting the Sun, not flat.",
-    "sources": [
-      {
-        "title": "Why do some people believe the Earth is flat? - Pursuit",
-        "url": "https://pursuit.unimelb.edu.au/articles/why-do-some-people-believe-the-earth-is-flat",
-        "snippet": "Although scientific evidence says the Earth is a sphere orbiting the Sun, there are some people around who still think our planet is flat."
-      },
-      {
-        "title": "The Earth is not flat \u2013 Full Fact",
-        "url": "https://fullfact.org/online/earth-is-spherical-not-flat/",
-        "snippet": "A post on Instagram claims that satellites are fake and the Earth is flat. This is not true."
-      }
-    ],
-    "confidence": 0.7839,
-    "latency_ms": 9723,
-    "bart_label": "factual claim",
-    "bart_score": 0.4597,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:15:58.053758+00:00"
-  },
-  "1f62826f28a8bb8e": {
-    "original_post": "BBC visits aftermath of Israeli strike on Lebanon that killed family as IDF targets Hezbollah A relative tells BBC those killed were civilians and not Hezbollah operatives, but the Israel Defense Forces says it was targeting \"terrorist infrastructure\".",
-    "is_claim": true,
-    "extracted_claim": "Israel Defense Forces targeted 'terrorist infrastructure' in Lebanon after a strike that killed a family",
-    "verdict": "TRUE",
-    "response": "TRUE: The Israel Defense Forces targeted 'terrorist infrastructure' in Lebanon after a strike that killed a family, as confirmed by reports stating they were targeting Hezbollah military infrastructure.",
-    "sources": [
-      {
-        "title": "DIRECT HIT: The IDF strikes a building in southern Lebanon it says ...",
-        "url": "https://www.facebook.com/FoxNews/posts/direct-hit-the-idf-strikes-a-building-in-southern-lebanon-it-says-is-tied-to-hez/1337719711551221/",
-        "snippet": "DIRECT HIT: The IDF strikes a building in southern Lebanon it says is tied to \u201cHezbollah terrorist military infrastructure.\u201d"
-      },
-      {
-        "title": "TERROR TARGETED: The Israeli Defense Forces say it carried out ...",
-        "url": "https://www.facebook.com/FoxNews/posts/terror-targeted-the-israeli-defense-forces-say-it-carried-out-a-wave-of-airstrik/1329968228993036/",
-        "snippet": "TERROR TARGETED: The Israeli Defense Forces say it carried out a wave of airstrikes in Beirut, targeting what it described as Hezbollah ..."
-      }
-    ],
-    "confidence": 0.6519,
-    "latency_ms": 15497,
-    "bart_label": "question",
-    "bart_score": 0.2797,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:29:07.801301+00:00"
-  },
-  "299178353334bae0": {
-    "original_post": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row Volodymyr Zelensky says restoring the flow of Russian oil via Ukraine into the EU would be like lifting sanctions on Russia.",
-    "is_claim": true,
-    "extracted_claim": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row",
-    "verdict": "TRUE",
-    "response": "True. Ukrainian President Zelensky did accuse EU allies of 'blackmail' in the oil pipeline row over pressure to open the Russian oil pipeline.",
-    "sources": [
-      {
-        "title": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'",
-        "url": "https://www.ttownmedia.com/news/national/zelensky-eu-pressure-to-open-russian-oil-pipeline-is-blackmail/article_471bdd70-d0c4-50b3-b612-827b1489408c.html",
-        "snippet": "Ukrainian President Volodymyr Zelensky told his European allies that ... Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'."
-      },
-      {
-        "title": "Zelensky accuses EU allies of 'blackmail' in oil pipeline row",
-        "url": "https://www.myjoyonline.com/zelensky-accuses-eu-allies-of-blackmail-in-oil-pipeline-row/",
-        "snippet": "Ukrainian President Volodymyr Zelensky has accused European allies of seeking to \"blackmail\" Kyiv into reopening a pipeline transporting ..."
-      },
-      {
-        "title": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'",
-        "url": "https://www.bangkokpost.com/world/3217235/zelensky-eu-pressure-to-open-russian-oil-pipeline-is-blackmail",
-        "snippet": "Zelensky: EU pressure to open Russian oil pipeline is 'blackmail'. PUBLISHED : 15 Mar 2026 at 18:45. WRITER: AFP. Small; Medium; Large. Share ..."
-      },
-      {
-        "title": "Pressure to re-open Russian oil pipeline like 'blackmail', Zelenskyy ...",
-        "url": "https://www.euractiv.com/news/kyiv-to-work-with-any-hungarian-leader-not-allied-with-putin-zelenskyy-says/",
-        "snippet": "Pressure to re-open Russian oil pipeline like 'blackmail', Zelenskyy tells EU \u00b7 EU renews Russian sanctions before deadline as new package stalls."
-      }
-    ],
-    "confidence": 0.7437,
-    "latency_ms": 17254,
-    "bart_label": "joke or sarcasm",
-    "bart_score": 0.3592,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:29:25.063739+00:00"
-  },
-  "4e7366590bea288e": {
-    "original_post": "Severe flooding kills 66 in Kenya, as heavy rains continue Eleven people were rescued overnight after a minibus taxi got stuck in rising floodwaters in Nairobi.",
-    "is_claim": true,
-    "extracted_claim": "Severe flooding kills 66 in Kenya",
-    "verdict": "FALSE",
-    "response": "The claim that severe flooding killed 66 in Kenya is false. The death toll from severe flooding in Kenya is reported to be 42, not 66.",
-    "sources": [
-      {
-        "title": "The death toll from severe flooding in Kenya has risen to 42, after ...",
-        "url": "https://www.facebook.com/9News/videos/dozens-killed-in-kenya-floods/932470322762066/",
-        "snippet": "Dozens killed in Kenya floods. The death toll from severe flooding in Kenya has risen to 42, after heavy rains triggered flash floods across ..."
-      },
-      {
-        "title": "Kenya says death toll from floods almost doubles to 42 - The Senior",
-        "url": "https://www.thesenior.com.au/story/9194107/kenya-says-death-toll-from-floods-almost-doubles-to-42/",
-        "snippet": "Flash flooding has killed at least 42 people in Kenya's capital after wild weather swept away vehicles and..."
-      },
-      {
-        "title": "Death Toll From Kenyan Floods Rises to 62, Police Say",
-        "url": "https://www.usnews.com/news/world/articles/2026-03-14/death-toll-from-kenyan-floods-rises-to-62-police-say",
-        "snippet": "March 14 (Reuters) - A \u2060total \u2060of 62 \u2060people including eight children \u200bhave died since heavy \u200crains and flooding hit \u200cKenya's capital ..."
-      }
-    ],
-    "confidence": 0.6789,
-    "latency_ms": 14716,
-    "bart_label": "question",
-    "bart_score": 0.3472,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:29:39.789221+00:00"
-  },
-  "8b22430e26d95b93": {
-    "original_post": "Israeli forces kill Palestinian couple and two of their children in occupied West Bank Mohammed, aged five, and Othman, aged seven, were killed alongside their parents, the Palestinian health ministry says.",
-    "is_claim": true,
-    "extracted_claim": "Israeli forces killed a Palestinian couple and two of their children in the occupied West Bank.",
-    "verdict": "TRUE",
-    "response": "Israeli forces did kill a Palestinian couple and two of their children in the occupied West Bank, as reported by multiple sources including the Palestinian health ministry and international news outlets.",
-    "sources": [
-      {
-        "title": "Israeli forces kill 2 Palestinian children and their parents in West ...",
-        "url": "https://www.nbcnews.com/world/israel/israeli-forces-kill-palestinian-parents-two-children-west-bank-medics-rcna263550",
-        "snippet": "RAMALLAH/CAIRO \u2014 Israeli forces killed a Palestinian father, mother and two of their children as they drove in the occupied West Bank on ..."
-      },
-      {
-        "title": "Palestinian ministry says Israeli troops kill 2 children, parents ... - BSS",
-        "url": "https://www.bssnews.net/international/368958",
-        "snippet": "JERUSALEM, March 15, 2026 (BSS/AFP) - The Palestinian health ministry said Israeli troops shot and killed a Palestinian husband and..."
-      },
-      {
-        "title": "Israeli forces kill Palestinian family of four in West Bank ... - The Hindu",
-        "url": "https://www.thehindu.com/news/international/israeli-forces-kill-palestinian-family-of-four-in-west-bank-palestinian-health-authorities-say/article70745915.ece",
-        "snippet": "The Israeli military said it was looking into the reports. The \u200cPalestinian Health Ministry also \u200bsaid one Palestinian was killed in an attack ..."
-      }
-    ],
-    "confidence": 0.7227,
-    "latency_ms": 13523,
-    "bart_label": "question",
-    "bart_score": 0.3067,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:29:53.819318+00:00"
-  },
-  "ab18de4fe9582e90": {
-    "original_post": "US names six crew killed in refuelling plane crash in Iraq The aircraft was on a combat mission as part of ongoing US operations against Iran when it crashed in western Iraq on Thursday.",
-    "is_claim": true,
-    "extracted_claim": "US names six crew killed in refuelling plane crash in Iraq",
-    "verdict": "TRUE",
-    "response": "The US has named all six crew members who were killed in the refuelling plane crash in Iraq. The US Central Command confirmed that all six crew members died in the incident.",
-    "sources": [
-      {
-        "title": "All six crew members killed after US refuelling plane crashes in Iraq",
-        "url": "https://www.bbc.com/news/articles/cy0dz5ql17vo",
-        "snippet": "The US Central Command says all six crew members died after a refuelling aircraft went down over western Iraq."
-      },
-      {
-        "title": "Six US service members killed in plane crash over Iraq | Reuters",
-        "url": "https://www.reuters.com/world/four-us-service-members-killed-plane-crash-over-iraq-2026-03-13/",
-        "snippet": "All six crew members aboard a U.S. military KC-135 refueling aircraft that crashed in western Iraq are \u200bconfirmed to have been killed, ..."
-      }
-    ],
-    "confidence": 0.6776,
-    "latency_ms": 14199,
-    "bart_label": "question",
-    "bart_score": 0.3439,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:30:08.035407+00:00"
-  },
-  "420ab1c683361f70": {
-    "original_post": "Iran captain latest footballer to drop asylum bid, Iranian state media says Five of the seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
-    "is_claim": true,
-    "extracted_claim": "Five of the seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
-    "verdict": "FALSE",
-    "response": "Contrary to the claim, six of the seven members of the women's football delegation have accepted humanitarian visas to stay in Australia permanently, while one member has chosen to return home.",
-    "sources": [
-      {
-        "title": "Iranian soccer team leaves Australia, with seven women staying ...",
-        "url": "https://www.nbcnews.com/world/asia/iranian-soccer-team-leaves-australia-seven-women-staying-rcna262886",
-        "snippet": "Six of the women have accepted humanitarian visas that will allow them to stay in Australia permanently, while the seventh has decided to return ..."
-      },
-      {
-        "title": "Most of Iranian women's soccer team left Australia after declining ...",
-        "url": "https://www.wbrc.com/2026/03/11/most-iranian-womens-soccer-team-left-australia-after-declining-last-minute-airport-asylum-offers/",
-        "snippet": "Seven women ultimately accepted humanitarian visas allowing them to remain permanently in Australia after what Australian Home Affairs Minister ..."
-      }
-    ],
-    "confidence": 0.664,
-    "latency_ms": 21399,
-    "bart_label": "question",
-    "bart_score": 0.3099,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:30:29.450042+00:00"
-  },
-  "eba051ed97b4e267": {
-    "original_post": "French police detain brothers over 'lethal and antisemitic' plot A loaded gun, hydrochloric acid and an Islamic State flag were found in their car, prosecutors say.",
-    "is_claim": true,
-    "extracted_claim": "French police detained brothers over a 'lethal and antisemitic' plot involving a loaded gun, hydrochloric acid, and an Islamic State flag found in their car.",
-    "verdict": "TRUE",
-    "response": "The claim that French police detained brothers over a 'lethal and antisemitic' plot involving a loaded gun, hydrochloric acid, and an Islamic State flag found in their car is true. This information was reported by prosecutors.",
-    "sources": [
-      {
-        "title": "French police 'hold suspect' over anti-Semitic attack - BBC News",
-        "url": "https://www.bbc.com/news/world-europe-18357812",
-        "snippet": "Many say anti-Semitic incidents have been on the rise since the Toulouse shootings in March. French police say a man suspected of attacking ..."
-      }
-    ],
-    "confidence": 0.7482,
-    "latency_ms": 25021,
-    "bart_label": "question",
-    "bart_score": 0.5204,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:30:54.483155+00:00"
-  },
-  "653cd0834611bd27": {
-    "original_post": "Treasure hunter freed from prison after refusing to turn over shipwreck gold Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
-    "is_claim": true,
-    "extracted_claim": "Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
-    "verdict": "TRUE",
-    "response": "True, Tommy Thompson spent more than a decade in prison after refusing to disclose the whereabouts of 500 missing gold coins.",
-    "sources": [
-      {
-        "title": "Treasure Hunter Released From Prison After Refusing to Turn Over ...",
-        "url": "https://www.nytimes.com/2026/03/12/us/tommy-thompson-jail-released-gold-coins.html",
-        "snippet": "Thomas G. Thompson was held in contempt for 10 years for repeatedly denying he knew the whereabouts of 500 missing gold coins."
-      },
-      {
-        "title": "Treasure hunter freed from jail after refusing to turn over shipwreck ...",
-        "url": "https://www.bbc.com/news/articles/cg4g7kn99q3o",
-        "snippet": "Thompson was held in contempt for refusing to answer questions about the location of about 500 missing gold coins, and he was sent to prison for ..."
-      },
-      {
-        "title": "A former deep-sea treasure hunter who made one of the great ...",
-        "url": "https://www.facebook.com/ABCNews/posts/a-former-deep-sea-treasure-hunter-who-made-one-of-the-great-shipwreck-discoverie/1353911023262441/",
-        "snippet": "... after refusing to disclose the location of missing gold coins and related financial records. Thompson has remained incarcerated since then ..."
-      }
-    ],
-    "confidence": 0.7852,
-    "latency_ms": 12630,
-    "bart_label": "question",
-    "bart_score": 0.463,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:31:07.127932+00:00"
-  },
-  "65f79e00421531a8": {
-    "original_post": "Ugandan opposition leader goes abroad after two months in hiding Uganda's military chief has said Bobi Wine is wanted \"dead or alive\", although some ministers have denied he is being sought.",
-    "is_claim": true,
-    "extracted_claim": "Ugandan military chief said Bobi Wine is wanted 'dead or alive'",
-    "verdict": "TRUE",
-    "response": "It is true that Ugandan military chief Muhoozi Kainerugaba said he was praying for fugitive opposition leader Bobi Wine's death and mentioned he was wanted 'dead or alive'. This statement has been reported by multiple sources.",
-    "sources": [
-      {
-        "title": "Ugandan military chief Muhoozi Kainerugaba said he was praying ...",
-        "url": "https://www.facebook.com/Reuters/posts/ugandan-military-chief-muhoozi-kainerugaba-said-he-was-praying-for-fugitive-oppo/1444435750880486/",
-        "snippet": "Ugandan military chief Muhoozi Kainerugaba said he was praying for fugitive opposition leader Bobi Wine's death and gave him 48 hours to ..."
-      },
-      {
-        "title": "Dead or alive! Muhoozi renews search for Bobi Wine - The Star",
-        "url": "https://www.the-star.co.ke/news/2026-01-26-dead-or-alive-muhoozi-renews-search-for-wine",
-        "snippet": "Dead or alive! Muhoozi renews search for Bobi Wine. The general said search had stopped for 24 hours on instructions from Museveni. image."
-      },
-      {
-        "title": "Uganda's army chief who threatened to castrate Bobi Wine - BBC",
-        "url": "https://www.bbc.com/news/articles/cdjnp9m8wvgo",
-        "snippet": "Another tweet saying Wine was wanted \"dead or alive\" is still on his feed, even though a government minister has said the opposition leader ..."
-      }
-    ],
-    "confidence": 0.7449,
-    "latency_ms": 13368,
-    "bart_label": "question",
-    "bart_score": 0.5122,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:31:20.508058+00:00"
-  },
-  "f6627c65abeaaed2": {
-    "original_post": "Cuban protesters ransack Communist office as energy crisis deepens Discontent is mounting over rolling blackouts and shortages of food, fuel and medicine, exacerbated by a US blockade.",
-    "is_claim": true,
-    "extracted_claim": "Cuban protesters ransack Communist office as energy crisis deepens",
-    "verdict": "TRUE",
-    "response": "TRUE: Cuban protesters did ransack a Communist Party office in response to the deepening energy crisis. Five people were arrested after vandalizing the office in the central city of Moron.",
-    "sources": [
-      {
-        "title": "Protesters torch Communist Party HQ in Cuba as video ... - Fox News",
-        "url": "https://www.foxnews.com/world/protesters-attack-communist-party-hq-cuba-video-appears-capture-gunfire",
-        "snippet": "Protesters attacked a Communist Party headquarters in Cuba overnight, ransacking the building and attempting to set it on fire, while video from ..."
-      },
-      {
-        "title": "Protesters in Cuba attack Communist Party office in rare riot over ...",
-        "url": "https://www.nbcnews.com/world/cuba/protesters-cuba-attack-communist-party-office-rare-riot-blackouts-rcna263464",
-        "snippet": "Protesters in Cuba attack Communist Party office in rare riot over blackouts. A rally against power cuts and food shortages appeared to begin ..."
-      },
-      {
-        "title": "Cuban protesters ransack Communist office as energy crisis deepens",
-        "url": "https://www.bbc.com/news/articles/c875zd7de5xo",
-        "snippet": "Five people were arrested after a small group vandalised the offices in the central city of Moron overnight into Saturday, Cuba's Interior ..."
-      }
-    ],
-    "confidence": 0.7286,
-    "latency_ms": 15383,
-    "bart_label": "question",
-    "bart_score": 0.4715,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:31:35.903138+00:00"
-  },
-  "f21231f1e8df5429": {
-    "original_post": "Trump urges UK and other nations to send warships to Strait of Hormuz The US president says he hopes China, France, Japan and South Korea will also send ships to defend the key oil shipping route.",
-    "is_claim": true,
-    "extracted_claim": "Trump urges UK and other nations to send warships to Strait of Hormuz",
-    "verdict": "TRUE",
-    "response": "True, Trump has urged the UK and other nations to send warships to the Strait of Hormuz to help keep the key oil shipping route open.",
-    "sources": [
-      {
-        "title": "Trump calls on UK to send warships to keep strait of Hormuz open",
-        "url": "https://www.theguardian.com/uk-news/2026/mar/14/trump-warships-strait-of-hormuz-iran-oil-shipping",
-        "snippet": "Donald Trump has said the UK should send warships to help keep the strait of Hormuz open. In a post on his Truth Social platform, the US ..."
-      },
-      {
-        "title": "Trump urges other nations to send warships to the Mideast - MS NOW",
-        "url": "https://www.ms.now/news/u-s-trump-warships-iran-mideast",
-        "snippet": "President Donald Trump is asking other countries to send warships to the Middle East to help reopen the Strait of Hormuz, the vital gateway ..."
-      },
-      {
-        "title": "'As a sincere friend...': China responds after Trump urges countries ...",
-        "url": "https://www.wionews.com/world/-as-a-sincere-friend-china-responds-after-trump-urges-countries-to-send-warships-to-secure-strait-of-hormuz-amid-iran-threat-1773524775265",
-        "snippet": "Global tensions rise after Iran closed the Strait of Hormuz following US-Israel strikes. Trump urged nations to send warships to secure the ..."
-      }
-    ],
-    "confidence": 0.6637,
-    "latency_ms": 12827,
-    "bart_label": "joke or sarcasm",
-    "bart_score": 0.3092,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:31:48.742544+00:00"
-  },
-  "55be8d9892a04487": {
-    "original_post": "Hamas urges key ally Iran to halt attacks on Gulf states The Palestinian group also affirms Tehran's right to defend itself from \"aggression\" by the US and Israel.",
-    "is_claim": true,
-    "extracted_claim": "Hamas urges Iran to halt attacks on Gulf states and affirms Iran's right to defend itself from US and Israel aggression",
-    "verdict": "TRUE",
-    "response": "TRUE: Hamas has urged Iran to avoid targeting neighboring countries while affirming Iran's right to defend itself from US and Israel aggression.",
-    "sources": [
-      {
-        "title": "Hamas Urges Iran Not to Target Neighboring Countries - WSJ",
-        "url": "https://www.wsj.com/livecoverage/us-israel-iran-war-news-2026/card/hamas-urges-iran-not-to-target-neighboring-countries-sFWrmmpCTgxDX3XzKOvw?gaa_at=eafs&gaa_n=AWEtsqclZzQkbcrOM3MOdguqm-ScS5X7_MxMbH7P3mvggMl9Apb02SUbLjqT&gaa_ts=69b70cac&gaa_sig=UV1IPuKzwTMoVSOwsIC4YgKu5qvEvCavS-Z_q-ZT_3W3hviQ0Ie2z6LX-KBdW2IcTys5-H4XInGbeFO66uzpSQ%3D%3D",
-        "snippet": "The Hamas statement condemned what it described as \u201cAmerican-Zionist aggression\u201d against Iran and said Tehran has the right to defend itself."
-      },
-      {
-        "title": "Hamas Calls on Iran Not to Target Neighboring Countries but Affirms ...",
-        "url": "https://www.usnews.com/news/world/articles/2026-03-14/hamas-calls-on-iran-not-to-target-neighboring-countries-but-affirms-its-right-to-self-defence",
-        "snippet": "\"While the group affirms Iran's right to respond to this aggression by all \u200bavailable means in accordance with international norms and laws, it ..."
-      },
-      {
-        "title": "Hamas urges Iran to avoid targeting neighbouring countries amid ...",
-        "url": "https://www.trtworld.com/article/54786d0a5670",
-        "snippet": "\"While affirming the right of the Islamic Republic of Iran to respond to this aggression by all available means in accordance with international ..."
-      },
-      {
-        "title": "Hamas urges Iran to stop 'targeting neighboring countries'",
-        "url": "https://www.timesofisrael.com/liveblog_entry/hamas-urges-iran-to-stop-targeting-neighboring-countries/",
-        "snippet": "\u201cWhile affirming the right of the Islamic Republic of Iran to respond to this aggression by all available means in accordance with ..."
-      }
-    ],
-    "confidence": 0.7431,
-    "latency_ms": 53270,
-    "bart_label": "question",
-    "bart_score": 0.3577,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:32:42.021178+00:00"
-  },
-  "20256f563e864c19": {
-    "original_post": "The women bringing chess into the 21st Century - with 'bullet' matches and viral videos Women content creators are helping chess shake its image as an \"old man's game\" and bring it into the digital age.",
-    "is_claim": true,
-    "extracted_claim": "Women content creators are helping chess shake its image as an 'old man's game' and bring it into the digital age.",
-    "verdict": "TRUE",
-    "response": "True. Women content creators like Sarah El Barbry are indeed helping chess shake its image as an 'old man's game' and bring it into the digital age, as reported by various sources.",
-    "sources": [
-      {
-        "title": "The women bringing chess into the 21st Century - AOL.com",
-        "url": "https://www.aol.com/articles/women-bringing-chess-21st-century-004025605.html",
-        "snippet": "All of this is helping chess shake its image as an \"old man's game\", says woman international master Fiona Steil-Antoni, who works as a ..."
-      },
-      {
-        "title": "Chess content creators like Sarah El Barbry, 24, are ... - Instagram",
-        "url": "https://www.instagram.com/reel/DV1ELweDIz-/",
-        "snippet": "Chess content creators like Sarah El Barbry, 24, are among those helping to bring the ancient game into the 21st Century.\u2063"
-      },
-      {
-        "title": "The women bringing the 'old man's game' into the digital age",
-        "url": "https://www.facebook.com/bbcworldservice/videos/the-women-bringing-the-old-mans-game-into-the-digital-age/901258952672966/",
-        "snippet": "Gen Z players like Sarah are redefining what it means to succeed in chess. The digital chess era is creating more opportunities than ever ..."
-      },
-      {
-        "title": "How chess took over the internet",
-        "url": "https://i-d.co/article/gen-z-chess-tiktok-twitch-streaming-trend-2023/",
-        "snippet": "Chess influencers on TikTok, Twitch and YouTube are contributing to a newfound popularity amongst young people."
-      }
-    ],
-    "confidence": 0.6585,
-    "latency_ms": 66350,
-    "bart_label": "joke or sarcasm",
-    "bart_score": 0.2963,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:33:48.878007+00:00"
-  },
-  "e1df27e4120fd345": {
-    "original_post": "Drinking bleach cures COVID-19",
-    "is_claim": true,
-    "extracted_claim": "Drinking bleach cures Covid-19",
-    "verdict": "FALSE",
-    "response": "Drinking bleach does not cure Covid-19. There is no evidence to support this claim, and in fact, consuming bleach can be extremely harmful and even fatal. It is important to rely on information from reputable sources like the CDC and medical professionals.",
-    "sources": [
-      {
-        "title": "No evidence bleach consumed to cure COVID-19 during pandemic",
-        "url": "https://www.cidrap.umn.edu/covid-19/report-no-evidence-bleach-consumed-cure-covid-19-during-pandemic",
-        "snippet": "A new report dispels accounts that Americans drank bleach to cure or prevent COVID-19, a practice even the Centers for Disease Control and Prevention (CDC) ..."
-      },
-      {
-        "title": "Did people really drink bleach to prevent COVID-19? A guide ... - PMC",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10321604/",
-        "snippet": "We find no evidence that people ingested cleaning products to prevent a COVID-19 infection. These findings have important implications for public health and ..."
-      }
-    ],
-    "confidence": 0.7302,
-    "latency_ms": 61406,
-    "bart_label": "joke or sarcasm",
-    "bart_score": 0.3255,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-15T19:34:03.839617+00:00"
-  },
-  "5818eae94c865620": {
-    "original_post": "Iran taking steps to prevent anti-establishment protests, Tehran residents tell BBC Residents describe new security checkpoints around the capital, where they say people are stopped and searched.",
-    "is_claim": true,
-    "extracted_claim": "Iran is taking steps to prevent anti-establishment protests by setting up new security checkpoints in Tehran where people are stopped and searched.",
-    "verdict": "TRUE",
-    "response": "True. Iran is indeed taking steps to prevent anti-establishment protests by setting up new security checkpoints in Tehran where people are stopped and searched, as reported by Tehran residents to the BBC.",
-    "sources": [
-      {
-        "title": "Iran intensifies protest crackdown amid war: 'The real enemy is the ...",
-        "url": "https://www.ynetnews.com/article/r14mtjtf11l",
-        "snippet": "... streets, setting up checkpoints and searching civilians as residents say fear now prevents protests."
-      },
-      {
-        "title": "US-Israeli strikes hit street checkpoints in Iran | BBC News - YouTube",
-        "url": "https://www.youtube.com/watch?v=Xez6NH0gaKs",
-        "snippet": "US-Israeli strikes on Iran's capital Tehran have targeted street checkpoints of the Basij - a volunteer militia that has suppressed protests ..."
-      },
-      {
-        "title": "Tehran roadblocks still under fire as US, Israel seek to trigger revolt",
-        "url": "https://www.euractiv.com/news/tehran-roadblocks-still-under-fire-as-us-israel-seek-to-trigger-revolt/",
-        "snippet": "The video shows a checkpoint run by the Basij militia in Tehran as it was struck on Friday."
-      }
-    ],
-    "confidence": 0.6411,
-    "latency_ms": 17373,
-    "bart_label": "joke or sarcasm",
-    "bart_score": 0.2527,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:28:18.397104+00:00"
-  },
-  "831d4cee863de168": {
-    "original_post": "Ugandan opposition leader tells BBC he fled abroad fearing for his life Bobi Wine says from an undisclosed location: \"It was clear that the regime wanted to eliminate me.\"",
-    "is_claim": true,
-    "extracted_claim": "Ugandan opposition leader Bobi Wine fled abroad fearing for his life due to threats from the regime.",
-    "verdict": "TRUE",
-    "response": "TRUE: Ugandan opposition leader Bobi Wine did flee abroad fearing for his life due to threats from the regime. He stated that it was clear the regime wanted to eliminate him.",
-    "sources": [
-      {
-        "title": "Ugandan opposition leader Bobi Wine flees country due to threats",
-        "url": "https://www.youtube.com/watch?v=azQgjrZVx3I",
-        "snippet": "Ugandan opposition leader Bobi Wine flees country due to threats Ugandan opposition leader Bobi Wine announced Saturday that he has fled the ..."
-      },
-      {
-        "title": "Opposition leader Bobi Wine says he left Uganda after going ... - KTVB",
-        "url": "https://www.ktvb.com/article/syndication/associatedpress/opposition-leader-bobi-wine-says-he-left-uganda-after-going-into-hiding-after-disputed-election/616-eb0f16c3-0b88-4086-8f5c-f536eb1e7b4c",
-        "snippet": "Ugandan opposition leader Bobi Wine says he has fled the ... government over official corruption and the lack of economic opportunities."
-      },
-      {
-        "title": "Opposition leader Bobi Wine says he secretly fled Uganda after ...",
-        "url": "https://shabellemedia.com/opposition-leader-bobi-wine-says-he-secretly-fled-uganda-after-disputed-vote/",
-        "snippet": "... threats against the opposition figure, further heightening tensions. In a video message shared online, Wine said he had successfully left ..."
-      }
-    ],
-    "confidence": 0.6619,
-    "latency_ms": 16048,
-    "bart_label": "question",
-    "bart_score": 0.3047,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:28:36.858396+00:00"
-  },
-  "949ba1ac1eb9b727": {
-    "original_post": "Michigan synagogue attacker's brother was Hezbollah commander, IDF says US officials previously said the man accused of ramming a truck full of explosives into a synagogue had recently lost family in Lebanon.",
-    "is_claim": true,
-    "extracted_claim": "Michigan synagogue attacker's brother was Hezbollah commander",
-    "verdict": "TRUE",
-    "response": "The Israeli Defence Force has confirmed that the brother of the Michigan synagogue attacker was a Hezbollah terrorist commander.",
-    "sources": [
-      {
-        "title": "Brother of Michigan synagogue terrorist confirmed by Israel to be ...",
-        "url": "https://www.facebook.com/SkyNewsAustralia/videos/brother-of-michigan-synagogue-terrorist-confirmed-by-israel-to-be-hezbollah-comm/1473438024154077/",
-        "snippet": "The Israeli Defence Force has alleged that the brother of the Michigan synagogue attacker is a Hezbollah terrorist commander."
-      },
-      {
-        "title": "Michigan synagogue attacker's brother was Hezbollah commander ...",
-        "url": "https://www.bbc.com/news/articles/c4gj1135x7ro",
-        "snippet": "Michigan synagogue attacker's brother was Hezbollah commander, IDF says \u00b7 3 hours ago \u00b7 A brother of the man accused of attacking a Michigan ..."
-      },
-      {
-        "title": "Israel Says Michigan Synagogue Attacker's Brother Was a ...",
-        "url": "https://www.nytimes.com/2026/03/15/world/middleeast/israel-lebanon-michigan-synagogue-hezbollah.html",
-        "snippet": "Israel Says Michigan Synagogue Attacker's Brother Was a Hezbollah Commander ... It did not link the attacker in Michigan to Hezbollah. A ..."
-      },
-      {
-        "title": "IDF says slain brother of Michigan synagogue attacker was a ...",
-        "url": "https://www.timesofisrael.com/idf-says-slain-brother-of-michigan-synagogue-attacker-was-a-hezbollah-commander/",
-        "snippet": "The IDF said that Ibrahim was \u201celiminated in an IAF strike on a Hezbollah military structure.\u201d Several of the Michigan attacker's Lebanese ..."
-      },
-      {
-        "title": "Israel claims brother of Michigan synagogue attacker was Hezbollah ...",
-        "url": "https://www.theguardian.com/world/2026/mar/15/michigan-synagogue-attacker-brother-hezbollah-commander",
-        "snippet": "An armed private security guard shot back at the Ayman Ghazali after the attacker opened fire through his windshield in a hallway inside the ..."
-      }
-    ],
-    "confidence": 0.7146,
-    "latency_ms": 10396,
-    "bart_label": "question",
-    "bart_score": 0.2865,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:28:49.358096+00:00"
-  },
-  "baa26c0556dd16db": {
-    "original_post": "Race on to establish globally recognised 'AI-free' logo The backlash to the growing use of the tech has led to an explosion in attempts to come up with 'AI-Free' logo that could be used globally.",
-    "is_claim": true,
-    "extracted_claim": "Backlash to AI use has led to attempts to create a globally recognized 'AI-Free' logo.",
-    "verdict": "TRUE",
-    "response": "True, there is a race to establish a globally recognized 'AI-Free' logo in response to the backlash against the growing use of AI. Organizations worldwide are working on creating a universally recognized label for 'human-made' products and services.",
-    "sources": [
-      {
-        "title": "Race on to establish globally recognised 'AI-free' logo - AOL.com",
-        "url": "https://www.aol.com/articles/race-establish-globally-recognised-ai-003256290.html",
-        "snippet": "Organisations worldwide are racing to develop a universally recognised label for \"human-made\" products and services as part of the growing backlash against ..."
-      }
-    ],
-    "confidence": 0.7539,
-    "latency_ms": 22239,
-    "bart_label": "question",
-    "bart_score": 0.5347,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:29:14.442311+00:00"
-  },
-  "ef913699a2df9e3a": {
-    "original_post": "What Iranians are being told about the war Iranian state media's coverage of the war includes inflations of enemy casualties and digital manipulation intended to glorify Iran.",
-    "is_claim": true,
-    "extracted_claim": "Iranian state media's coverage of the war includes inflations of enemy casualties and digital manipulation intended to glorify Iran.",
-    "verdict": "TRUE",
-    "response": "True, Iranian state media's coverage of the war has been reported to include inflations of enemy casualties and digital manipulation aimed at glorifying Iran.",
-    "sources": [
-      {
-        "title": "Israel-Iran conflict unleashes wave of AI disinformation - BBC",
-        "url": "https://www.bbc.com/news/articles/c0k78715enxo",
-        "snippet": "\"Check ... Iranian state media's coverage of the war includes inflations of enemy casualties and digital manipulation intended to glorify Iran."
-      },
-      {
-        "title": "Battles Over Truth Rage Online Amid Iran's Internet Blackout",
-        "url": "https://www.nytimes.com/2026/01/16/business/iran-internet-blackout-protests-disinformation.html",
-        "snippet": "Others have echoed Iran's claims that the unrest was orchestrated by its enemies ... state-sponsored manipulation of social media. The ..."
-      }
-    ],
-    "confidence": 0.681,
-    "latency_ms": 16941,
-    "bart_label": "question",
-    "bart_score": 0.3526,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:29:31.445958+00:00"
-  },
-  "3ce85c1ecbf4b9ee": {
-    "original_post": "'We will go wherever they hide': Rooting out IS in Somalia Somalia became a key part of IS's global network after fighters were driven out of strongholds in Syria and Iraq.",
-    "is_claim": true,
-    "extracted_claim": "Somalia became a key part of IS's global network after fighters were driven out of strongholds in Syria and Iraq.",
-    "verdict": "TRUE",
-    "response": "True. Somalia has indeed become a key part of IS's global network, with the Islamic State's Somalia Province growing increasingly international and playing a significant role in the group's expansionist agenda.",
-    "sources": [
-      {
-        "title": "Islamic State-Somalia: A Growing Global Terror Concern",
-        "url": "https://ctc.westpoint.edu/islamic-state-somalia-a-growing-global-terror-concern/",
-        "snippet": "The Islamic State's Somalia Province has grown increasingly international, sending money across two continents and recruiting around the globe."
-      },
-      {
-        "title": "Somalia: The New Frontline in the Islamic State's Global Expansion",
-        "url": "https://www.washingtoninstitute.org/policy-analysis/somalia-new-frontline-islamic-states-global-expansion",
-        "snippet": "In its latest propaganda campaign, the Islamic State is underscoring the strategic significance of Somalia in its expansionist agenda."
-      }
-    ],
-    "confidence": 0.6575,
-    "latency_ms": 20411,
-    "bart_label": "question",
-    "bart_score": 0.2937,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:29:51.970315+00:00"
-  },
-  "85f5bb70db759b5d": {
-    "original_post": "'Gruesome' war bets fuel calls for crackdown on prediction markets Predictions markets have hosted millions of dollars of bets related to the war in Iran.",
-    "is_claim": true,
-    "extracted_claim": "Predictions markets have hosted millions of dollars of bets related to the war in Iran.",
-    "verdict": "TRUE",
-    "response": "True. Predictions markets, like Polymarket, have indeed hosted millions of dollars of bets related to the war in Iran, with reports estimating over $500 million in bets on this topic alone.",
-    "sources": [
-      {
-        "title": "'Gruesome' war bets fuel calls for Kalshi Polymarket crackdown - BBC",
-        "url": "https://www.bbc.com/news/articles/cjwz8051y0lo",
-        "snippet": "Polymarket alone has hosted what Bloomberg estimated as more than $500m in bets related to the Iran war, at one point offering an opportunity ..."
-      },
-      {
-        "title": "'Gruesome' war bets fuel calls for crackdown on prediction markets",
-        "url": "https://finance.yahoo.com/news/gruesome-war-bets-fuel-calls-000136047.html",
-        "snippet": "Polymarket alone has hosted what Bloomberg estimated as more than $500m in bets related to the Iran war, at one point offering an opportunity to ..."
-      },
-      {
-        "title": "Gamblers can now bet on the outcome of wars \u2013 and that's a problem",
-        "url": "https://theconversation.com/gamblers-can-now-bet-on-the-outcome-of-wars-and-thats-a-problem-277374",
-        "snippet": "In total, Polymarket users bet more than US$4 million (A$5.65 million) on the US-Iran strikes occurring on February 28."
-      }
-    ],
-    "confidence": 0.6913,
-    "latency_ms": 15749,
-    "bart_label": "question",
-    "bart_score": 0.3783,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:30:08.511173+00:00"
-  },
-  "9ae34848dd89be6e": {
-    "original_post": "Under drone fire, exiled Kurds wait to confront Iranian regime A group of fighters based in Iraq say they are \"ready to go home\", as they face drone attacks from Tehran.",
-    "is_claim": true,
-    "extracted_claim": "Exiled Kurds are waiting to confront the Iranian regime while facing drone attacks from Tehran.",
-    "verdict": "TRUE",
-    "response": "Exiled Kurds based in Iraq are indeed facing drone attacks from Tehran and are expressing readiness to confront the Iranian regime. This has been reported by multiple sources.",
-    "sources": [
-      {
-        "title": "Under drone fire, exiled Kurds wait to confront Iranian regime - BBC",
-        "url": "https://www.bbc.com/news/articles/c79505804lpo",
-        "snippet": "A group of fighters based in Iraq say they are \"ready to go home\", as they face drone attacks from Tehran."
-      },
-      {
-        "title": "Under drone fire, exiled Kurds wait to confront Iranian regime - AOL",
-        "url": "https://www.aol.com/articles/under-drone-fire-exiled-kurds-220246557.html",
-        "snippet": "A group of fighters based in Iraq say they are \"ready to go home\", as they face drone attacks from Tehran."
-      },
-      {
-        "title": "Iranian Kurdish fighters say they're ready to strike Tehran, waiting for ...",
-        "url": "https://www.foxnews.com/world/iranian-kurdish-fighters-say-theyre-ready-strike-tehran-waiting-opening",
-        "snippet": "KDPI spokesperson Khalid Azizi says Kurdish forces are prepared to challenge Iran but will not launch a ground offensive yet as the U.S.-Israel ..."
-      }
-    ],
-    "confidence": 0.6552,
-    "latency_ms": 15535,
-    "bart_label": "emotional expression",
-    "bart_score": 0.2879,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:30:24.868115+00:00"
-  },
-  "8eefba240aa1ced7": {
-    "original_post": "Watch: Why Kharg Island is a lifeline for Iran BBC Security Brief's Mikey Kay breaks down why Kharg Island is so strategically important for Tehran.",
-    "is_claim": true,
-    "extracted_claim": "Kharg Island is strategically important for Tehran",
-    "verdict": "TRUE",
-    "response": "True. Kharg Island is strategically important for Tehran as it serves as Iran's main crude oil export terminal and a major source of revenue for the country's economy and security.",
-    "sources": [
-      {
-        "title": "Why Kharg Island is a strategic focus as Iran war escalates - The Hill",
-        "url": "https://thehill.com/policy/energy-environment/5775550-us-iran-war-kharg-island/",
-        "snippet": "The U.S. war with Iran has disrupted global energy markets, but Kharg Island remains unaffected. Seizing the island could cripple Iran's ..."
-      },
-      {
-        "title": "Why is Kharg Island, Iran's key oil export hub, so important?",
-        "url": "https://www.lemonde.fr/en/economy/article/2026/03/14/kharg-island-iran-s-key-oil-export-hub_6751437_19.html",
-        "snippet": "The highly strategic island, Iran's main crude oil export terminal, had been spared from US-Israeli airstrikes since they began on February 28."
-      },
-      {
-        "title": "Iran's Kharg Island is key to its economy and security | AP News",
-        "url": "https://apnews.com/article/iran-war-islands-strait-hormuz-oil-trump-1b3e770e61c6a05d3e078223e15b20b2",
-        "snippet": "The island has storage tanks and housing for thousands of workers. Gazelles roam freely near the refineries and depots that make Kharg one of ..."
-      },
-      {
-        "title": "Why has the US targeted Iran's Kharg Island? - BBC",
-        "url": "https://www.bbc.com/news/articles/c8jxzlwvd8ro",
-        "snippet": "A terminal for the export of Iranian oil, the island provides a major source of revenue for the Islamic Revolutionary Guard Corps (IRGC). What ..."
-      },
-      {
-        "title": "What to Know About Iran's Kharg Island - The New York Times",
-        "url": "https://www.nytimes.com/2026/03/14/world/middleeast/what-to-know-about-kharg-island.html",
-        "snippet": "The Persian Gulf island, targeted by U.S. strikes, is home to Iran's main oil export terminal. Any disruption could jolt global energy markets."
-      }
-    ],
-    "confidence": 0.7768,
-    "latency_ms": 11034,
-    "bart_label": "question",
-    "bart_score": 0.5919,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:30:37.804845+00:00"
-  },
-  "77365d54fb96a2fb": {
-    "original_post": "Video shows moment point-blank gunshot misses Indian politician Senior Kashmir leader Farooq Abdullah escaped unhurt after the incident and the suspect is in custody.",
-    "is_claim": true,
-    "extracted_claim": "Farooq Abdullah, an Indian politician, escaped unhurt after a point-blank gunshot missed him.",
-    "verdict": "TRUE",
-    "response": "True. Farooq Abdullah, an Indian politician, did escape unhurt after a point-blank gunshot missed him. The suspect involved in the incident is in custody.",
-    "sources": [
-      {
-        "title": "Video shows moment gunshot misses Kashmir ex-chief minister - BBC",
-        "url": "https://www.bbc.com/news/videos/cj0d3357vqjo",
-        "snippet": "Senior Kashmir leader Farooq Abdullah escaped unhurt after the incident and the suspect is in custody ... Video shows moment point-blank gunshot ..."
-      },
-      {
-        "title": "#Explained: Shot fired at Farooq Abdullah from point-blank range ...",
-        "url": "https://www.facebook.com/newsinsider24x7/posts/explained-shot-fired-at-farooq-abdullah-from-point-blank-range-he-escapes-unhurt/1339493748197947/",
-        "snippet": "Explained: Shot fired at Farooq Abdullah from point-blank range, he escapes unhurt; assassination bid."
-      },
-      {
-        "title": "Farooq Abdullah survives point-blank assassination bid - MSN",
-        "url": "https://www.msn.com/en-in/news/insight/farooq-abdullah-survives-point-blank-assassination-bid/gm-GM5C2F2FB9?gemSnapshotKey=GM5C2F2FB9-snapshot-4&uxmode=ruby",
-        "snippet": "Farooq Abdullah survives point-blank assassination bid. Former Jammu and Kashmir Chief Minister Farooq Abdullah narrowly escaped an ..."
-      }
-    ],
-    "confidence": 0.7438,
-    "latency_ms": 13037,
-    "bart_label": "question",
-    "bart_score": 0.3595,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:30:50.899817+00:00"
-  },
-  "3e95531828879a77": {
-    "original_post": "Volcanic fragments rain down as Hawaii's Kilauea volcano erupts This eruption episode sent fragments made of ash, pumice, and pieces of volcanic glass into communities, forcing highway closures and the evacuation of tourists.",
-    "is_claim": true,
-    "extracted_claim": "Hawaii's Kilauea volcano erupted, sending volcanic fragments into communities and causing evacuations.",
-    "verdict": "TRUE",
-    "response": "TRUE: Hawaii's Kilauea volcano did erupt, sending glassy volcanic fragments, ash, and lava into the air, which fell into communities and forced evacuations.",
-    "sources": [
-      {
-        "title": "Hawaii's Kilauea volcano sends glassy fragments, ash into the air ...",
-        "url": "https://www.cbsnews.com/video/hawaiis-kilauea-volcano-sends-glassy-fragments-ash-into-the-air-during-new-eruption/",
-        "snippet": "Hawaii's Kilauea volcano erupted for the 43rd time since December 2024, sending glassy volcanic fragments, ash and lava into the air."
-      },
-      {
-        "title": "Volcanic fragments rain down as Hawaii's Kilauea volcano erupts",
-        "url": "https://www.bbc.com/news/videos/c2e4ljy1kp8o",
-        "snippet": "According to the USGS, Kilauea's plume sent tephra falling within Hawai\u02bbi Volcanoes National Park and into adjacent communities."
-      }
-    ],
-    "confidence": 0.6892,
-    "latency_ms": 13886,
-    "bart_label": "emotional expression",
-    "bart_score": 0.3729,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:31:04.846008+00:00"
-  },
-  "23babd706e274b1b": {
-    "original_post": "Iran War Live Updates: Trump Pressures Countries to Open Vital Shipping Route As fighting in the Middle East entered its third week, President Trump warned that failing to help secure the Strait of Hormuz would be \u201cvery bad for the future of NATO.\u201d",
-    "is_claim": true,
-    "extracted_claim": "President Trump warned that failing to help secure the Strait of Hormuz would be 'very bad for the future of Nato.'",
-    "verdict": "TRUE",
-    "response": "True, President Trump did warn that failing to help secure the Strait of Hormuz would be 'very bad for the future of NATO.'",
-    "sources": [
-      {
-        "title": "Trump asks NATO nations to help in Hormuz security, reminds them ...",
-        "url": "https://www.wionews.com/world/trump-asks-nato-nations-to-help-in-hormuz-security-reminds-them-of-ukraine-support-amid-iran-war-1773618199313",
-        "snippet": "Donald Trump warned that NATO could face a \u201cvery bad\u201d future if allies fail to help reopen the Strait of Hormuz during the Iran conflict."
-      },
-      {
-        "title": "Donald Trump warns Nato faces 'very bad future' if allies fail to help ...",
-        "url": "https://www.ft.com/content/1ca6d121-760b-4ec5-b6ad-514fdaa94873",
-        "snippet": "Donald Trump has warned that Nato faces a \u201cvery bad\u201d future if US allies fail to assist in opening up the Strait of Hormuz, sending a blunt ..."
-      },
-      {
-        "title": "Trump warns of very bad future for Nato if allies fail to help reopen ...",
-        "url": "https://www.indiatoday.in/world/story/donald-trump-nato-very-bad-future-european-allies-help-reopen-strait-of-hormuz-israel-us-middle-easr-war-iran-2882495-2026-03-16",
-        "snippet": "Trump warns of very bad future for Nato if allies fail to help reopen Strait of Hormuz. Trump urged allies to back Washington's push to ..."
-      },
-      {
-        "title": "Trump demands others help secure Strait of Hormuz, Japan and ...",
-        "url": "https://www.reuters.com/business/energy/trump-demands-others-help-secure-strait-hormuz-japan-australia-say-no-plans-send-2026-03-16/",
-        "snippet": "Trump also ratcheted up pressure on European allies to help protect the strait, warning that NATO faces a \u201cvery \u200bbad\u201d future if its members fail ..."
-      },
-      {
-        "title": "Lauding Israeli help, Trump intensifies pressure on China, others to ...",
-        "url": "https://www.timesofisrael.com/lauding-israeli-help-trump-intensifies-pressure-on-countries-to-help-secure-hormuz-strait/",
-        "snippet": "Escalating his rhetoric in an interview with the Financial Times, Trump warned that NATO faced a \u201cvery bad\u201d future if US allies fail to assist ..."
-      }
-    ],
-    "confidence": 0.7341,
-    "latency_ms": 12061,
-    "bart_label": "question",
-    "bart_score": 0.3352,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:31:18.856038+00:00"
-  },
-  "a3b2a3b7548fa867": {
-    "original_post": "In Iraq, the U.S. Tried to Bring Allies on Board. Not in Iran. This time, President Trump went to war without preparing the public, seeking U.N. approval or even consulting allies. But they will have to pick up the pieces.",
-    "is_claim": true,
-    "extracted_claim": "President Trump went to war without preparing the public, seeking U.N. approval, or consulting allies in Iran.",
-    "verdict": "TRUE",
-    "response": "President Trump did not seek congressional approval, consult allies, or prepare the public before launching strikes on Iran in June 2025.",
-    "sources": [
-      {
-        "title": "Fact-checking statements made by Trump to justify U.S. strikes on Iran",
-        "url": "https://www.pbs.org/newshour/politics/fact-checking-statements-made-by-trump-to-justify-u-s-strikes-on-iran",
-        "snippet": "Trump did not seek congressional approval for the military action. He also acted unilaterally when launching June 2025 strikes on Iranian ..."
-      }
-    ],
-    "confidence": 0.7637,
-    "latency_ms": 16153,
-    "bart_label": "question",
-    "bart_score": 0.5593,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:31:36.881810+00:00"
-  },
-  "131b7b6fac42b88e": {
-    "original_post": "The War Is Making It Harder to Keep the Lights On, 2,000 Miles Away Bangladesh is taking steps to conserve electricity, which its factories need to keep stitching together the world\u2019s clothing.",
-    "is_claim": true,
-    "extracted_claim": "The War Is Making It Harder to Keep the Lights On",
-    "verdict": "UNVERIFIABLE",
-    "response": "The claim that 'The War Is Making It Harder to Keep the Lights On' cannot be verified with the provided evidence. Further information directly related to this claim is needed for verification.",
-    "sources": [],
-    "confidence": 0.1756,
-    "latency_ms": 14485,
-    "bart_label": "question",
-    "bart_score": 0.4389,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:31:51.470803+00:00"
-  },
-  "7ddb5b0869ac918e": {
-    "original_post": "Desperation in Cuba Ignites Unusual Acts of Defiance A protest in the city of Mor\u00f3n in central Cuba culminated in fiery vandalism at the local Communist Party headquarters.",
-    "is_claim": true,
-    "extracted_claim": "Protest in Mor\u00f3n, Cuba culminated in fiery vandalism at Communist Party headquarters",
-    "verdict": "TRUE",
-    "response": "True, a protest in Mor\u00f3n, Cuba did culminate in fiery vandalism at the local Communist Party headquarters. Videos and reports confirm the attack on the building by protesters.",
-    "sources": [
-      {
-        "title": "Protesters torch Communist Party HQ in Cuba; video appears to ...",
-        "url": "https://www.yahoo.com/news/articles/protesters-torch-communist-party-hq-203233705.html",
-        "snippet": "Dramatic footage appears to show a protester on the ground after alleged gunfire as crowds attack the Communist Party building in Cuba, ..."
-      },
-      {
-        "title": "Five arrested in Cuba after protest at local Communist party office",
-        "url": "https://www.theguardian.com/world/2026/mar/14/arrests-cuba-protest-local-communist-party-office",
-        "snippet": "Five people have been arrested in Cuba for acts of \u201cvandalism\u201d after a small group of protesters broke into a provincial office of the Cuban ..."
-      },
-      {
-        "title": "Protesters in Cuba attack Communist Party office in rare riot over ...",
-        "url": "https://www.reuters.com/world/americas/protesters-cuba-attack-communist-party-office-rare-riot-over-blackouts-2026-03-14/",
-        "snippet": "\"A smaller group of people stoned the entrance of the building and started a fire in the street with furniture from the reception area,\" it ..."
-      },
-      {
-        "title": "(Reuters) - Anti-government protesters attacked a Communist Party ...",
-        "url": "https://x.com/phildstewart/status/2032931046019223804",
-        "snippet": "Videos on social media showed a large fire and people throwing rocks through the windows of a building as voices shouted \"liberty\" in the ..."
-      }
-    ],
-    "confidence": 0.6801,
-    "latency_ms": 12078,
-    "bart_label": "question",
-    "bart_score": 0.3502,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:32:03.598183+00:00"
-  },
-  "cbe03c1bfd8bb463": {
-    "original_post": "Pakistani-Afghan War Takes Heavy Toll on Civilians Pakistani airstrikes have killed at least 75 civilians and displaced 115,000 in Afghanistan, with both sides vowing escalation and no talks in sight.",
-    "is_claim": true,
-    "extracted_claim": "Pakistani airstrikes have killed at least 75 civilians and displaced 115,000 in Afghanistan",
-    "verdict": "UNVERIFIABLE",
-    "response": "The claim that Pakistani airstrikes have killed at least 75 civilians and displaced 115,000 in Afghanistan is unverifiable based on the provided evidence. While there are reports of civilian casualties in airstrikes between Pakistan and Afghanistan, the exact number specified in the claim could not be confirmed.",
-    "sources": [
-      {
-        "title": "Afghanistan accuses Pakistan of targeting homes in airstrikes that ...",
-        "url": "https://www.nbcnews.com/world/asia/afghanistan-accuses-pakistan-targeting-homes-airstrikes-kill-least-4-rcna263306",
-        "snippet": "Afghanistan accuses Pakistan of targeting homes in airstrikes that kill at least 4 civilians. Both sides have claimed to inflict heavy losses ..."
-      },
-      {
-        "title": "Afghanistan accuses Pakistan of targeting civilians after 6 killed in ...",
-        "url": "https://www.ctpost.com/news/world/article/afghanistan-accuses-pakistan-of-targeting-22074460.php",
-        "snippet": "Afghanistan's Taliban government has accused Pakistan's military of targeting homes in airstrikes in Kabul and Kandahar Province."
-      },
-      {
-        "title": "Afghanistan accuses Pakistan of targeting civilians after 6 killed in ...",
-        "url": "https://thehill.com/homenews/ap/ap-international/ap-afghanistan-accuses-pakistan-of-targeting-civilian-homes-in-airstrikes/",
-        "snippet": "Kabul police spokesman Khalid Zadran said at least four civilians, including children, were killed in the city and 15 others were injured."
-      }
-    ],
-    "confidence": 0.137,
-    "latency_ms": 19612,
-    "bart_label": "question",
-    "bart_score": 0.3425,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:32:23.270166+00:00"
-  },
-  "c7fdfc1b8237bd05": {
-    "original_post": "Marseille\u2019s Tight Mayoral Race Is a Bellwether for France\u2019s Future Voters across France choose mayors this week. The far right is performing strongly in the country\u2019s second city, making the contest there a test of national shifts.",
-    "is_claim": true,
-    "extracted_claim": "The far right is performing strongly in Marseille's mayoral race, making it a test of national shifts in France.",
-    "verdict": "TRUE",
-    "response": "The far right is indeed performing strongly in Marseille's mayoral race, with the leftist mayor and his far-right rival tied in the first-round election, as reported by Reuters and France24. This contest is seen as a test of national shifts in France, reflecting the rise of the far-right in the country.",
-    "sources": [
-      {
-        "title": "French far-right eyes Marseille city hall as its candidate ... - Reuters",
-        "url": "https://www.reuters.com/world/europe/french-mayoral-elections-gauge-far-right-strength-before-presidential-ballot-2026-03-15/",
-        "snippet": "Marseille's leftist mayor and his far-right rival were tied in Sunday's first-round municipal election, exit polls showed, boosting the ..."
-      },
-      {
-        "title": "French far right eyes Marseille upset after strong showing in mayoral ...",
-        "url": "https://www.france24.com/en/france/20260315-far-right-polls-strongly-in-french-mayoral-elections-seen-as-launchpad-for-2027-presidential-race",
-        "snippet": "Candidates for the far-right National Rally posted strong results in the first round of France's municipal elections on Sunday, ..."
-      }
-    ],
-    "confidence": 0.7367,
-    "latency_ms": 14369,
-    "bart_label": "question",
-    "bart_score": 0.4918,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:32:37.690470+00:00"
-  },
-  "bb0e50751a05bc98": {
-    "original_post": "As Rockets Fly Overhead, Residents of Israel\u2019s Border City Stay Underground The Israeli government evacuated Kiryat Shmona during the last round of fighting with Hezbollah in 2023. Residents who were told it was safe to return are again under fire.",
-    "is_claim": true,
-    "extracted_claim": "The Israeli government evacuated Kiryat Shmona during the last round of fighting with Hezbollah in 2023.",
-    "verdict": "TRUE",
-    "response": "The Israeli government did evacuate Kiryat Shmona during the last round of fighting with Hezbollah in 2023. Over 20,000 residents were evacuated from the town near the Lebanon border due to the escalating danger.",
-    "sources": [
-      {
-        "title": "Israel Evacuates Northern Communities as Danger of Hezbollah ...",
-        "url": "https://www.fdd.org/analysis/2023/10/20/israel-evacuates-northern-communities-as-danger-of-hezbollah-escalation-grows/",
-        "snippet": "The evacuation comes after Kiryat Shmona was targeted by 30 rockets on October 19, moderately wounding a father and his daughter. The same day, ..."
-      },
-      {
-        "title": "Israel to evacuate residents of town near Lebanon border after flare up",
-        "url": "https://www.reuters.com/world/israel-evacuate-residents-town-near-lebanon-border-after-flare-up-2023-10-20/",
-        "snippet": "Israel said on Friday it would evacuate more than 20000 residents from Kiryat Shmona, one of the biggest towns on its northern border with ..."
-      }
-    ],
-    "confidence": 0.7614,
-    "latency_ms": 11287,
-    "bart_label": "emotional expression",
-    "bart_score": 0.4036,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:32:49.040727+00:00"
-  },
-  "176ac7609ae86b4a": {
-    "original_post": "4 Palestinians Killed When Israeli Forces Open Fire on West Bank Family Six members of a Palestinian family went out for a ride in the car. Only two made it back home.",
-    "is_claim": true,
-    "extracted_claim": "4 Palestinians were killed by Israeli forces in the West Bank",
-    "verdict": "TRUE",
-    "response": "It is true that 4 Palestinians were killed by Israeli forces in the West Bank when they opened fire on a family in a car.",
-    "sources": [
-      {
-        "title": "Israeli troops kill 4 in Palestinian family in West Bank - DW.com",
-        "url": "https://www.dw.com/en/israeli-troops-kill-4-in-palestinian-family-in-west-bank/a-76366659",
-        "snippet": "A Palestinian family of four has been killed after Israeli forces opened fire on a vehicle in the occupied West Bank. In Gaza, a family of ..."
-      },
-      {
-        "title": "Israeli forces kill 16 people in Gaza and the West Bank, medics say",
-        "url": "https://www.reuters.com/world/middle-east/israeli-forces-kill-four-palestinians-west-bank-palestinian-health-authorities-2026-03-15/",
-        "snippet": "In the Israeli-occupied West Bank, a Palestinian father, mother, and two of their children were killed as they drove in the \u200boccupied West Bank, ..."
-      },
-      {
-        "title": "Israeli soldiers fire on family car in occupied West Bank, killing 4",
-        "url": "https://apnews.com/article/mideast-wars-west-bank-deaths-ec9966789dbd71f85fe5776fe864ab97",
-        "snippet": "The Palestinian Red Crescent rescue service said that Ali and Waed Odeh, and two of their four children, were shot in the head. The Odehs' two ..."
-      },
-      {
-        "title": "Israeli forces kill West Bank Palestinian couple, 2 children",
-        "url": "https://www.timesofisrael.com/israeli-forces-kill-west-bank-palestinian-couple-2-children-police-say-car-sped-at-troops/",
-        "snippet": "The Palestinian Authority Health Ministry identified the dead as Ali Khaled Bani Awda, 37; his wife Wa'ad, 35; and their sons Muhammad and ..."
-      }
-    ],
-    "confidence": 0.7588,
-    "latency_ms": 12342,
-    "bart_label": "emotional expression",
-    "bart_score": 0.397,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:33:03.718562+00:00"
-  },
-  "0cac06d870590010": {
-    "original_post": "A Timeline of the Fraught Relationship Between Iran and the U.S. The governments of both countries have repeatedly cast the other as evil, perpetuating a cycle that has culminated in the present war.",
-    "is_claim": true,
-    "extracted_claim": "The governments of Iran and the US have repeatedly cast each other as evil, perpetuating a cycle that has culminated in the present war.",
-    "verdict": "UNVERIFIABLE",
-    "response": "The claim that the governments of Iran and the US have repeatedly cast each other as evil, perpetuating a cycle that has culminated in the present war is unverifiable based on the provided evidence.",
-    "sources": [
-      {
-        "title": "Trump keeps telling America he\u2019s winning in Iran. He\u2019s less clear in explaining how the war ends",
-        "url": "https://www.ky3.com/2026/03/12/trump-keeps-telling-america-hes-winning-iran-hes-less-clear-explaining-how-war-ends/",
-        "snippet": "WASHINGTON (AP) \u2014 Facing jittery global markets and drooping poll numbers since launching a war with Iran, President Donald Trump has cycled from calls for \u201cunconditional surrender\u201d to sounding amenable to an end state in which Iran trades one hard-line ayatollah for another. Shifting comments from the Republican president and his top aides are adding to the precariousness of the 12-day-old conflict, which is impacting nearly every corner of the Middle East and causing economic tremors around th"
-      },
-      {
-        "title": "Fact-checking statements made by Trump to justify U.S. strikes on Iran",
-        "url": "https://www.pbs.org/newshour/politics/fact-checking-statements-made-by-trump-to-justify-u-s-strikes-on-iran",
-        "snippet": "This article originally appeared on PolitiFact. The United States and Israel bombed Iran Feb. 28, with President Donald Trump accusing Iran of building nuclear weapons that threaten U.S. allies and could \"soon\" reach the U.S. WATCH: War with Iran | PBS News Special Report Iran retaliated by attacking Israel and Middle Eastern countries that host U.S. military bases. Trump's eight-minute video shared on Truth Social ended with a warning of the potential danger for U.S. military members and an app"
-      },
-      {
-        "title": "Conservative Voices Question the Iran War. Several prominent ...",
-        "url": "https://www.facebook.com/ABenMeir/posts/conservative-voices-question-the-iran-war-several-prominent-conservative-comment/1335396928636185/",
-        "snippet": "... evil' Rock away After unleashing operation \"Epic Fury\" in Iran, President Donald Trump is facing MAGA skepticism at home as the military ..."
-      }
-    ],
-    "confidence": 0.1598,
-    "latency_ms": 17264,
-    "bart_label": "question",
-    "bart_score": 0.3995,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:33:23.259112+00:00"
-  },
-  "5eb5a8c1d5e0e08b": {
-    "original_post": "Amid War in Iran, Europe\u2019s Flashes of Military Strength Also Show Its Weakness To defend allies from Iran, the continent\u2019s powers have mounted a rare show of force. But those efforts have diverted limited resources from other hot spots.",
-    "is_claim": true,
-    "extracted_claim": "Europe's military strength is being tested by the conflict in Iran",
-    "verdict": "TRUE",
-    "response": "True, Europe's military strength is being tested by the conflict in Iran as they have mounted a rare show of force to defend allies. However, these efforts have also diverted limited resources from other hot spots.",
-    "sources": [
-      {
-        "title": "War in Mideast Tests Europe's Military Might. The Verdict? Mixed.",
-        "url": "https://www.nytimes.com/2026/03/15/world/europe/europe-iran-military.html",
-        "snippet": "Testing Europe's Military Might: To defend allies from Iran, the continent's powers have mounted a rare show of force. But those efforts have ..."
-      },
-      {
-        "title": "Europe grapples with internal splits as Iran war escalates",
-        "url": "https://www.aa.com.tr/en/europe/europe-grapples-with-internal-splits-as-iran-war-escalates/3857863",
-        "snippet": "Experts say Europe's response remains largely reactive as US and Israel drive military agenda; Conflict testing transatlantic unity and ..."
-      }
-    ],
-    "confidence": 0.761,
-    "latency_ms": 16075,
-    "bart_label": "question",
-    "bart_score": 0.5526,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:33:42.704214+00:00"
-  },
-  "61690e2d64c9f559": {
-    "original_post": "Ukraine's urgent fight on the financial frontline The war-torn country is battling to secure crucial funding from the IMF and EU, as well as putting up taxes.",
-    "is_claim": true,
-    "extracted_claim": "Ukraine is battling to secure crucial funding from the IMF and EU and putting up taxes.",
-    "verdict": "TRUE",
-    "response": "True. Ukraine is indeed battling to secure crucial funding from the IMF and EU, as evidenced by receiving a $1.5 billion payment from the IMF and moving forward with tax reforms sought by the IMF.",
-    "sources": [
-      {
-        "title": "Ukraine risks losing $115B in aid as IMF and EU reform deadlines ...",
-        "url": "https://english.nv.ua/business/ukraine-risks-losing-115b-in-aid-as-imf-and-eu-reform-deadlines-slip-50580666.html",
-        "snippet": "Watchdog warns stalled reforms could cost Ukraine billions in IMF and EU funding, including defense support."
-      },
-      {
-        "title": "Ukraine receives IMF cash cushion as huge funding gap remains ...",
-        "url": "https://kyivindependent.com/ukraine-receives-imf-cash-cushion-as-huge-funding-gap-remains-unsolved/",
-        "snippet": "Ukraine received its first payment of $1.5 billion under a new International Monetary Fund program, Prime Minister Yulia Svyrydenko said on ..."
-      },
-      {
-        "title": "Ukraine to Move Forward With Contentious Tax Bill Sought by IMF",
-        "url": "https://www.bloomberg.com/news/articles/2026-01-19/ukraine-to-move-forward-with-contentious-tax-bill-sought-by-imf",
-        "snippet": "Ukrainian authorities are pressing ahead with a tax on self-employed entrepreneurs, one of the most contentious policies demanded by the ..."
-      }
-    ],
-    "confidence": 0.769,
-    "latency_ms": 17083,
-    "bart_label": "question",
-    "bart_score": 0.5724,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:35:11.999620+00:00"
-  },
-  "624f856bc744d985": {
-    "original_post": "Here\u2019s What Happened in the War in the Middle East on Sunday Five missiles struck the Baghdad International Airport and injured four people. Israeli and Iranian attacks continued as global economic concerns about the war mounted.",
-    "is_claim": true,
-    "extracted_claim": "Five missiles struck the Baghdad International Airport and injured four people.",
-    "verdict": "FALSE",
-    "response": "The claim that five missiles struck the Baghdad International Airport and injured four people is false. According to multiple sources, five rockets struck the airport and injured five people, not four.",
-    "sources": [
-      {
-        "title": "Rocket strike near US site heightens Iraq tensions - MSN",
-        "url": "https://www.msn.com/en-in/news/insight/rocket-strike-near-us-site-heightens-iraq-tensions/gm-GM62A60385?gemSnapshotKey=GM62A60385-snapshot-0&uxmode=ruby",
-        "snippet": "Five rockets struck Baghdad International Airport, injuring five people and landing near a US diplomatic facility amid escalating hostilities."
-      },
-      {
-        "title": "Baghdad airport rocket attack leaves 5 wounded \u2013 Iraqi authorities",
-        "url": "https://globalnation.inquirer.net/314209/baghdad-airport-rocket-attack-leaves-5-wounded-iraqi-authorities",
-        "snippet": "A rocket attack on Baghdad International Airport, which houses a US diplomatic facility, wounded five people on Sunday, Iraqi authorities ..."
-      },
-      {
-        "title": "Third week of Middle East conflict: rockets hit Baghdad airport as ...",
-        "url": "https://news4sanantonio.com/news/nation-world/trump-calls-for-allied-warships-to-secure-strait-of-hormuz-amid-ongoing-fighting-iran-israel-benjamin-netanyahu-kharg-island-gulf-countries-uae-united-arab-emirates-nuclear-facilities-strait-of-hormuz-allies-us-energy-secretary-chris-wright-gas-prices",
-        "snippet": "... Baghdad International Airport and its ... five people injured, suspect in custody. PORT ARANSAS, Texas &mdash; Four people were injured ..."
-      }
-    ],
-    "confidence": 0.7339,
-    "latency_ms": 9827,
-    "bart_label": "question",
-    "bart_score": 0.4848,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:35:42.636034+00:00"
-  },
-  "ddf44bf32a78a1cd": {
-    "original_post": "The Iran War\u2019s Global Reach The fighting is raising energy prices, hitting farmers and reshaping geopolitics. We look at the ripple effects worldwide.",
-    "is_claim": true,
-    "extracted_claim": "The Iran War is raising energy prices, hitting farmers, and reshaping geopolitics globally.",
-    "verdict": "TRUE",
-    "response": "The claim that the Iran War is raising energy prices, hitting farmers, and reshaping geopolitics globally is true. Evidence shows that the conflict is disrupting global shipping, leading to food supply shocks and soaring heating costs. Additionally, the war is impacting fuel prices and could potentially harm US farmers.",
-    "sources": [
-      {
-        "title": "Farmers warn of 'food supply shocks' as Iran war disrupts global ...",
-        "url": "https://www.wmur.com/article/farmers-warn-of-food-supply-shocks-as-iran-war-disrupts-global-shipping/70738539",
-        "snippet": "Farmers warn of 'food supply shocks' as Iran war disrupts global shipping. The ongoing conflict in Iran is affecting U.S. gas prices and ..."
-      },
-      {
-        "title": "Heating Costs Soar for Millions of Americans as Iran War Explodes",
-        "url": "https://www.newsweek.com/heating-costs-soar-for-millions-of-americans-as-iran-war-explodes-11674773",
-        "snippet": "Residential heating oil prices surged amid the Iran war, according to EIA data. On March 9, prices averaged $5.094 per gallon, up from $4.268 ..."
-      },
-      {
-        "title": "The War in Iran Will Raise Fuel Prices and Costs Throughout the ...",
-        "url": "https://www.americanprogress.org/article/the-war-in-iran-will-raise-fuel-prices-and-costs-throughout-the-economy/",
-        "snippet": "The price of crude oil and natural gas is skyrocketing in the wake of the war in Iran, and trends so far have been more drastic than in other ..."
-      },
-      {
-        "title": "Trump's War on Iran Could Screw Over US Farmers - WIRED",
-        "url": "https://www.wired.com/story/trumps-war-on-iran-could-screw-over-us-farmers/",
-        "snippet": "Global oil and gas prices have skyrocketed following the US attack on Iran last weekend. But another key global supply chain is also at risk ..."
-      }
-    ],
-    "confidence": 0.6841,
-    "latency_ms": 15101,
-    "bart_label": "question",
-    "bart_score": 0.3602,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:35:57.785747+00:00"
-  },
-  "f3a6d48654b694b7": {
-    "original_post": "\u2018Doctor Who\u2019 Fans Have Fresh Chance to Time Travel With Found Episodes Two unearthed episodes, which were discovered in film canisters wrapped in plastic bags among the possessions of a dead collector in England, were restored by BBC archivists.",
-    "is_claim": true,
-    "extracted_claim": "Two 'Doctor Who' episodes were found and restored by BBC archivists.",
-    "verdict": "TRUE",
-    "response": "Two 'Doctor Who' episodes were indeed found and restored by BBC archivists after being discovered in a collector's possession. The episodes were found in film canisters wrapped in plastic bags.",
-    "sources": [
-      {
-        "title": "Lost Doctor Who episodes found in 'eclectic' collection - BBC",
-        "url": "https://www.bbc.com/news/articles/c4g7kwq1k11o",
-        "snippet": "A cardboard box found in a collector's \"ramshackle\" collection of vintage films contained two episodes of Doctor Who that have not been ..."
-      },
-      {
-        "title": "Two lost 'Doctor Who' episodes broadcast only once in 1965 found ...",
-        "url": "https://nypost.com/2026/03/15/entertainment/two-lost-doctor-who-episodes-broadcast-only-once-in-1965-found-stashed-in-cardboard-box/",
-        "snippet": "The episodes of the iconic British science fiction television series were discovered wrapped in plastic in the private collection of a deceased ..."
-      },
-      {
-        "title": "Lost 'Doctor Who episodes' from the 1960s found and restored by BBC",
-        "url": "https://apnews.com/article/doctor-who-lost-episodes-found-daleks-6849b09faa6eca9377b2a0db45d47ff8",
-        "snippet": "A film charity announced Friday that it has found two previously lost 1960s episodes in film cans wrapped in plastic bags among the possessions ..."
-      }
-    ],
-    "confidence": 0.7174,
-    "latency_ms": 16434,
-    "bart_label": "question",
-    "bart_score": 0.2935,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:36:14.312647+00:00"
-  },
-  "981bf20004368789": {
-    "original_post": "After Trump\u2019s Call to Send Warships to Strait of Hormuz, Nations Respond With Caution President Trump has urged China, Britain, France, Japan and South Korea to send warships to help reopen the waterway, even though they were not involved in the U.S.-Israeli attack on Iran.",
-    "is_claim": true,
-    "extracted_claim": "President Trump urged China, Britain, France, Japan, and South Korea to send warships to help reopen the Strait of Hormuz.",
-    "verdict": "TRUE",
-    "response": "True, President Trump did urge China, Britain, France, Japan, South Korea, and other countries to send warships to help reopen the Strait of Hormuz.",
-    "sources": [
-      {
-        "title": "US President Donald Trump is urging allies to help reopen and ...",
-        "url": "https://www.facebook.com/SkyNewsAustralia/posts/us-president-donald-trump-is-urging-allies-to-help-reopen-and-secure-the-critica/1375799321244329/",
-        "snippet": "Trump asks China, France, Japan to deploy warships to Strait of Hormuz after Iran's threat United States President Donald Trump says several ..."
-      },
-      {
-        "title": "Trump urges other nations to send warships to the Mideast - MS NOW",
-        "url": "https://www.ms.now/news/u-s-trump-warships-iran-mideast",
-        "snippet": "President Donald Trump is asking other countries to send warships to the Middle East to help reopen the Strait of Hormuz, the vital gateway ..."
-      },
-      {
-        "title": "Trump warns of very bad future for Nato if allies fail to help reopen Strait of Hormuz",
-        "url": "https://www.indiatoday.in/world/story/donald-trump-nato-very-bad-future-european-allies-help-reopen-strait-of-hormuz-israel-us-middle-easr-war-iran-2882495-2026-03-16",
-        "snippet": "US President Donald Trump has warned that the North Atlantic Treaty Organisation (Nato) could face a \u201cvery bad\u201d future if its member states fail to support Washington\u2019s efforts to reopen the strategic Strait of Hormuz, amid the ongoing US-Israeli war with Iran. In an interview with the British daily Financial Times, Trump urged allies, particularly European countries, to join what he described as a \u201cteam effort\u201d to secure the key maritime chokepoint through which nearly one-fifth of the world\u2019s "
-      },
-      {
-        "title": "Trump urges other nations to help secure shipping through Strait of ...",
-        "url": "https://www.reuters.com/world/asia-pacific/trump-says-many-countries-will-send-warships-keep-strait-hormuz-open-2026-03-14/",
-        "snippet": "Trump wrote that he hoped China, France, Japan, South Korea, Britain and others would send ships to the area. \"In \u200bthe meantime, the United ..."
-      },
-      {
-        "title": "Trump urges other countries to send warships to reopen Strait of ...",
-        "url": "https://www.koco.com/article/trump-warships-to-reopen-strait-of-hormuz/70744081",
-        "snippet": "Trump said countries such as China, France, Japan and South Korea would \"hopefully\" take part. The U.K. said on Saturday that it was ..."
-      }
-    ],
-    "confidence": 0.784,
-    "latency_ms": 13896,
-    "bart_label": "question",
-    "bart_score": 0.46,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:36:29.338729+00:00"
-  },
-  "3bcd743eba579b92": {
-    "original_post": "Oil Prices May Not Fall Soon, U.S. Energy Secretary Says Energy Secretary Chris Wright said the Strait of Hormuz, a critical passageway for oil shipments, remained unsafe for tankers. Iran has been firing projectiles and laying mines.",
-    "is_claim": true,
-    "extracted_claim": "Strait of Hormuz is unsafe for tankers due to Iran's actions",
-    "verdict": "TRUE",
-    "response": "The claim that the Strait of Hormuz is unsafe for tankers due to Iran's actions is true. Iran has been involved in actions that have made the strait unsafe for shipping, leading to a decrease in ship traffic and warnings from the Iranian military to avoid the area.",
-    "sources": [
-      {
-        "title": "After Iran Attacks, Ship Traffic Plummets in Strait of Hormuz",
-        "url": "https://www.nytimes.com/2026/02/28/world/middleeast/strait-of-hormuz-ship-traffic.html",
-        "snippet": "The Iranian military cautioned vessels on Saturday to avoid the strait, saying that passage through it was \u201ccurrently unsafe,\u201d according to ..."
-      },
-      {
-        "title": "Satellite maps show the impact Iran war has had on shipping ... - Metro",
-        "url": "https://metro.co.uk/2026/03/06/map-shows-dwindling-shipping-strait-hormuz-since-iran-attack-27256472/",
-        "snippet": "... dangerous for ships after the Middle East conflict. The Strait of Hormuz, which handles around 20% of the global fuel trade, has been closed ..."
-      }
-    ],
-    "confidence": 0.788,
-    "latency_ms": 14472,
-    "bart_label": "question",
-    "bart_score": 0.6199,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:36:45.727938+00:00"
-  },
-  "5f8106353d937206": {
-    "original_post": "Israel Says Michigan Synagogue Attacker\u2019s Brother Was a Hezbollah Commander The Israeli military said it killed the brother of Ayman Mohamad Ghazali in an airstrike in Lebanon a week before the attack on the synagogue.",
-    "is_claim": true,
-    "extracted_claim": "Israel says Michigan synagogue attacker's brother was a Hezbollah commander killed in an airstrike in Lebanon.",
-    "verdict": "TRUE",
-    "response": "Israel has confirmed that the brother of the Michigan synagogue attacker was a Hezbollah commander killed in an Israeli airstrike in Lebanon.",
-    "sources": [
-      {
-        "title": "Israel Says Michigan Synagogue Attacker's Brother Was a ...",
-        "url": "https://www.nytimes.com/2026/03/15/world/middleeast/israel-lebanon-michigan-synagogue-hezbollah.html",
-        "snippet": "Israel Says Michigan Synagogue Attacker's Brother ... Hezbollah commander who was killed in an Israeli airstrike in Lebanon earlier this month."
-      },
-      {
-        "title": "Israel claims brother of Michigan synagogue attacker was Hezbollah commander",
-        "url": "https://www.theguardian.com/world/2026/mar/15/michigan-synagogue-attacker-brother-hezbollah-commander",
-        "snippet": "Israel\u2019s military claimed on Sunday that the brother of the recent Michigan synagogue attacker was a Hezbollah commander responsible for managing weapons in a unit that has launched \u201chundreds of rockets toward Israeli civilians\u201d. In a statement posted on X, the IDF claimed that Ibrahim Mohamad Ghazali \u2013 brother of Ayman Mohamad Ghazali \u2013 was a Hezbollah commander within a specialized branch of the Badr unit. Ibrahim Ghazali \u201cwas eliminated in an [Israeli air force] strike on a Hezbollah military"
-      },
-      {
-        "title": "Israel links Michigan attacker's brother to Hezbollah - MSN",
-        "url": "https://www.msn.com/en-in/news/insight/israel-links-michigan-attacker-s-brother-to-hezbollah/gm-GMFF40E5AD?gemSnapshotKey=GMFF40E5AD-snapshot-1&uxmode=ruby",
-        "snippet": "... Michigan synagogue attacker was a Hezbollah commander killed in a recent airstrike in Lebanon. ... attacker's brother was Hezbollah commander ..."
-      }
-    ],
-    "confidence": 0.7695,
-    "latency_ms": 11601,
-    "bart_label": "question",
-    "bart_score": 0.4237,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:36:57.383691+00:00"
-  },
-  "636f8540524cfb55": {
-    "original_post": "Two Arrested in Death of Anti-Iranian Regime Activist in Canada A man and a woman were charged with murder in what the authorities described as a \u201ctargeted incident\u201d against Masood Masjoody, who had gone missing weeks ago in British Columbia.",
-    "is_claim": true,
-    "extracted_claim": "Two individuals were arrested and charged with murder in the death of anti-Iranian regime activist Masood Masjoody in Canada.",
-    "verdict": "TRUE",
-    "response": "Two individuals, Mehdi Ahmadzadeh Razavi and Arezou Soltani, were indeed arrested and charged with murder in the death of anti-Iranian regime activist Masood Masjoody in Canada.",
-    "sources": [
-      {
-        "title": "Two charged in killing of Iranian-Canadian dissident Masood ...",
-        "url": "https://www.iranintl.com/en/202603146353",
-        "snippet": "The charges were laid Friday against Mehdi Ahmadzadeh Razavi, 48, of Maple Ridge, and Arezou Soltani, 45, of North Vancouver. Both are accused ..."
-      },
-      {
-        "title": "Two Arrested in Death of Anti-Iranian Regime Activist in Canada",
-        "url": "https://www.nytimes.com/2026/03/15/world/canada/canada-iran-arrests-death.html",
-        "snippet": "On Saturday, the police announced they had arrested a man and a woman, Mehdi Ahmadzadeh Razavi, 48, from Maple Ridge, British Columbia, and ..."
-      },
-      {
-        "title": "Two people charged with murder in the death of Masood Masjoody",
-        "url": "https://vancouversun.com/news/two-men-charged-first-degree-murder-masood-masjoody",
-        "snippet": "On Friday, 48-year-old Mehdi Ahmadzadeh Razavi of Maple Ridge and 45-year-old Arezou Soltani of North Vancouver were arrested and later each ..."
-      }
-    ],
-    "confidence": 0.74,
-    "latency_ms": 15363,
-    "bart_label": "question",
-    "bart_score": 0.3499,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:37:14.462522+00:00"
-  },
-  "c8272c8d87692cbd": {
-    "original_post": "Three More Iranian Soccer Players Withdraw Bid for Asylum in Australia Seven members of the national women\u2019s team had sought refuge in the country after they were labeled \u201ctraitors\u201d at home. Four of them have since changed their minds.",
-    "is_claim": true,
-    "extracted_claim": "Three Iranian soccer players withdrew bid for asylum in Australia after being labeled traitors at home.",
-    "verdict": "TRUE",
-    "response": "Three Iranian soccer players did withdraw their bid for asylum in Australia after being labeled traitors at home, along with four others who also changed their minds.",
-    "sources": [
-      {
-        "title": "Three More Iranian Soccer Players Withdraw Bid for Asylum in ...",
-        "url": "https://www.nytimes.com/2026/03/14/world/australia/iranian-soccer-asylum-australia.html",
-        "snippet": "Iranian National Soccer Team: Seven members of the women's team had sought refuge in Australia after they were labeled \u201ctraitors\u201d at home."
-      },
-      {
-        "title": "More Iranian women soccer players reverse Australia asylum claim",
-        "url": "https://www.msn.com/en-us/news/world/more-iranian-women-soccer-players-reverse-australia-asylum-claim/ar-AA1YE3NG?ocid=ob-fb-eseses-es-fact-check",
-        "snippet": "The players were granted humanitarian visas due to persecution fears after Iranian state media described them as traitors for not singing ..."
-      },
-      {
-        "title": "Iran captain latest footballer to drop asylum bid, Iranian state ... - BBC",
-        "url": "https://www.bbc.com/news/articles/c98gz372683o",
-        "snippet": "It comes a day after authorities reported three other women had withdrawn ... being branded \"wartime traitors\" in Iran amid calls for a harsh ..."
-      },
-      {
-        "title": "Iran player changes mind on asylum in Australia - ESPN",
-        "url": "https://www.espn.com/soccer/story/_/id/48167227/iran-player-changes-mind-asylum-australia",
-        "snippet": "... Iran after they were labeled \"wartime traitors\" by Iranian state media for refusing to sing the national anthem before their opening match."
-      }
-    ],
-    "confidence": 0.7723,
-    "latency_ms": 11936,
-    "bart_label": "question",
-    "bart_score": 0.4308,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:37:27.346924+00:00"
-  },
-  "59fdc88bd271e71c": {
-    "original_post": "china has high profit than india",
-    "is_claim": true,
-    "extracted_claim": "China has higher profits than India",
-    "verdict": "FALSE",
-    "response": "The claim that China has higher profits than India is false. Profitability is not directly comparable between countries based on available evidence.",
-    "sources": [
-      {
-        "title": "India\u2014China: Reversal of fortunes? - Brookings Institution",
-        "url": "https://www.brookings.edu/articles/india-china-reversal-of-fortunes/",
-        "snippet": "Then came the big divergence for 44 years; at its peak, in 2014, China's per capita income was 2.34 times that of India. History does repeat ..."
-      },
-      {
-        "title": "India Vs China GDP debate: Fact checking Finfluencer Akshat ...",
-        "url": "https://www.financialexpress.com/policy/economy-india-vs-china-gdp-debate-fact-checking-finfluencer-akshat-shrivastavas-claims-3719622/",
-        "snippet": "Finfluencer Akshat Shrivastava claims, \u201cChina's net exports is almost 26% of India's GDP.\u201d An in depth analysis on what leading economists have to say on the ..."
-      },
-      {
-        "title": "India and the invidious comparison with China | The Tangled Woof",
-        "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/",
-        "snippet": "It's an important fact that, since the pandemic, India has overtaken China to become the world's fastest-growing large economy, averaging real ..."
-      }
-    ],
-    "confidence": 0.6124,
-    "latency_ms": 14475,
-    "bart_label": "factual claim",
-    "bart_score": 0.3309,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:37:32.832910+00:00"
-  },
-  "5abb58ebecb26d2b": {
-    "original_post": "Warning to Americans to leave Iraq is a sign the Iran war is spilling over the border.",
-    "is_claim": true,
-    "extracted_claim": "Warning to Americans to leave Iraq is a sign the Iran war is spilling over the border.",
-    "verdict": "TRUE",
-    "response": "TRUE: The warning for Americans to leave Iraq is indeed a sign of escalating tensions and potential spillover from the conflict with Iran-aligned militias.",
-    "sources": [
-      {
-        "title": "U.S. Embassy urges Americans to leave Iraq - YouTube",
-        "url": "https://www.youtube.com/watch?v=zJ2X9jo4r5o",
-        "snippet": "The U.S. Embassy in Baghdad is urging Americans to leave Iraq immediately after drone attacks and rising threats from Iran-aligned militias."
-      },
-      {
-        "title": "Americans in Iraq should leave 'immediately,' US Embassy in ...",
-        "url": "https://www.aol.com/articles/americans-iraq-leave-immediately-us-184245780.html",
-        "snippet": "The US Embassy in Baghdad has warned Americans inside to leave Iraq \u201cimmediately.\u201d A security alert posted by the embassy cites ..."
-      },
-      {
-        "title": "Americans Warned of Kidnapping Risks From Iran-Aligned Militias in ...",
-        "url": "https://www.newsweek.com/americans-warned-kidnapping-risks-iran-aligned-militias-in-iraq-11673694",
-        "snippet": "A security alert from the U.S. embassy in Baghdad on Saturday warned American citizens to \"leave Iraq immediately,\" citing risks of attacks ..."
-      },
-      {
-        "title": "U.S. Embassy in Baghdad again urges Americans to leave Iraq as ...",
-        "url": "https://www.kuow.org/stories/u-s-embassy-in-baghdad-again-urges-americans-to-leave-iraq-as-trump-touts-strikes-on-iran",
-        "snippet": "In a post on social media, the U.S. embassy in Baghdad once more warned Americans to leave Iraq immediately after an airstrike early Saturday ..."
-      },
-      {
-        "title": "US calls for Americans to leave Iraq 'now' as attacks mount - MSN",
-        "url": "https://www.msn.com/en-us/news/world/us-calls-for-americans-to-leave-iraq-now-as-attacks-mount/ar-AA1YCP4j",
-        "snippet": "The US Embassy in Baghdad told Americans on Saturday to leave Iraq immediately following a series of attacks targeting US nationals."
-      }
-    ],
-    "confidence": 0.7864,
-    "latency_ms": 20772,
-    "bart_label": "emotional expression",
-    "bart_score": 0.466,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:37:48.179705+00:00"
-  },
-  "6c7a203ed28a5898": {
-    "original_post": "FCC Chair Threatens to Revoke Broadcasters\u2019 Licenses Over Iran War Coverage The comment from Brendan Carr came on the heels of a social media message from President Trump criticizing the news media\u2019s coverage of the war with Iran.",
-    "is_claim": true,
-    "extracted_claim": "FCC Chair threatens to revoke broadcasters' licenses over Iran war coverage",
-    "verdict": "TRUE",
-    "response": "TRUE: FCC Chair Brendan Carr did threaten to revoke broadcasters' licenses over their coverage of the war with Iran, citing concerns about 'fake news' and 'misleading' coverage.",
-    "sources": [
-      {
-        "title": "FCC Chairman threatens to revoke broadcast licenses - FOX 2",
-        "url": "https://fox2now.com/news/national/fcc-chair-threatens-networks-licenses-after-trump-complains-about-iran-coverage/",
-        "snippet": "FCC Chairman threatens to revoke broadcast licenses over media coverage of U.S.-Israeli military operation in Iran, sparking criticism from Sen."
-      },
-      {
-        "title": "FCC chair threatens TV networks amid Iran war coverage - CNN",
-        "url": "https://www.cnn.com/2026/03/14/media/fcc-brendan-carr-trump-iran-war-abc-nbc-cbs",
-        "snippet": "The association also said that \u201cusing federal regulatory power to threaten broadcast licenses over coverage decisions is unconstitutional \u2014 full ..."
-      },
-      {
-        "title": "FCC chair threatens to throttle news broadcasts over 'hoaxes' about ...",
-        "url": "https://www.theguardian.com/us-news/2026/mar/14/fcc-broadcast-permits-iran-war-news",
-        "snippet": "Brendan Carr posts that he may cancel spectrum permits of 'mainstream news' outlets for 'misleading' coverage."
-      },
-      {
-        "title": "FCC chair threatens to revoke broadcasters' licenses amid Trump ...",
+        "title": "FCC chair threatens to revoke broadcasters' licenses amid Trump comments on Iran coverage",
         "url": "https://www.nbcnews.com/news/us-news/fcc-chair-threatens-revoke-broadcasters-licenses-trump-comments-iran-c-rcna263535",
-        "snippet": "Carr posted on social media that broadcasters who air \u201cfake news\u201d must \u201ccorrect course before their license renewals come up.\u201d"
-      },
-      {
-        "title": "F.C.C. Chair Threatens to Revoke Broadcasters' Licenses Over War ...",
-        "url": "https://www.nytimes.com/2026/03/14/world/middleeast/fcc-broadcasters-iran-war.html",
-        "snippet": "Carr accused broadcasters of \u201crunning hoaxes and news distortions\u201d in a social media post and warned them to \u201ccorrect course before their ..."
+        "snippet": "Federal Communications Commission Chairman Brendan Carr on Saturday renewed his criticism and threats against broadcasters over their content, this time with President Donald Trump\u2019s criticism of Iran war reporting as the backdrop. Broadcasters who air \u201cfake news\u201d must \u201ccorrect course before their license renewals come up,\u201d Carr posted on X, in remarks accompanied by a screenshot of Trump\u2019s Truth Social post earlier in the day accusing the New York Times, Wall Street Journal and \u201cother lowlife \u2018"
       }
     ],
-    "confidence": 0.7585,
-    "latency_ms": 13861,
-    "bart_label": "question",
-    "bart_score": 0.5462,
+    "confidence": 0.7127,
+    "latency_ms": 8935,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.4317,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:38:02.107914+00:00"
+    "cached_at": "2026-03-17T11:01:35.315830+00:00"
   },
-  "8743989f7524ae36": {
-    "original_post": "Tehran Seems Largely Empty, as Many Flee and Others Weary of the Fighting Residents say a heavy, lifeless atmosphere hangs over the streets of Iran\u2019s capital, which has endured relentless attacks throughout the war.",
+  "da26945a0382b8b6": {
+    "original_post": "OpenAI\u2019s own mental health experts unanimously opposed \u201cnaughty\u201d ChatGPT launch OpenAI draws a line between AI \u201csmut\u201d and porn. Experts fear it\u2019s all unhealthy.",
     "is_claim": true,
-    "extracted_claim": "Tehran seems largely empty as many flee and others weary of the fighting",
+    "extracted_claim": "OpenAI\u2019s mental health experts unanimously opposed ChatGPT's 'naughty' launch due to concerns about unhealthy content.",
     "verdict": "TRUE",
-    "response": "True, residents report that Tehran seems largely empty as many flee and others grow weary of the ongoing fighting. The heavy, lifeless atmosphere hanging over the streets is a result of relentless attacks throughout the war.",
+    "response": "True, OpenAI's mental health experts did unanimously oppose ChatGPT's 'naughty' launch due to concerns about unhealthy content. There were internal alarms about emotional dependence and unhealthy attachments to the AI chatbot.",
     "sources": [
       {
-        "title": "In war-struck Iran, fleeing Tehran is a luxury few can afford",
-        "url": "https://www.thenewhumanitarian.org/news-feature/2026/03/12/war-struck-iran-fleeing-tehran-luxury-few-can-afford",
-        "snippet": "By the time Tehran's residents tried to flee, many had already been priced out of basic groceries and bus and taxi fares. \u201cDespite being ..."
+        "title": "OpenAI's own mental health experts unanimously opposed \u201cnaughty ...",
+        "url": "https://arstechnica.com/tech-policy/2026/03/chatgpt-may-soon-become-sexy-suicide-coach-openai-advisor-reportedly-warned/",
+        "snippet": "OpenAI draws a line between AI \u201csmut\u201d and porn. Experts fear it's all unhealthy."
       },
       {
-        "title": "Tehran Seems Largely Empty, as Many Flee and Others Weary of ...",
-        "url": "https://www.nytimes.com/2026/03/14/world/middleeast/tehran-empty-iran-strikes.html",
-        "snippet": "Residents say a heavy, lifeless atmosphere hangs over the streets of Iran's capital, which has endured relentless attacks throughout the war."
+        "title": "Report: Amid safety failures, ChatGPT's planned \u201cadult mode ...",
+        "url": "https://sherwood.news/tech/safety-failures-chatgpts-planned-adult-mode-caused-concern-misclassified-12-percent-minors-adults/",
+        "snippet": "Internal alarms sounded within OpenAI about the now delayed X-rated mode. Concerns centered around unhealthy emotional dependence and an ..."
       }
     ],
-    "confidence": 0.6828,
-    "latency_ms": 11899,
+    "confidence": 0.7571,
+    "latency_ms": 16741,
     "bart_label": "question",
-    "bart_score": 0.357,
+    "bart_score": 0.5428,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:38:14.631478+00:00"
+    "cached_at": "2026-03-17T11:01:52.215986+00:00"
   },
-  "cdac975470065808": {
-    "original_post": "Sandstorm Batters Gaza, Slamming Makeshift Shelters Millions of Gazans have remained without proper housing since the war, according to the United Nations.",
+  "78d0205e12f09df1": {
+    "original_post": "Driving the $375,000 Porsche race car that debuted as a $12 DLC in iRacing Porsche's new 911 Cup debuted in iRacing, and then we took it out on the track.",
     "is_claim": true,
-    "extracted_claim": "Millions of Gazans have remained without proper housing since the war, according to the United Nations.",
+    "extracted_claim": "Porsche's new 911 Cup debuted in iRacing",
     "verdict": "TRUE",
-    "response": "True. About 90% of people in Gaza have been displaced since the war began, with an estimated 1.9 million Palestinians relocating, according to the United Nations. The lack of proper housing in Gaza has led to a humanitarian catastrophe.",
+    "response": "True, Porsche's new 911 Cup (992.2) has debuted in iRacing, as announced by iRacing on their official Facebook page. The new car was released for iRacers who already have the Porsche 911 GT3 Cup (992.1).",
     "sources": [
       {
-        "title": "About 90% of people in Gaza displaced since war began, says UN ...",
-        "url": "https://www.theguardian.com/world/article/2024/jul/03/about-90-of-people-in-gaza-displaced-since-war-began-says-un-agency",
-        "snippet": "Many have moved more than once, with estimated 1.9m Palestinians relocating since Israel's invasion, says OCHA."
-      },
-      {
-        "title": "UN report calculates it would take until 2040 to rebuild all homes ...",
-        "url": "http://www.milwaukeeindependent.com/newswire/un-report-calculates-take-2040-rebuild-homes-destroyed-far-gaza/",
-        "snippet": "The death toll in Gaza is more than 34,500 Palestinians, according to local health officials, as the territory faces a humanitarian catastrophe."
+        "title": "We are thrilled to announce that the Porsche 911 Cup (992.2) will ...",
+        "url": "https://www.facebook.com/iracing/posts/we-are-thrilled-to-announce-that-the-porsche-911-cup-9922-will-debut-on-iracing-/1298631252303099/",
+        "snippet": "Upon the release of the Porsche 911 Cup (992.2), the new car will be granted to all iRacers who already have the Porsche 911 GT3 Cup (992.1)."
       }
     ],
-    "confidence": 0.6597,
-    "latency_ms": 15878,
+    "confidence": 0.6591,
+    "latency_ms": 13355,
     "bart_label": "question",
-    "bart_score": 0.2992,
+    "bart_score": 0.2978,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:38:30.576648+00:00"
+    "cached_at": "2026-03-17T11:02:05.673610+00:00"
   },
-  "9a5c4c681f755917": {
-    "original_post": "The war has put Middle East water supplies at risk.",
+  "e1c13a09d8e33743": {
+    "original_post": "Apple\u2019s AirPods Max 2 bring H2 chip, boosted ANC in April for $549 Apple's over-head headphones get an update after over five years.",
     "is_claim": true,
-    "extracted_claim": "The war has put Middle East water supplies at risk.",
+    "extracted_claim": "Apple\u2019s AirPods Max 2 will be released in April with an H2 chip and improved ANC for $549.",
     "verdict": "TRUE",
-    "response": "True. The war in Iran has indeed put Middle East water supplies at risk, with desalination plants being damaged and water sources threatened by the conflict.",
+    "response": "True. Apple's AirPods Max 2 with an H2 chip and improved ANC will be released in April for $549, as reported by multiple sources.",
     "sources": [
       {
-        "title": "Oil built the Persian Gulf. Desalinated water keeps it alive. War could ...",
-        "url": "https://apnews.com/article/iran-war-desalination-water-oil-middle-east-12b23f2fa26ed5c4a10f80c4077e61ce",
-        "snippet": "As the Iran war widens, experts say the Middle East's real strategic weak point may be water \u2014 not oil."
+        "title": "Apple unveils AirPods Max 2 with H2 chip, upgraded ... - 9to5Mac",
+        "url": "https://9to5mac.com/2026/03/16/apple-unveils-airpods-max-2-with-h2-chip-live-translation-more/",
+        "snippet": "AirPods Max 2 cost $549 and will be available to order starting Wednesday, March 25 before shipping in early April. The new model comes in ..."
       },
       {
-        "title": "Drinking water warning issued for millions as Iran war threatens supply",
-        "url": "https://www.newsweek.com/drinking-water-warning-issued-for-millions-as-iran-war-threatens-supply-11647120",
-        "snippet": "Conflict is placing drinking water at risk as missile and drone strikes encroach on desalination plants that sustain the region."
+        "title": "Apple drops a surprise AirPods Max 2 update - Macworld",
+        "url": "https://www.macworld.com/article/3089722/apple-drops-a-surprise-airpods-max-2-update.html",
+        "snippet": "Macworld reports Apple released AirPods Max 2 after five years, featuring the H2 chip and significant audio upgrades while maintaining the ..."
       },
       {
-        "title": "War in Iran Has Put Middle East Water Supplies at Risk",
-        "url": "https://www.nytimes.com/interactive/2026/03/14/climate/iran-war-water-supply-desalination.html",
-        "snippet": "Two weeks into the war in Iran, two water desalination plants in the region have been damaged in military operations, raising concerns over ..."
+        "title": "Apple launches AirPods Max 2 with improved noise cancellation",
+        "url": "https://mashable.com/article/airpods-max-2-announced",
+        "snippet": "Apple has launched the Airpods Max 2, an improved version of its flagship, over-the-ear headphones."
       }
     ],
-    "confidence": 0.7531,
-    "latency_ms": 20171,
-    "bart_label": "question",
-    "bart_score": 0.3828,
+    "confidence": 0.7188,
+    "latency_ms": 13597,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.2971,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:38:50.818644+00:00"
+    "cached_at": "2026-03-17T11:02:21.863853+00:00"
   },
-  "3510d43fa7419e72": {
-    "original_post": "indian football team will score 1-0 with argentina next year",
+  "a8887727a2117cfc": {
+    "original_post": "The science of how fireflies stay in sync Engineers have uncovered the mathematical rules fireflies follow to sync up their flashes.",
     "is_claim": true,
-    "extracted_claim": "Indian football team will score 1-0 against Argentina next year",
-    "verdict": "FALSE",
-    "response": "The claim that the Indian football team will score 1-0 against Argentina next year is false. There is no evidence to support this claim, and past matches between India and Argentina have not resulted in a 1-0 victory for India.",
+    "extracted_claim": "Engineers have uncovered the mathematical rules fireflies follow to sync up their flashes",
+    "verdict": "TRUE",
+    "response": "Engineers have indeed uncovered the mathematical rules fireflies follow to sync up their flashes, as confirmed by multiple scientific studies and research articles.",
     "sources": [
       {
-        "title": "The Indian team's disastrous outing against Argentina in the Pro ...",
-        "url": "https://www.instagram.com/p/DUtHY-8kxCF/",
-        "snippet": "India succumbed to a 2-4 defeat at the hands of Argentina in its final FIH Pro League 2025-26 match of the Rourkela leg at the Birsa Munda ..."
+        "title": "The science of how fireflies stay in sync - Ars Technica",
+        "url": "https://arstechnica.com/science/2026/03/the-science-of-how-fireflies-stay-in-sync/",
+        "snippet": "Scientists have discovered that male fireflies in a South Carolina swamp follow local interaction rules to synchronize their flashing mating ..."
       },
       {
-        "title": "India beat Argentina in football | Did someone said Indian ... - YouTube",
-        "url": "https://www.youtube.com/shorts/TL8NRX7PSzo",
-        "snippet": "INDIA BEATS ARGENTINA IN FOOTBALL! Yes, it actually happened\u2014and in a World Youth Cup final, no less. Punjab's very own Minerva Academy FC ..."
+        "title": "Scientists uncover the secret timing behind glowing fireflies",
+        "url": "https://www.earth.com/news/scientists-uncover-the-secret-timing-behind-glowing-fireflies/",
+        "snippet": "Researchers have discovered the mathematical pattern that allows thousands of synchronized fireflies light up the night."
       },
       {
-        "title": "INDIA BEATS ARGENTINA IN FOOTBALL! Yes, it actually happened ...",
-        "url": "https://www.facebook.com/TheBridgeIN/videos/-india-beats-argentina-in-footballyes-it-actually-happenedand-in-a-world-youth-c/1818187045706873/",
-        "snippet": "Punjab's very own Minerva Academy FC U14 stunned Argentina's CEF 18 Tucum\u00e1n with a ruthless 4\u20130 win to lift the Gothia Cup 2025 in Sweden. In ..."
+        "title": "How Do Fireflies Flash in Sync? Studies Suggest a New Answer.",
+        "url": "https://www.quantamagazine.org/how-do-fireflies-flash-in-sync-studies-suggest-a-new-answer-20220920/",
+        "snippet": "Field research suggests a new explanation for the synchronized flashing in fireflies and confirms that a novel form of \u201cchimeric\u201d synchrony occurs naturally."
       }
     ],
-    "confidence": 0.6974,
-    "latency_ms": 15858,
+    "confidence": 0.7677,
+    "latency_ms": 19919,
+    "bart_label": "question",
+    "bart_score": 0.5692,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-17T11:02:43.361808+00:00"
+  },
+  "0bb5cc9b50e63e5f": {
+    "original_post": "elon musk has raised about 20 billion dollars in meta",
+    "is_claim": true,
+    "extracted_claim": "Elon Musk has raised about 20 billion dollars in Meta.",
+    "verdict": "TRUE",
+    "response": "True, Elon Musk's artificial intelligence company xAI has raised $20 billion in funding, as reported by Mashable and Reuters.",
+    "sources": [
+      {
+        "title": "Elon Musk's xAI raises $20 billion as Grok is investigated ... - Mashable",
+        "url": "https://mashable.com/article/xai-20-billion-grok",
+        "snippet": "Elon Musk's artificial intelligence company xAI has raised $20 billion in an upsized Series E funding round, the company announced on Tuesday."
+      },
+      {
+        "title": "Elon Musk's xAI Holdings in talks to raise $20 billion from investors ...",
+        "url": "https://www.reuters.com/business/media-telecom/elon-musks-xai-holdings-talks-raise-20-billion-investors-bloomberg-news-reports-2025-04-26/",
+        "snippet": "Elon Musk's xAI Holdings is in talks with investors to raise roughly $20 billion in funding for his newly combined artificial intelligence ..."
+      }
+    ],
+    "confidence": 0.7364,
+    "latency_ms": 15699,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.491,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-17T11:03:06.826225+00:00"
+  },
+  "dfef29280dce5f7d": {
+    "original_post": "An engineering thesis disguised as a coupe: A history of the Honda Prelude Technology like four-wheel steering and variable valve timing debuted in the Prelude.",
+    "is_claim": true,
+    "extracted_claim": "Technology like four-wheel steering and variable valve timing debuted in the Honda Prelude.",
+    "verdict": "TRUE",
+    "response": "True. The Honda Prelude debuted technologies like four-wheel steering and variable valve timing.",
+    "sources": [
+      {
+        "title": "An engineering thesis disguised as a coupe: A history of the Honda ...",
+        "url": "https://arstechnica.com/cars/2026/03/an-engineering-thesis-disguised-as-a-coupe-a-history-of-the-honda-prelude/",
+        "snippet": "In 1993, Honda introduced the Prelude VTEC, shorthand for Variable Valve Timing and Lift Electronic Control, a name that would soon enter the ..."
+      },
+      {
+        "title": "Before NSX and S2000, Honda's Prelude Introduced New Tech to ...",
+        "url": "https://www.aol.com/articles/nsx-s2000-honda-prelude-introduced-013000751.html",
+        "snippet": "This generation introduced Honda's mechanical four-wheel steering system, a revolutionary piece of technology so good that auto pundits at the time noted ..."
+      },
+      {
+        "title": "Before NSX and S2000, Honda's Prelude Introduced New Tech to ...",
+        "url": "https://www.autoblog.com/features/before-nsx-and-s2000-hondas-prelude-introduced-new-tech-to-the-masses",
+        "snippet": "Past Preludes introduced ABS, four-wheel steering, and VTEC, setting engineering benchmarks. The new Prelude inherits a legacy of innovation and ..."
+      }
+    ],
+    "confidence": 0.7445,
+    "latency_ms": 21416,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.3613,
+    "detection_method": "bart+gpt",
+    "cached_at": "2026-03-17T11:03:07.196046+00:00"
+  },
+  "86aebeebf460a55f": {
+    "original_post": "Staff complain that xAI is flailing because of constant upheaval Staff complain that the constant upheaval is destroying morale.",
+    "is_claim": true,
+    "extracted_claim": "Constant upheaval is causing morale issues among staff working with xAI.",
+    "verdict": "TRUE",
+    "response": "True, staff working with xAI have expressed concerns about constant upheaval causing morale issues. Reports indicate that the constant upheaval is indeed affecting morale among employees.",
+    "sources": [
+      {
+        "title": "Staff complain that xAI is flailing because of constant upheaval - Pixelift",
+        "url": "https://pixelift.pl/en/news/staff-complain-that-xai-is-flailing-because-of-constant-upheaval-20260314-en",
+        "snippet": "Staff complain that the constant upheaval is destroying morale ... Staff complain that xAI is flailing because of constant upheaval. P."
+      },
+      {
+        "title": "Staff complain that xAI is flailing because of constant upheaval - Reddit",
+        "url": "https://www.reddit.com/r/musked/comments/1ru2roz/staff_complain_that_xai_is_flailing_because_of/",
+        "snippet": "Staff complain that xAI is flailing because of constant upheaval | Staff complain that the constant upheaval is destroying morale."
+      },
+      {
+        "title": "xAI employees say Musk's chaos is killing the company inside",
+        "url": "https://www.instagram.com/p/DV3yXejoMI9/",
+        "snippet": "Staff at Elon Musk's AI venture xAI report plummeting morale amid relentless internal restructuring. Employees describe a chaotic work ..."
+      }
+    ],
+    "confidence": 0.6486,
+    "latency_ms": 17291,
     "bart_label": "emotional expression",
-    "bart_score": 0.3934,
+    "bart_score": 0.2714,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:38:58.561354+00:00"
+    "cached_at": "2026-03-17T11:03:24.693720+00:00"
   },
-  "9a2fe9fea37c0d2f": {
-    "original_post": "Dozens of Medical Workers Killed as Israel Hits Lebanon Lebanese health officials say that 31 health workers have been killed by Israeli strikes. Israel claimed, without evidence, that Hezbollah has been using ambulances and medical facilities.",
+  "1132260a929dd993": {
+    "original_post": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum She made a full recovery, despite the maggots.",
     "is_claim": true,
-    "extracted_claim": "Israel has killed 31 health workers in Lebanon",
+    "extracted_claim": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum",
     "verdict": "TRUE",
-    "response": "It is true that 31 health workers have been killed by Israeli strikes in Lebanon, as reported by Lebanese health officials and various news sources.",
+    "response": "A woman did indeed sneeze out maggots after fly larvae got trapped in her deviated septum. The larvae were identified as late-stage sheep bot fly larvae. She made a full recovery despite the incident.",
     "sources": [
       {
-        "title": "Dozens of Medical Workers Killed as Israel Hits Lebanon",
-        "url": "https://www.nytimes.com/2026/03/14/world/middleeast/lebanon-medical-workers-killed.html",
-        "snippet": "Lebanese health officials say that 31 health workers have been killed by Israeli strikes. Israel claimed, without evidence, that Hezbollah ..."
+        "title": "Woman sneezes out maggots after fly larvae get trapped in her ...",
+        "url": "https://arstechnica.com/health/2026/03/woman-sneezes-out-maggots-after-fly-larvae-get-trapped-in-her-deviated-septum/",
+        "snippet": "Woman sneezes out maggots after fly larvae get trapped in her deviated septum ... They were, in fact, late-stage sheep bot fly larvae. She ..."
       },
       {
-        "title": "Israel kills 12 medics in attack in southern Lebanon as war ravages ...",
-        "url": "https://www.aljazeera.com/news/2026/3/14/israel-kills-12-medics-in-attack-in-southern-lebanon-as-war-drags-on",
-        "snippet": "Israel's attack, echoing similar carnage it wrought in Gaza, kills doctors, paramedics and nurses who were on duty."
-      },
-      {
-        "title": "Israeli strike kills 12 healthcare workers in southern Lebanon",
-        "url": "https://www.theguardian.com/world/2026/mar/14/lebanon-israeli-rockets-kill-healthcare-workers",
-        "snippet": "The facility was attacked on Friday night, bringing the toll of medical staff to 31 killed in past 12 days."
-      },
-      {
-        "title": "31 killed in fresh Israeli airstrikes in Lebanon - Anadolu Ajans\u0131",
-        "url": "https://www.aa.com.tr/en/middle-east/31-killed-in-fresh-israeli-airstrikes-in-lebanon/3861425",
-        "snippet": "On March 2, Lebanese group Hezbollah began attacking Israeli military sites in response to repeated Israeli attacks on Lebanon and the killing ..."
+        "title": "Woman Gets Infested by Maggots, Sneezes Them Out - Gizmodo",
+        "url": "https://gizmodo.com/the-biologically-implausible-case-of-the-woman-who-sneezed-maggots-2000733255",
+        "snippet": "The 58-year-old woman's nasal and sinus cavities were infested by sheep bot fly larvae caught ... The so-called worms were actually maggots, or ..."
       }
     ],
-    "confidence": 0.6995,
-    "latency_ms": 19319,
-    "bart_label": "question",
-    "bart_score": 0.2487,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T09:39:10.221043+00:00"
-  },
-  "772b9fed87317d04": {
-    "original_post": "Intrigue, Power Plays and Rivalries: Inside the Rise of Mojtaba Khamenei The weeklong fight over Iran\u2019s next leader pitted the Revolutionary Guards against moderates. The generals won, but only over spirited resistance.",
-    "is_claim": true,
-    "extracted_claim": "The Revolutionary Guards won a weeklong fight over Iran's next leader against moderates.",
-    "verdict": "FALSE",
-    "response": "There is no clear evidence to support the claim that the Revolutionary Guards won a weeklong fight over Iran's next leader against moderates. The sources provided do not mention any such conflict or victory.",
-    "sources": [
-      {
-        "title": "Iran war leadership rift exposed as Guards keep striking Arab ...",
-        "url": "https://www.iranintl.com/en/202603076800",
-        "snippet": "Iran's Revolutionary Guards continued launching attacks on neighboring countries despite President Pezeshkian's apology to regional states ..."
-      },
-      {
-        "title": "Elite Iranian force NOPO tasked with protecting new Supreme Leader",
-        "url": "https://www.foxnews.com/world/lethal-black-clad-kill-squad-now-guards-irans-new-supreme-leader-mojtaba-khamenei",
-        "snippet": "Lethal elite 'black-clad' kill squad guards Iran's new Supreme Leader Mojtaba Khamenei. Well-paid NOPO unit deployed following targeted attack ..."
-      },
-      {
-        "title": "Iran intensifies protest crackdown amid war: \u2018The real enemy is the people\u2019",
-        "url": "https://www.ynetnews.com/article/r14mtjtf11l",
-        "snippet": "Following the war, Tehran\u2019s traffic-clogged roads have emptied of cars, replaced instead by checkpoints and security forces as Iran\u2019s regime tightens its grip on its citizens. Supreme Leader Ayatollah Ali Khamenei was eliminated in the opening strike of the war last Saturday. Israel and the United States urged Iranians to seize the moment, rise up against the regime and overthrow it, but the government quickly suppressed celebrations by its opponents over Khamenei\u2019s death and the possibility of "
-      },
-      {
-        "title": "Iran raises \u2018human shield\u2019 fears by rallying supporters to the streets",
-        "url": "https://www.iranintl.com/en/202603130792",
-        "snippet": "your access and capabilities to disrupt repression and help the people.\u201d Similar appeals have come from abroad. Israeli Prime Minister Benjamin Netanyahu addressed Iranians in a Persian-language message published by an official Israeli account. \u201cWe are delivering heavy blows to the Revolutionary Guards and Basij forces, both in the streets and at checkpoints,\u201d he said, promising that the attacks would continue. \u201cI say to the people of Iran: the moment you can begin a new path of freedom is getti"
-      },
-      {
-        "title": "Iran's new leader is ayatollah's son - Facebook",
-        "url": "https://www.facebook.com/groups/msnbcnewsjunkies/posts/3368225493339304/",
-        "snippet": "Iran's New leader is the Son of the Ayatollah they killed! He's 56 years old, injured in the attack that killed his Father & his Wife!"
-      }
-    ],
-    "confidence": 0.662,
-    "latency_ms": 21351,
+    "confidence": 0.6975,
+    "latency_ms": 11553,
     "bart_label": "emotional expression",
-    "bart_score": 0.4551,
+    "bart_score": 0.3937,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:17:50.857448+00:00"
+    "cached_at": "2026-03-17T11:03:39.049472+00:00"
   },
-  "01f1fd19e5954407": {
-    "original_post": "After Trump\u2019s Call to Send Warships to Strait of Hormuz, Nations Respond With Caution President Trump has urged China, Britain, France, Japan and South Korea to send warships to help reopen the waterway, even though they are not involved in the U.S.-Israeli attack on Iran.",
+  "e86cc4ff216d255b": {
+    "original_post": "Slay the Spire 2 is a bit too familiar for its own good Early Access impressions: New characters shine, but it feels like we've done this before.",
     "is_claim": true,
-    "extracted_claim": "President Trump urged China, Britain, France, Japan, and South Korea to send warships to help reopen the Strait of Hormuz.",
+    "extracted_claim": "Slay the Spire 2 feels too familiar in Early Access",
     "verdict": "TRUE",
-    "response": "True, President Trump did urge China, Britain, France, Japan, South Korea, and other nations to send warships to help reopen the Strait of Hormuz.",
+    "response": "TRUE: Early Access impressions of Slay the Spire 2 suggest that while new characters shine, the game feels too familiar and like something that has been done before.",
     "sources": [
       {
-        "title": "Trump appealed to China, France, Japan, South Korea, Britain and ...",
-        "url": "https://www.facebook.com/7NewsAustralia/posts/trump-appealed-to-china-france-japan-south-korea-britain-and-others-to-send-wars/1397862175713484/",
-        "snippet": "Trump appealed to China, France, Japan, South Korea, Britain and others to send warships to keep the Strait of Hormuz open. Link below."
+        "title": "Slay the Spire 2 is a bit too familiar for its own good - Ars Technica",
+        "url": "https://arstechnica.com/gaming/2026/03/slay-the-spire-2-is-a-bit-too-familiar-for-its-own-good/",
+        "snippet": "Slay the Spire 2 is a bit too familiar for its own good. Early Access impressions: New characters shine, but it feels like we've done this ..."
       },
       {
-        "title": "Trump urges other nations to send warships to the Mideast - MS NOW",
-        "url": "https://www.ms.now/news/u-s-trump-warships-iran-mideast",
-        "snippet": "President Donald Trump is asking other countries to send warships to the Middle East to help reopen the Strait of Hormuz, the vital gateway ..."
-      },
-      {
-        "title": "Trump urges other nations to help secure shipping through Strait of ...",
-        "url": "https://www.reuters.com/world/asia-pacific/trump-says-many-countries-will-send-warships-keep-strait-hormuz-open-2026-03-14/",
-        "snippet": "Trump wrote that he hoped China, France, Japan, South Korea, Britain and others would send ships to the area. \"In \u200bthe meantime, the United ..."
-      },
-      {
-        "title": "Donald Trump urges UK to send warships to secure Strait of Hormuz",
-        "url": "https://www.the-independent.com/news/world/middle-east/trump-us-iran-israel-war-uk-strait-hormuz-starmer-b2938569.html",
-        "snippet": "On The Ground newsletter: Get a weekly dispatch from our international correspondents Get a weekly dispatch from our international correspondents Get a weekly international news dispatch Email * SIGN UP I would like to be emailed about offers, events and updates from The Independent. Read our Privacy notice Donald Trump has pleaded for the UK and its allies to send warships to the embattled Strait of Hormuz in an effort to break Iran\u2019s blockade of the key oil shipping route. Piling pressure on S"
-      },
-      {
-        "title": "Trump urges UK and other nations to send warships to Strait ... - BBC",
-        "url": "https://www.bbc.co.uk/news/articles/cd039n9vj3vo",
-        "snippet": "The US president says he hopes China, France, Japan and South Korea will also send ships to defend the key oil shipping route."
+        "title": "Slay the Spire 2 early access review: \"Instantly familiar, but already ...",
+        "url": "https://www.gamesradar.com/slay-the-spire-2-review/",
+        "snippet": "Slay the Spire 2 early access review: \"Instantly familiar, but already bursting with new ideas\""
       }
     ],
-    "confidence": 0.7838,
-    "latency_ms": 10163,
+    "confidence": 0.6643,
+    "latency_ms": 14449,
     "bart_label": "question",
-    "bart_score": 0.4594,
+    "bart_score": 0.3108,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:18:13.206075+00:00"
+    "cached_at": "2026-03-17T11:03:53.584762+00:00"
   },
-  "cd3e573bc71b8b11": {
-    "original_post": "Lebanon\u2019s Displaced Flee Israeli Strikes One Year Into War Israeli calls for the evacuation of huge swaths of southern Lebanon have led 830,000 people, about 14 percent of Lebanon\u2019s population, to flee.",
+  "5404865fc31b8dd0": {
+    "original_post": "Google Fiber will be sold to private equity firm and merge with cable company GFiber and Astound to merge with Alphabet, selling majority stake to Stonepeak.",
     "is_claim": true,
-    "extracted_claim": "Israeli calls for the evacuation of huge swaths of southern Lebanon have led 830,000 people to flee.",
+    "extracted_claim": "Google Fiber will be sold to private equity firm and merge with cable company GFiber and Astound to merge with Alphabet, selling majority stake to Stonepeak.",
     "verdict": "TRUE",
-    "response": "True, Israeli calls for the evacuation of huge swaths of southern Lebanon have led to over 300,000 people fleeing, as reported by the IDF. The total number of displaced people may not be as high as 830,000, but the claim is generally accurate.",
+    "response": "True, Google Fiber will be sold to a private equity firm and merge with cable company GFiber and Astound. The majority stake will be owned by Stonepeak, with Alphabet retaining a minority stake.",
     "sources": [
       {
-        "title": "Israeli attacks, threats fuel mass displacement crisis in southern ...",
-        "url": "https://www.aljazeera.com/news/2026/3/4/israeli-attacks-threats-fuel-mass-displacement-crisis-in-southern-lebanon",
-        "snippet": "Tens of thousands have fled their homes in Lebanon's south as Israel issues forced evacuation order for entire area."
+        "title": "GFiber and Astound to Combine - Broadband Breakfast",
+        "url": "https://broadbandbreakfast.com/gfiber-and-astound-to-combine/",
+        "snippet": "GFiber and Astound to Combine. Investment firm Stonepeak will be the majority owner, with Alphabet retaining a 'significant minority' stake."
       },
       {
-        "title": "IDF reiterates call for residents of southern Lebanon to flee northward",
-        "url": "https://www.timesofisrael.com/liveblog_entry/idf-reiterates-call-for-residents-of-southern-lebanon-to-flee-northward-estimates-300000-have-evacuated/",
-        "snippet": "The IDF estimates that over 300,000 Lebanese civilians have so far evacuated their villages in southern Lebanon. During the fighting between ..."
+        "title": "Google Fiber will be sold to private equity firm and merge with cable ...",
+        "url": "https://www.reddit.com/r/technology/comments/1rt0u2f/google_fiber_will_be_sold_to_private_equity_firm/",
+        "snippet": "Alphabet and Astound owner Stonepeak announced \u201can agreement to combine GFiber with Astound Broadband, creating a leading independent fiber ..."
+      },
+      {
+        "title": "GFiber and Stonepeak's Astound to combine, creating a leading ...",
+        "url": "https://stonepeak.com/news/gfiber-and-stonepeaks-astound-to-combine-creating-a-leading-independent-broadband-provider",
+        "snippet": "Stonepeak to become majority shareholder in new venture combining GFiber and Astound Broadband; Alphabet to retain minority stake."
       }
     ],
-    "confidence": 0.7041,
-    "latency_ms": 14096,
-    "bart_label": "question",
-    "bart_score": 0.4102,
+    "confidence": 0.7044,
+    "latency_ms": 13334,
+    "bart_label": "joke or sarcasm",
+    "bart_score": 0.411,
     "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:18:32.649365+00:00"
-  },
-  "b2364a020b56519b": {
-    "original_post": "Canada Takes Its Sovereignty Push to Space The country aims to expand domestic satellite systems and cut dependence on American networks like Elon Musk\u2019s Starlink.",
-    "is_claim": true,
-    "extracted_claim": "Canada aims to expand domestic satellite systems and cut dependence on American networks like Elon Musk\u2019s Starlink.",
-    "verdict": "TRUE",
-    "response": "True. Canada is aiming to expand its domestic satellite systems and reduce dependence on American networks like Elon Musk's Starlink. This effort includes launching hundreds of new communication satellites and building its own satellite internet network.",
-    "sources": [
-      {
-        "title": "Canada is duking it out with SpaceX, insisting Starlink doesn't need ...",
-        "url": "https://fortune.com/2025/04/09/elon-musk-starlink-canada-subsidies-crtc-bell/",
-        "snippet": "Canada's largest telecom is duking it out with SpaceX, insisting Starlink and Elon Musk shouldn't be eligible for millions in subsidies."
-      },
-      {
-        "title": "Satellites are Canada's next sovereignty frontier as global 'race ...",
-        "url": "https://globalnews.ca/news/11719238/satellite-communications-defence-telesat-low-orbit/",
-        "snippet": "Canada is working to launch hundreds of new communication satellites that Prime Minister Mark Carney and experts say will be \u201cfundamental\u201d ..."
-      },
-      {
-        "title": "Canada Is Building Its Own Satellite Internet Network ... - Facebook",
-        "url": "https://www.facebook.com/now.canada/posts/canada-is-building-its-own-satellite-internet-network-%EF%B8%8Fcanada-is-preparing-to-en/1337012765122754/",
-        "snippet": "Officials say the network will: \u2022 Expand high-speed internet to remote and Arctic communities \u2744\ufe0f \u2022 Support military communications and national ..."
-      }
-    ],
-    "confidence": 0.676,
-    "latency_ms": 14681,
-    "bart_label": "question",
-    "bart_score": 0.34,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:18:51.697359+00:00"
-  },
-  "44dac524a5bc635a": {
-    "original_post": "Netanyahu Has the War He Always Wanted, but on Trump\u2019s Terms Israel\u2019s prime minister wanted regime change in Iran. But President Trump seems prepared to settle for something less.",
-    "is_claim": true,
-    "extracted_claim": "Netanyahu wanted regime change in Iran but Trump seems prepared to settle for something less",
-    "verdict": "TRUE",
-    "response": "True. Netanyahu initially wanted regime change in Iran, but President Trump seems prepared to settle for something less in the current campaign.",
-    "sources": [
-      {
-        "title": "Netanyahu Tempers Rhetoric on Iranian Regime Change - WSJ",
-        "url": "https://www.wsj.com/livecoverage/us-israel-iran-war-2026/card/netanyahu-tempers-rhetoric-on-iranian-regime-change-idiI6hgnhls5XtjnUnHy?gaa_at=eafs&gaa_n=AWEtsqcD0mRKMlft4rpEwxODpXZ1X-r37PbM60XtxzzkpsXlbospe0D7glP_&gaa_ts=69b7dc93&gaa_sig=Cnc_6HzZjntl1GB_4gNj_xN8AtdUyM3dmFV_ZtSK4qz8Ut-fPXOUx9g28vvzRAXdAWE5MqaQnenB9xfQWPyaDQ%3D%3D",
-        "snippet": "\u201cIf it doesn't fall, it will be much weaker.\u201d President Trump and Netanyahu spoke of regime change in the earliest days of the current campaign."
-      },
-      {
-        "title": "Third week of Middle East conflict: rockets hit Baghdad airport as airstrikes continue",
-        "url": "https://news4sanantonio.com/news/nation-world/trump-calls-for-allied-warships-to-secure-strait-of-hormuz-amid-ongoing-fighting-iran-israel-benjamin-netanyahu-kharg-island-gulf-countries-uae-united-arab-emirates-nuclear-facilities-strait-of-hormuz-allies-us-energy-secretary-chris-wright-gas-prices",
-        "snippet": "Trump maintains that he is not yet prepared to reach a deal with Iran to end the war. Iran wants to make a deal, and I don\u2019t want to make it because the terms aren\u2019t good enough yet,\u201d Trump told NBC News during a phone interview on Saturday. The Israeli military said it plans for at least three more weeks of operations in the region with \u201cthousands of targets\u201d remaining, CNN reports. As a result of the ongoing conflict, US energy markets have remained highly unstable, with gas prices increasingl"
-      },
-      {
-        "title": "Netanyahu Has the War He Always Wanted, but on Trump's Terms",
-        "url": "https://www.nytimes.com/2026/03/14/world/middleeast/netanyahu-iran-war-trump.html",
-        "snippet": "As for regime change, Israel continues to target Iran's internal security forces, Mr. Netanyahu said on Thursday in his first news conference of ..."
-      }
-    ],
-    "confidence": 0.7291,
-    "latency_ms": 12848,
-    "bart_label": "question",
-    "bart_score": 0.4728,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:19:04.609511+00:00"
-  },
-  "d5fbacabc6d5d9a8": {
-    "original_post": "The human brain uses only 10% of its capacity",
-    "is_claim": true,
-    "extracted_claim": "The human brain uses only 10% of its capacity",
-    "verdict": "FALSE",
-    "response": "The claim that the human brain uses only 10% of its capacity is completely false. Scientists believe that we use our entire brain every day.",
-    "sources": [
-      {
-        "title": "Myth or fact? Humans only use 10% of their brains. We're ...",
-        "url": "https://www.facebook.com/khanacademy/posts/-myth-or-fact-humans-only-use-10-of-their-brainswere-celebrating-10-years-of-par/1153060493531749/",
-        "snippet": "The claim that humans only use 10% of their brain capacity, repeated in self-help books, movies, and popular media as fact, is completely false\u2014 ..."
-      },
-      {
-        "title": "Ten-percent-of-the-brain myth - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
-        "snippet": "The ten-percent-of-the-brain myth or ninety-percent-of-the-brain myth states that humans generally use only one-tenth of their brains."
-      },
-      {
-        "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
-        "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
-        "snippet": "The idea that we use 10 percent of our brain is 100 percent a myth. In fact, scientists believe that we use our entire brain every day."
-      }
-    ],
-    "confidence": 0.7344,
-    "latency_ms": 15272,
-    "bart_label": "question",
-    "bart_score": 0.336,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:19:21.357084+00:00"
-  },
-  "4d0408adaa339dfa": {
-    "original_post": "Mahmood Mamdani, Father of NYC Mayor, Is Writing a Book on Gaza At once, Mahmood Mamdani\u2019s fame was eclipsed by his son\u2019s. At the same time, the election of Zohran Mamdani has attracted new interest in his father\u2019s work.",
-    "is_claim": true,
-    "extracted_claim": "Mahmood Mamdani is writing a book on Gaza",
-    "verdict": "TRUE",
-    "response": "True, Mahmood Mamdani is indeed writing a book on Gaza. He mentioned the International Criminal Court's arrest warrant related to alleged war crimes in Gaza as the legal basis for his vow. His next book will focus on Israel, Palestinians, and campus protests against the war in Gaza.",
-    "sources": [
-      {
-        "title": "The New York Times - Facebook",
-        "url": "https://www.facebook.com/nytimes/posts/mahmood-mamdani-the-father-of-mayor-zohran-mamdani-of-new-york-is-considered-one/1320720406577086/",
-        "snippet": "Mamdani cited the International Criminal Court's arrest warrant issued in 2024 for alleged war crimes in Gaza as the legal basis for his vow."
-      },
-      {
-        "title": "Mahmood Mamdani, who is a prof of government and anthropology ...",
-        "url": "https://x.com/CampusJewHate/status/2032898163313631426",
-        "snippet": "He said his next book would be about Israel, Palestinians and the campus protests against the war in Gaza at Columbia University in 2024. \u201cI ..."
-      },
-      {
-        "title": "Mahmood Mamdani, Father of NYC Mayor, Is Writing a Book on Gaza",
-        "url": "https://www.nytimes.com/2026/03/14/world/africa/mahmood-mamdani-gaza-war-book.html",
-        "snippet": "The thesis of Professor Mamdani's next book will be that people are by nature migratory beings and that the notion of a homeland is a fiction."
-      }
-    ],
-    "confidence": 0.6703,
-    "latency_ms": 12748,
-    "bart_label": "question",
-    "bart_score": 0.3258,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:19:25.301195+00:00"
-  },
-  "c09ac9331a036e36": {
-    "original_post": "Here\u2019s What Happened in the War in the Middle East on Friday Defense Secretary Pete Hegseth said Friday would be the most intense day of the U.S. air campaign in Iran as a vital oil supply route remained choked off.",
-    "is_claim": true,
-    "extracted_claim": "Friday was the most intense day of the U.S. air campaign in Iran",
-    "verdict": "TRUE",
-    "response": "True. Defense Secretary Pete Hegseth stated that Friday would be the most intense day of the U.S. air campaign in Iran, which was confirmed by multiple news sources.",
-    "sources": [
-      {
-        "title": "U.S. Military Attacks Iran's Oil Export Hub, Trump Says - NYTimes.com",
-        "url": "https://www.nytimes.com/live/2026/03/13/world/iran-war-trump-oil-israel",
-        "snippet": "Defense Secretary Pete Hegseth said on Friday that the day would be the most intense and lethal of the U.S. air campaign in Iran so far ..."
-      },
-      {
-        "title": "Critical New Evidence Suggests US Responsible for Iran School Strike",
-        "url": "https://www.newsweek.com/new-missile-evidence-suggests-us-responsible-for-iran-school-strike-11643606",
-        "snippet": "Iran War Briefing Day 11: 'Most Intense' US Strikes To Come, Markets Recover ; Iran War: Strikes Pound Beirut, Tehran as Gulf Attacks Intensify."
-      },
-      {
-        "title": "The U.S. vowed its 'most intense day of strikes inside Iran' - NPR",
-        "url": "https://www.npr.org/2026/03/10/nx-s1-5742828/iran-war-us-trump",
-        "snippet": "\"Today will be, yet again, our most intense day of strikes inside Iran,\" Defense Secretary Pete Hegseth said in a news conference, adding that ..."
-      }
-    ],
-    "confidence": 0.763,
-    "latency_ms": 15385,
-    "bart_label": "question",
-    "bart_score": 0.5575,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:19:46.495650+00:00"
-  },
-  "5de4a9fedb741a24": {
-    "original_post": "U.S. Attacks Iran\u2019s Kharg Island, a Key Port for Oil Exporting, Trump Says The strikes on Kharg Island targeted Iranian military forces, not economic infrastructure on the island, a U.S. military official said.",
-    "is_claim": true,
-    "extracted_claim": "U.S. attacks Iran\u2019s Kharg Island, targeting Iranian military forces, not economic infrastructure",
-    "verdict": "FALSE",
-    "response": "Contrary to the claim, the U.S. attacks on Iran's Kharg Island targeted all of the military infrastructure on the island, not just Iranian military forces. Economic infrastructure, including the oil export hub, was also impacted by the strikes.",
-    "sources": [
-      {
-        "title": "U.S. Military Attacks Iran's Oil Export Hub, Trump Says - NYTimes.com",
-        "url": "https://www.nytimes.com/live/2026/03/13/world/iran-war-trump-oil-israel",
-        "snippet": "The strikes on Kharg Island, Iran's oil export hub, targeted all of the military infrastructure on the island, a military official said. U.S. ..."
-      },
-      {
-        "title": "U.S. bombing of Kharg Island, Iran's critical oil hub, sparks new ...",
-        "url": "https://www.nbcnews.com/world/iran/iran-threatens-strike-oil-facilities-us-hits-military-targets-kharg-is-rcna263453",
-        "snippet": "U.S. bombing of Kharg Island, Iran's critical oil hub, sparks new threats to target Gulf oil infrastructure. Iranian state media reported there ..."
-      },
-      {
-        "title": "U.S. Embassy in Baghdad again urges Americans to leave Iraq as Trump touts strikes on Iran",
-        "url": "https://www.kuow.org/stories/u-s-embassy-in-baghdad-again-urges-americans-to-leave-iraq-as-trump-touts-strikes-on-iran",
-        "snippet": "U.S. Embassy in Baghdad again urges Americans to leave Iraq as Trump touts strikes on Iran President Trump asserted Saturday that the U.S. military had \"destroyed 100% of Iran's Military capability,\" and that American forces had on Friday bombed the crucial oil sea port, Kharg Island. Trump said the strikes had sought to avoid damaging the island's oil facilities, which has become a major focal point during the war as concerns have grown globally about Iran's energy exports. Kharg Island sits 15"
-      }
-    ],
-    "confidence": 0.7192,
-    "latency_ms": 14393,
-    "bart_label": "question",
-    "bart_score": 0.4481,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:20:00.945419+00:00"
-  },
-  "b0c464d2ffa675b1": {
-    "original_post": "TikTok and Meta risked safety to win algorithm arms race, whistleblowers say Companies allowed more harmful content on user\u2019s feeds, knowing their algorithms ran on outrage, BBC hears.",
-    "is_claim": true,
-    "extracted_claim": "TikTok and Meta risked safety to win algorithm arms race, allowing more harmful content on user's feeds.",
-    "verdict": "TRUE",
-    "response": "True, whistleblowers have alleged that TikTok and Meta risked safety to win the algorithm arms race by allowing more harmful content on user's feeds, knowing their algorithms ran on outrage.",
-    "sources": [
-      {
-        "title": "Social media giant Meta said Tuesday the Philippines is home to ...",
-        "url": "https://www.facebook.com/pnagovph/posts/social-media-giant-meta-said-tuesday-the-philippines-is-home-to-some-of-the-most/1068640675312386/",
-        "snippet": "Meta should also address its algorithmic control over the content it feeds its users, as it is being leveraged by harmful groups to further ..."
-      },
-      {
-        "title": "Rise in 'harmful content' since Meta policy rollbacks: survey",
-        "url": "https://www.abs-cbn.com/news/technology/2025/6/17/rise-in-harmful-content-since-meta-policy-rollbacks-survey-1337",
-        "snippet": "Harmful content including hate speech has surged across Meta's platforms since the company ended third-party fact-checking in the United States and eased ..."
-      }
-    ],
-    "confidence": 0.7627,
-    "latency_ms": 65715,
-    "bart_label": "question",
-    "bart_score": 0.5568,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:39:05.971791+00:00"
-  },
-  "c3356169dad0b215": {
-    "original_post": "Ten killed in fire at India hospital intensive care unit All the victims of the fire in Odisha state are patients, and 11 hospital staff are being treated for burns.",
-    "is_claim": true,
-    "extracted_claim": "Ten people were killed in a fire at an India hospital intensive care unit in Odisha state, with all victims being patients and 11 hospital staff being treated for burns.",
-    "verdict": "TRUE",
-    "response": "The claim is true. Ten people were killed in a fire at an India hospital intensive care unit in Odisha state, with all victims being patients. Additionally, 11 hospital staff are being treated for burns.",
-    "sources": [
-      {
-        "title": "At least 10 patients killed in hospital fire in India's Odisha",
-        "url": "https://www.straitstimes.com/asia/at-least-10-patients-killed-in-hospital-fire-in-indias-odisha",
-        "snippet": "At least 23 patients were under treatment in the intensive care unit and 10 of them died while being shifted to a safer area away from the fire."
-      },
-      {
-        "title": "At Least 10 Patients Killed in Hospital Fire in India's Odisha",
-        "url": "https://www.usnews.com/news/world/articles/2026-03-15/at-least-10-patients-killed-in-hospital-fire-in-indias-odisha",
-        "snippet": "At least 23 patients were under \u2060treatment in the intensive care unit and 10 of them died while being shifted to a safer area away from the fire ..."
-      }
-    ],
-    "confidence": 0.7242,
-    "latency_ms": 12176,
-    "bart_label": "question",
-    "bart_score": 0.3105,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:39:18.266672+00:00"
-  },
-  "28c254e57a7316eb": {
-    "original_post": "Gazans urged to shelter as sandstorm turns skies orange Displaced Palestinians were told to secure their tents to prevent them being blown away as a storm swept through the enclave.",
-    "is_claim": true,
-    "extracted_claim": "Gazans urged to shelter as sandstorm turns skies orange",
-    "verdict": "TRUE",
-    "response": "True, Gazans were urged to shelter as a sandstorm turned the skies orange. People were also advised to secure their tents to prevent them from being blown away during the storm.",
-    "sources": [
-      {
-        "title": "Gazans urged to shelter as sandstorm turns skies orange. #BBCNews",
-        "url": "https://www.youtube.com/shorts/Z9IcTANRCtk",
-        "snippet": "Gazans urged to shelter as sandstorm turns skies orange. #BBCNews ... BBC is a British public broadcast service. ... This content isn't available."
-      },
-      {
-        "title": "Gaza hit by strongest sandstorm in over five years - France 24",
-        "url": "https://www.france24.com/en/gaza-hit-by-strongest-sandstorm-in-over-five-years",
-        "snippet": "People were also urged to secure their tents to prevent them from being blown away. Israel's war with Hamas has left most of Gaza's 2 million ..."
-      },
-      {
-        "title": "Gazans urged to shelter as sandstorm turns skies orange - BBC",
-        "url": "https://www.bbc.com/news/videos/cwy8rx3ryljo",
-        "snippet": "First responders operating under the Hamas-run Interior Ministry warned people to secure their tents to prevent them from being blown away."
-      }
-    ],
-    "confidence": 0.7305,
-    "latency_ms": 15640,
-    "bart_label": "emotional expression",
-    "bart_score": 0.4762,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:39:38.572576+00:00"
-  },
-  "9e2ba7a53f6bec9c": {
-    "original_post": "Trump and Rubio\u2019s Vision of War: The Art of Destroy and Deal Unleashing his inner hawk, Secretary of State Marco Rubio plans President Trump\u2019s military interventions. So far, they favor regime compliance, not change.",
-    "is_claim": true,
-    "extracted_claim": "Secretary of State Marco Rubio plans President Trump\u2019s military interventions.",
-    "verdict": "FALSE",
-    "response": "There is no evidence to support the claim that Secretary of State Marco Rubio plans President Trump's military interventions. In fact, the evidence suggests conflicting reasons and actions between Trump and Rubio regarding military decisions.",
-    "sources": [
-      {
-        "title": "Secretary of State Marco Rubio on Monday gave a new explanation ...",
-        "url": "https://www.facebook.com/ABCNews/posts/secretary-of-state-marco-rubio-on-monday-gave-a-new-explanation-from-the-trump-a/1344451337541743/",
-        "snippet": "Secretary of State Marco Rubio on Monday gave a new explanation from the Trump administration about why the U.S. decided to launch military ..."
-      },
-      {
-        "title": "Newsweek's Leonardo Feldman asked Secretary of State Marco ...",
-        "url": "https://www.facebook.com/Newsweek/posts/newsweeks-leonardo-feldman-asked-secretary-of-state-marco-rubio-about-the-war-po/1281118000555308/",
-        "snippet": "Newsweek's Leonardo Feldman asked Secretary of State Marco Rubio about the War Powers Resolution under consideration in Congress after the Trump ..."
-      },
-      {
-        "title": "Fact-checking statements made by Trump to justify U.S. strikes on Iran",
-        "url": "https://www.pbs.org/newshour/politics/fact-checking-statements-made-by-trump-to-justify-u-s-strikes-on-iran",
-        "snippet": "... Rubio said. Trump did not seek congressional approval for the military action. He also acted unilaterally when launching June 2025 strikes ..."
-      },
-      {
-        "title": "Trump, Rubio offer conflicting reasons for US entry into Iran war",
-        "url": "https://www.reuters.com/world/europe/trump-says-us-has-knocked-out-many-iranian-naval-air-targets-2026-03-03/",
-        "snippet": "Trump said he ordered U.S. forces to join Israel's attack \u200bon Iran because he believed Iran was about to strike first, contradicting the ..."
-      }
-    ],
-    "confidence": 0.6548,
-    "latency_ms": 11840,
-    "bart_label": "question",
-    "bart_score": 0.2871,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:40:12.377696+00:00"
-  },
-  "eb17d683d84b2610": {
-    "original_post": "rothschild is the reason behind usa and iran war",
-    "is_claim": true,
-    "extracted_claim": "Rothschild is the reason behind USA and Iran war",
-    "verdict": "FALSE",
-    "response": "The claim that Rothschild is the reason behind the USA and Iran war is false. The Rothschild family has been targeted by conspiracy theorists, but there is no factual basis to support this claim.",
-    "sources": [
-      {
-        "title": "Where Do Antisemitic Conspiracy Theories About the Rothschild ...",
-        "url": "https://www.britannica.com/story/where-do-anti-semitic-conspiracy-theories-about-the-rothschild-family-come-from",
-        "snippet": "The Rothschilds have been targeted by conspiracy theorists as a prime example of Jews allegedly using their money to control global financial institutions."
-      },
-      {
-        "title": "Debunking the Rothschilds Conspiracy Theory - IranWire",
-        "url": "https://iranwire.com/en/special-features/68505/",
-        "snippet": "The Rothschild conspiracy theory is an age-old myth that a single European Jewish banking family has the power to control world events."
-      }
-    ],
-    "confidence": 0.681,
-    "latency_ms": 16101,
-    "bart_label": "emotional expression",
-    "bart_score": 0.3526,
-    "detection_method": "bart+gpt",
-    "cached_at": "2026-03-16T10:42:19.189996+00:00"
+    "cached_at": "2026-03-17T11:04:07.480369+00:00"
   }
 }

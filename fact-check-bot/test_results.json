@@ -1,0 +1,228 @@
+{
+  "summary": {
+    "total_tests": 15,
+    "passed": 10,
+    "failed": 5,
+    "pass_rate": 66.67,
+    "average_latency_ms": 6122.53,
+    "per_category": {
+      "FALSE": {
+        "total": 5,
+        "passed": 4,
+        "failed": 1
+      },
+      "TRUE": {
+        "total": 5,
+        "passed": 3,
+        "failed": 2
+      },
+      "UNVERIFIABLE": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2
+      },
+      "NOT A CLAIM": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  },
+  "tests": [
+    {
+      "id": 1,
+      "text": "COVID vaccines contain microchips that track your location",
+      "expected_verdict": "FALSE",
+      "actual_verdict": "TRUE",
+      "category": "FALSE",
+      "passed": false,
+      "confidence": 0.6688,
+      "latency_ms": 11297.743699999955,
+      "api_latency_ms": 8643,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 2,
+      "text": "The Great Wall of China is visible from space",
+      "expected_verdict": "FALSE",
+      "actual_verdict": "FALSE",
+      "category": "FALSE",
+      "passed": true,
+      "confidence": 0.7798,
+      "latency_ms": 1261.709599999449,
+      "api_latency_ms": 4988,
+      "sources_count": 4,
+      "error": null
+    },
+    {
+      "id": 3,
+      "text": "Einstein failed math in school",
+      "expected_verdict": "FALSE",
+      "actual_verdict": "FALSE",
+      "category": "FALSE",
+      "passed": true,
+      "confidence": 0.7446,
+      "latency_ms": 5632.964599999468,
+      "api_latency_ms": 4194,
+      "sources_count": 4,
+      "error": null
+    },
+    {
+      "id": 4,
+      "text": "Napoleon was only 5 feet 2 inches tall",
+      "expected_verdict": "FALSE",
+      "actual_verdict": "FALSE",
+      "category": "FALSE",
+      "passed": true,
+      "confidence": 0.6414,
+      "latency_ms": 6245.559600000888,
+      "api_latency_ms": 4867,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 5,
+      "text": "Humans only use 10% of their brain",
+      "expected_verdict": "FALSE",
+      "actual_verdict": "FALSE",
+      "category": "FALSE",
+      "passed": true,
+      "confidence": 0.7579,
+      "latency_ms": 7837.596499999563,
+      "api_latency_ms": 6393,
+      "sources_count": 3,
+      "error": null
+    },
+    {
+      "id": 6,
+      "text": "Elon Musk bought Twitter for $44 billion in 2022",
+      "expected_verdict": "TRUE",
+      "actual_verdict": "TRUE",
+      "category": "TRUE",
+      "passed": true,
+      "confidence": 0.7155,
+      "latency_ms": 8647.571999999855,
+      "api_latency_ms": 7313,
+      "sources_count": 3,
+      "error": null
+    },
+    {
+      "id": 7,
+      "text": "The Amazon River is the largest river by discharge",
+      "expected_verdict": "TRUE",
+      "actual_verdict": "TRUE",
+      "category": "TRUE",
+      "passed": true,
+      "confidence": 0.7666,
+      "latency_ms": 8296.380300000237,
+      "api_latency_ms": 7093,
+      "sources_count": 3,
+      "error": null
+    },
+    {
+      "id": 8,
+      "text": "Mount Everest is the tallest mountain above sea level",
+      "expected_verdict": "TRUE",
+      "actual_verdict": "FALSE",
+      "category": "TRUE",
+      "passed": false,
+      "confidence": 0.7126,
+      "latency_ms": 5632.550700000138,
+      "api_latency_ms": 4393,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 9,
+      "text": "Water boils at 100 degrees Celsius at sea level",
+      "expected_verdict": "TRUE",
+      "actual_verdict": "FALSE",
+      "category": "TRUE",
+      "passed": false,
+      "confidence": 0.6668,
+      "latency_ms": 6271.6489000004,
+      "api_latency_ms": 5189,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 10,
+      "text": "The US has won the most Olympic gold medals in history",
+      "expected_verdict": "TRUE",
+      "actual_verdict": "TRUE",
+      "category": "TRUE",
+      "passed": true,
+      "confidence": 0.7209,
+      "latency_ms": 10722.047000000202,
+      "api_latency_ms": 9660,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 11,
+      "text": "5G towers are causing health problems in nearby residents",
+      "expected_verdict": "UNVERIFIABLE",
+      "actual_verdict": "FALSE",
+      "category": "UNVERIFIABLE",
+      "passed": false,
+      "confidence": 0.7059,
+      "latency_ms": 6860.012899999674,
+      "api_latency_ms": 5481,
+      "sources_count": 2,
+      "error": null
+    },
+    {
+      "id": 12,
+      "text": "The government is hiding evidence of alien contact",
+      "expected_verdict": "UNVERIFIABLE",
+      "actual_verdict": "FALSE",
+      "category": "UNVERIFIABLE",
+      "passed": false,
+      "confidence": 0.7707,
+      "latency_ms": 7167.70489999999,
+      "api_latency_ms": 6115,
+      "sources_count": 3,
+      "error": null
+    },
+    {
+      "id": 13,
+      "text": "omg this pizza is so good i cant even rn",
+      "expected_verdict": "NOT A CLAIM",
+      "actual_verdict": "NOT A CLAIM",
+      "category": "NOT A CLAIM",
+      "passed": true,
+      "confidence": 0.4776,
+      "latency_ms": 2046.7134000000442,
+      "api_latency_ms": 856,
+      "sources_count": 0,
+      "error": null
+    },
+    {
+      "id": 14,
+      "text": "what time does the library close on sundays?",
+      "expected_verdict": "NOT A CLAIM",
+      "actual_verdict": "NOT A CLAIM",
+      "category": "NOT A CLAIM",
+      "passed": true,
+      "confidence": 0.21099999999999997,
+      "latency_ms": 1433.3595000007335,
+      "api_latency_ms": 184,
+      "sources_count": 0,
+      "error": null
+    },
+    {
+      "id": 15,
+      "text": "Monday should be illegal lmao",
+      "expected_verdict": "NOT A CLAIM",
+      "actual_verdict": "NOT A CLAIM",
+      "category": "NOT A CLAIM",
+      "passed": true,
+      "confidence": 0.3758,
+      "latency_ms": 2484.3272000007346,
+      "api_latency_ms": 1294,
+      "sources_count": 0,
+      "error": null
+    }
+  ]
+}
