@@ -1,12 +1,3 @@
----
-title: Fact Check Bot
-emoji: 🔍
-colorFrom: blue
-colorTo: purple
-sdk: docker
-pinned: false
----
-
 # 🔍 Fact-Check & Q&A Social Media Bot
 
 An intelligent social media monitoring bot that detects factual claims in posts, verifies them through real-time web search, and responds with AI-generated verdicts grounded in retrieved evidence.
@@ -17,28 +8,13 @@ colorFrom: blue
 colorTo: purple
 sdk: docker
 pinned: false
----
-
-# 🔍 Fact-Check & Q&A Social Media Bot
-
-An intelligent social media monitoring bot that detects factual claims in posts, verifies them through real-time web search, and responds with AI-generated verdicts grounded in retrieved evidence.
-
-**Performance**: 6.1s average latency | **FEVER Score**: 0.67 | **NOT A CLAIM accuracy**: 100% | **UI**: ChatGPT-style dark theme
-
----
+------
 
 ## 🔗 Live Demo
 - **Frontend**: https://social-media-ai-agent-bice.vercel.app
 - **Backend API**: https://midhunpa-fact-check-bot.hf.space
 - **API Docs**: https://midhunpa-fact-check-bot.hf.space/docs
 **Performance**: 6.1s average latency | **FEVER Score**: 0.67 | **NOT A CLAIM accuracy**: 100% | **UI**: ChatGPT-style dark theme
-
----
-
-## 🔗 Live Demo
-- **Frontend**: https://social-media-ai-agent-bice.vercel.app
-- **Backend API**: https://midhunpa-fact-check-bot.hf.space
-- **API Docs**: https://midhunpa-fact-check-bot.hf.space/docs
 
 ---
 
