@@ -1,56 +1,51 @@
-# 🤖 Social Media Fact-Checking Bot
+---
+title: Fact Check Bot
+emoji: 🔍
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
 
-A production-ready fact-checking system that verifies claims from social media (Reddit, RSS) using AI-powered evidence retrieval and grounding. Combines BART zero-shot classification with GPT-3.5-turbo for accurate claim detection and comprehensive source-backed verdicts.
+# 🔍 Fact-Check & Q&A Social Media Bot
 
-**Performance**: 6.1s average latency | **Accuracy**: 88% | **Quality**: 4.8/5 sources | **UI**: ChatGPT-style dark theme
+An intelligent social media monitoring bot that detects factual claims in posts, verifies them through real-time web search, and responds with AI-generated verdicts grounded in retrieved evidence.
+
+**Performance**: 6.1s average latency | **FEVER Score**: 0.67 | **NOT A CLAIM accuracy**: 100% | **UI**: ChatGPT-style dark theme
+
+---
+
+## 🔗 Live Demo
+- **Frontend**: https://social-media-ai-agent-bice.vercel.app
+- **Backend API**: https://midhunpa-fact-check-bot.hf.space
+- **API Docs**: https://midhunpa-fact-check-bot.hf.space/docs
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.9+
-- Node.js 16+
+- Python 3.11+
+- Node.js 18+
 - Git
 
 ### Backend Setup
-
 ```bash
-# Navigate to project
 cd fact-check-bot
-
-# Create virtual environment
 python -m venv venv
-source venv/Scripts/activate  # Windows
-# source venv/bin/activate    # Linux/Mac
-
-# Install dependencies
+venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-
-# Set environment variables
-# Create .env file with:
-# OPENAI_API_KEY=sk-...
-# SERPER_API_KEY=...
-# REDDIT_CLIENT_ID=...
-# REDDIT_CLIENT_SECRET=...
-# REDDIT_USER_AGENT=...
-
-# Run backend server
+python -m spacy download en_core_web_sm
+cp .env.example .env
+# Add your API keys to .env
 uvicorn backend.main:app --reload --port 8000
 ```
 
 ### Frontend Setup
-
 ```bash
-# In a new terminal
 cd fact-check-bot/frontend
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
-
 # Open http://localhost:3000
 ```
 
@@ -59,499 +54,341 @@ npm run dev
 ## 📋 Features
 
 ### Core Capabilities
-✅ **Real-time Fact-Checking** - Verify claims instantly via API or UI  
-✅ **Dual-Stage Detection** - BART + GPT for high accuracy (88%)  
-✅ **Source-Grounded Responses** - Every verdict backed by 3+ web sources  
-✅ **Social Media Integration** - Monitor Reddit and RSS feeds for claims  
-✅ **Confidence Scoring** - 0-1 confidence on every verdict  
-✅ **WebSocket Streaming** - Real-time progress updates as claims process  
-✅ **Hybrid Retrieval** - Web search + vector semantic search  
-✅ **Performance Optimized** - 6.1s end-to-end latency (60% faster)  
+✅ **Real-time Fact-Checking** — Verify claims instantly via WebSocket UI  
+✅ **Two-Stage Claim Detection** — NLI transformer + GPT for high accuracy  
+✅ **Hybrid Evidence Retrieval** — Web search + FAISS vector index + reranker  
+✅ **RAG-Grounded Responses** — GPT reads retrieved evidence, not memory  
+✅ **Social Media Ingestion** — Reddit and RSS feed listeners  
+✅ **Confidence Scoring** — 0-1 confidence on every verdict  
+✅ **WebSocket Streaming** — Real-time thinking steps shown in UI  
+✅ **NER + Dependency Parsing** — spaCy enriches search queries  
+✅ **Full Evaluation Suite** — BLEU, ROUGE, FEVER, MRR, F1 all implemented  
 
 ### Advanced Features
-🔍 **Smart Deduplication** - Normalized matching prevents reprocessing  
-⚡ **Aggressive Caching** - 24-hour TTL with automatic cleanup  
-🎯 **Reranking** - DPR reranker scores sources by relevance  
-📊 **Comprehensive Metrics** - Precision, Recall, F1, MRR tracking  
-🐳 **Docker Support** - Production-ready containerization  
-🔄 **Async Processing** - Parallel retrieval and generation  
+🔍 **Smart Deduplication** — SHA-256 normalized cache prevents reprocessing  
+⚡ **Request Caching** — Repeated claims return in under 1ms  
+🎯 **Cross-Encoder Reranking** — Scores chunks by relevance to claim  
+📊 **Live Metrics Endpoint** — /evaluate computes metrics from real logs  
+🐳 **Docker Deployment** — Models baked into image, no cold-start downloads  
+🔄 **Async Throughout** — All blocking calls in thread pool executor  
 
 ---
 
 ## 🏗️ Architecture
-
-### System Overview
-
 ```
-Social Media Feeds (Reddit, RSS)
+Social Media Post (or Reddit/RSS feed)
         ↓
-    Ingestion Layer
-        ├─ Normalization
-        ├─ Deduplication
-        └─ Cache Check (24h TTL)
+┌─────────────────────────────────────┐
+│  INGESTION (ingestion.py)           │
+│  • Remove URLs, emojis, mentions    │
+│  • Expand slang, normalize caps     │
+│  • spaCy NER: extract PERSON, ORG  │
+│  • SHA-256 cache check              │
+└─────────────────────────────────────┘
         ↓
-    Claim Detection (Dual-Stage)
-        ├─ BART Classification (~800ms)
-        └─ GPT Extraction (~1200ms) [skip if BART confident]
+┌─────────────────────────────────────┐
+│  CLAIM DETECTION (claim_detector)   │
+│  Stage 1: NLI zero-shot (BART)      │
+│    → "factual claim" vs opinion     │
+│  Stage 2: GPT extraction            │
+│    → clean searchable claim text    │
+│  Combined confidence: 0.4×BART      │
+│                      + 0.6×GPT      │
+└─────────────────────────────────────┘
         ↓
-    Evidence Retrieval (Parallel)
-        ├─ Web Search via Serper API (~2-3s)
-        └─ Vector Search on Document DB
+┌─────────────────────────────────────┐
+│  HYBRID RETRIEVAL (retrieval/)      │
+│  • Serper.dev → top 5 web results  │
+│  • Fetch full articles              │
+│  • Chunk → embed → FAISS index      │
+│  • Cross-encoder rerank top 5       │
+└─────────────────────────────────────┘
         ↓
-    Reranking & Filtering
-        └─ DPR Reranker (~300-500ms)
+┌─────────────────────────────────────┐
+│  RAG GENERATION (rag_generator.py)  │
+│  GPT reads evidence chunks only     │
+│  → TRUE / FALSE / UNVERIFIABLE      │
+│  → Natural language response        │
+│  → Cited source indices             │
+└─────────────────────────────────────┘
         ↓
-    RAG Generation
-        └─ GPT Verdict + Reasoning (~1200ms)
-        ↓
-    API Response / UI Display
-        └─ Sources + Confidence + Explanation
+   WebSocket → Frontend UI
+   Logging → logs/checks.json
+   Cache → logs/post_cache.json
 ```
-
-### Component Details
-
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Claim Detection** | BART (distilbart-mnli-12-3) + GPT-3.5 | Identify and classify claims |
-| **Embeddings** | DPR (Dense Passage Retrieval) | 384-dim semantic vectors |
-| **Vector Search** | FAISS (Facebook AI Similarity Search) | Fast nearest-neighbor retrieval |
-| **Web Search** | Serper.dev API | Current evidence from web |
-| **Reranking** | DPR Reranker | Score source relevance to claim |
-| **Response Gen** | GPT-3.5-turbo | Verdict + reasoning synthesis |
-| **Cache** | In-memory + JSON persistence | 24-hour claim storage |
-| **Frontend** | Next.js + React + TailwindCSS | Modern dark theme UI |
-| **Backend** | FastAPI + asyncio | High-performance API |
 
 ---
 
-## 📊 Performance Metrics
+## 🧠 Technology Stack
 
-### Latency Breakdown (6.1s average, optimized)
-
-| Stage | Duration | Improvement |
-|-------|----------|-------------|
-| Ingestion & Cache | 150-250ms | - |
-| BART Detection | 800-1000ms | - |
-| Web Search | 2000-3000ms | Parallel with generation |
-| Reranking | 300-500ms | - |
-| GPT Verdict | 1000-1500ms | Parallel with search |
-| Overhead | 100-150ms | - |
-| **TOTAL** | **6.1s** | **60% faster** (from 15s baseline) |
-
-### Accuracy Metrics
-
-```
-Claim Detection:
-  - Precision: 87%
-  - Recall: 89%
-  - F1 Score: 88%
-  - Accuracy: 88%
-
-Evidence Retrieval:
-  - MRR (Mean Reciprocal Rank): 0.73
-  - Recall@3: 92%
-  - Recall@5: 96%
-  - Average Source Quality: 4.8/5.0
-
-Response Quality:
-  - BLEU-4: 0.31
-  - ROUGE-L: 0.42
-```
-
-### Optimization Impact
-
-**4 Optimizations Implemented:**
-1. **Parallel Processing** (asyncio.gather) - Saves 2-3s
-2. **Cache TTL Enhancement** (24-hour retention) - Saves 15s per repeat query
-3. **Timeout Reduction** (10s → 5s Serper) - Saves 1-2s on timeouts
-4. **BART Confidence Threshold** (≥0.85 skips GPT) - Saves 1-2s on 40% of claims
-
-**Result**: 15s → 6.1s (60% improvement)
+| Layer | Technology | Purpose |
+|---|---|---|
+| LLM | OpenAI GPT-3.5-turbo | Claim extraction + verdict generation |
+| NLI Classifier | cross-encoder/nli-MiniLM2-L6-H768 | Zero-shot claim classification |
+| Embeddings | sentence-transformers/all-MiniLM-L6-v2 | Semantic chunk embeddings |
+| Reranker | cross-encoder/ms-marco-MiniLM-L-6-v2 | Evidence relevance scoring |
+| Vector Search | FAISS IndexFlatL2 | Fast semantic retrieval |
+| NER + Parsing | spaCy en_core_web_sm | Named entity extraction |
+| Web Search | Serper.dev (Google Search API) | Real-time evidence retrieval |
+| Backend | FastAPI + WebSocket | Async REST + streaming API |
+| Frontend | Next.js + Tailwind CSS | Conversational UI |
+| Deployment | HuggingFace Spaces + Vercel | Free production hosting |
 
 ---
 
-## 🔌 API Documentation
+## 📊 Evaluation Results
 
-### Endpoint: POST `/check`
+### Live API Test Results (15 Tests)
+
+| Category | Tests | Passed | Pass Rate |
+|---|---|---|---|
+| FALSE claim detection | 5 | 4 | 80% |
+| TRUE claim detection | 5 | 3 | 60% |
+| UNVERIFIABLE detection | 2 | 0 | 0% |
+| NOT A CLAIM detection | 3 | 3 | 100% |
+| **Overall** | **15** | **10** | **66.67%** |
+
+### Key Metrics
+```
+FEVER Score:        0.67
+Average Latency:    6,122ms
+Latency Target:     under 5,000ms
+NOT A CLAIM:        100% accurate
+FALSE detection:    80% accurate
+```
+
+### Evaluation Metrics Implemented (evaluator.py)
+- Claim Detection: Precision, Recall, F1, Accuracy
+- Retrieval: MRR, Recall@K (K=1,3,5)
+- Generation: BLEU-4, ROUGE-1/2/L, FEVER Score
+- Latency: Mean, P50, P95, P99, % under 5s
+- Robustness: Accuracy by category and noise level
+
+See [EVALUATION.md](EVALUATION.md) for full report.
+
+---
+
+## 🔌 API Reference
+
+### POST `/check`
+Fact-check a social media post.
 
 **Request:**
 ```json
-{
-  "post": "The Rothschild family controls world finances"
-}
+{"post": "Einstein failed math in school"}
 ```
 
 **Response:**
 ```json
 {
+  "original_post": "Einstein failed math in school",
+  "is_claim": true,
+  "extracted_claim": "Einstein failed math in school",
   "verdict": "FALSE",
-  "confidence": 0.92,
+  "response": "Einstein did not fail math. He mastered calculus by age 15.",
   "sources": [
     {
-      "title": "Rothschild family wealth sources explained",
-      "url": "https://example.com/article1",
-      "snippet": "The Rothschild family's wealth comes from banking...",
-      "relevance_score": 0.94
-    },
-    {
-      "title": "Banking history fact-check",
-      "url": "https://example.com/article2",
-      "snippet": "Multiple banking families influenced finance...",
-      "relevance_score": 0.87
-    },
-    {
-      "title": "Conspiracy theories debunked",
-      "url": "https://example.com/article3",
-      "snippet": "The claim that one family controls all finance...",
-      "relevance_score": 0.81
+      "title": "Did Einstein Really Fail Math?",
+      "url": "https://www.ripleys.com/stories/einstein-fail-math",
+      "snippet": "The common rumor that he failed a math test is simply untrue."
     }
   ],
-  "reasoning": "The claim that the Rothschild family controls world finances is FALSE. While the family built a prominent banking business in the 18th-19th centuries, modern global finance involves thousands of institutions and actors. No single family controls world finances."
+  "confidence": 0.74,
+  "latency_ms": 6194,
+  "bart_label": "factual claim",
+  "bart_score": 0.36,
+  "detection_method": "bart+gpt"
 }
 ```
 
-**Verdict Values:**
-- `TRUE`: Claim is factually accurate
-- `FALSE`: Claim is factually inaccurate
-- `UNVERIFIABLE`: Insufficient evidence to determine
-- `NOT_A_CLAIM`: Text doesn't contain verifiable claim
+### WebSocket `/ws`
+Real-time pipeline with progress events.
 
-**WebSocket:** Real-time progress updates stream via WebSocket during processing
+Sends stage events as processing occurs:
+```
+{"stage": "normalizing", "message": "Cleaning text..."}
+{"stage": "classifying", "message": "Running BART classification..."}
+{"stage": "extracting", "message": "Claim identified: Einstein failed math"}
+{"stage": "retrieving", "message": "Searching web for evidence..."}
+{"stage": "generating", "message": "Generating verdict with RAG..."}
+{"stage": "complete", "result": {...}}
+```
+
+### Other Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /health | Health check |
+| GET | /model-status | BART loaded, cache entries |
+| GET | /evaluate | Compute metrics from logs |
+| GET | /logs | Recent check history |
+| GET | /simulate | 5 simulated demo posts |
+| GET | /docs | Swagger UI |
 
 ---
 
 ## 🧪 Testing
 
-### Run Full Test Suite
-
+### Run Live API Tests (15 posts)
 ```bash
-# All tests
-pytest tests/ -v
-
-# Phase 1: Component tests
-pytest tests/test_cases.py::test_normalize_text -v
-pytest tests/test_cases.py::test_embedding_generation -v
-pytest tests/test_cases.py::test_text_chunking -v
-pytest tests/test_cases.py::test_faiss_indexing -v
-pytest tests/test_cases.py::test_document_store_persistence -v
-pytest tests/test_cases.py::test_reranker_ranking -v
-pytest tests/test_cases.py::test_deduplication -v
-pytest tests/test_cases.py::test_article_fetcher -v
-
-# Phase 2: Pipeline tests
-pytest tests/test_cases.py::test_claim_detection -v
-pytest tests/test_cases.py::test_full_pipeline_api -v
-
-# Specific test categories
-pytest tests/test_retrieval.py -v          # Retrieval pipeline
-pytest tests/test_components.py -v         # Component isolation
-pytest tests/test_pipeline.py -v           # End-to-end flow
-pytest tests/test_social_ingestion.py -v   # Social media listeners
+cd fact-check-bot
+python test_cases.py
 ```
 
-### Test Results
+Tests cover: FALSE claims, TRUE claims, UNVERIFIABLE claims,
+opinions, questions — including noisy social media text
+with emojis, slang, and caps.
 
-**Status**: ✅ 10/10 tests passing
-
-See [EVALUATION.md](EVALUATION.md) for detailed test explanations and performance analysis.
+### Run Component Tests
+```bash
+pytest tests/ -v
+```
 
 ---
 
-## 🐳 Docker Deployment
+## 🌐 Deployment
+
+### Backend — HuggingFace Spaces (Docker)
+All ML models baked into Docker image at build time.
+No cold-start downloads. 16GB RAM free tier.
+```bash
+git remote add hfspace https://huggingface.co/spaces/midhunpa/fact-check-bot
+git push hfspace main --force
+```
+
+Live at: https://midhunpa-fact-check-bot.hf.space
+
+### Frontend — Vercel
+```bash
+cd frontend
+vercel deploy
+```
+
+Set environment variables in Vercel:
+```
+NEXT_PUBLIC_WS_URL  = wss://midhunpa-fact-check-bot.hf.space/ws
+NEXT_PUBLIC_API_URL = https://midhunpa-fact-check-bot.hf.space
+```
+
+Live at: https://social-media-ai-agent-bice.vercel.app
 
 ### Local Docker
-
 ```bash
-# Build containers
-docker-compose build
-
-# Run services
-docker-compose up
-
+docker-compose up --build
 # Backend: http://localhost:8000
 # Frontend: http://localhost:3000
-# API Docs: http://localhost:8000/docs
 ```
 
-### Production Deployment
+---
 
-**Backend (Render):**
+## 🔧 Environment Variables
 ```bash
-# render.yaml configuration
-services:
-  - type: web
-    name: fact-check-bot
-    runtime: python39
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 8000
-    envVars:
-      - key: OPENAI_API_KEY
-        scope: run
-      - key: SERPER_API_KEY
-        scope: run
-```
+OPENAI_API_KEY=sk-...
+SERPER_API_KEY=...
+GPT_MODEL=gpt-3.5-turbo
+LOG_FILE=logs/checks.json
 
-**Frontend (Vercel):**
-```bash
-# Deploy Next.js frontend
-vercel deploy
-# Set environment: NEXT_PUBLIC_WS_URL=<render-backend-url>
+# Optional — social ingestion
+INGESTION_ENABLED=false
+REDDIT_CLIENT_ID=...
+REDDIT_CLIENT_SECRET=...
+REDDIT_USER_AGENT=fact-check-bot/1.0
+REDDIT_SUBREDDITS=worldnews+science+technology
+RSS_FEEDS=https://feeds.arstechnica.com/arstechnica/index
 ```
 
 ---
 
 ## 📁 Project Structure
-
 ```
 fact-check-bot/
 ├── backend/
-│   ├── main.py                 # FastAPI app & WebSocket handler
-│   ├── claim_detector.py       # BART + GPT claim detection
-│   ├── evaluator.py            # Metrics calculation
-│   ├── ingestion.py            # Post cache & normalization
-│   ├── logger.py               # Logging configuration
-│   ├── models.py               # Pydantic models
-│   ├── rag_generator.py        # GPT response generation
-│   ├── retriever.py            # Web search + vector retrieval
-│   ├── zero_shot_classifier.py # BART wrapper
-│   ├── config.py               # Configuration
-│   └── retrieval/              # Modular retrieval components
-│       ├── article_fetcher.py  # HTTP article retrieval
-│       ├── chunker.py          # Text chunking
-│       ├── document_ingestor.py # Document processing
-│       ├── document_store.py   # Persistent doc storage
-│       ├── embedder.py         # DPR embeddings
-│       ├── hybrid_retriever.py # Web + vector search
-│       ├── reranker.py         # DPR reranking
-│       └── vector_index.py     # FAISS index
-│   └── social/                 # Social media listeners
-│       ├── base_listener.py    # Abstract listener
-│       ├── reddit_listener.py  # Reddit integration
-│       ├── rss_listener.py     # RSS feed integration
-│       ├── queue_manager.py    # Task queue
-│       └── dedup.py            # Deduplication
-├── frontend/
-│   ├── app/
-│   │   ├── page.tsx            # Chat interface page
-│   │   ├── layout.tsx          # Root layout
-│   │   └── globals.css         # Global styles
-│   ├── components/
-│   │   ├── LandingPage.tsx     # 4-step onboarding
-│   │   ├── ChatInterface.tsx   # Main chat UI
-│   │   ├── ResultBubble.tsx    # Verdict display
-│   │   ├── UserBubble.tsx      # Message styling
-│   │   ├── ThinkingBubble.tsx  # Processing indicator
-│   │   └── SourceCard.tsx      # Source display
-│   ├── package.json
-│   ├── next.config.ts
-│   └── tsconfig.json
-├── tests/
-│   ├── test_cases.py           # 10 tests (Phase 1 & 2)
-│   ├── test_retrieval.py       # Retrieval pipeline
-│   ├── test_components.py      # Component tests
-│   ├── test_pipeline.py        # End-to-end tests
-│   └── test_social_ingestion.py # Social listeners
-├── data/
-│   └── document_store.json     # Persisted documents
-├── logs/
-│   ├── checks.json             # Verification history
-│   └── post_cache.json         # Cached posts
-├── requirements.txt            # Python dependencies
-├── docker-compose.yml          # Docker orchestration
-├── Dockerfile                  # Container definition
-├── EVALUATION.md               # Test & metrics report
-└── README.md                   # This file
+│   ├── main.py                  # FastAPI app + WebSocket endpoint
+│   ├── claim_detector.py        # Two-stage BART + GPT detection
+│   ├── zero_shot_classifier.py  # NLI model singleton loader
+│   ├── retriever.py             # Serper.dev web search
+│   ├── rag_generator.py         # RAG verdict generation
+│   ├── ingestion.py             # Text normalization + spaCy NER
+│   ├── evaluator.py             # All evaluation metrics
+│   ├── logger.py                # JSON audit logging
+│   ├── models.py                # Pydantic request/response schemas
+│   ├── config.py                # Environment configuration
+│   ├── retrieval/               # Hybrid retrieval pipeline
+│   │   ├── hybrid_retriever.py  # Web + vector search combined
+│   │   ├── embedder.py          # Sentence transformer embeddings
+│   │   ├── vector_index.py      # FAISS index management
+│   │   ├── reranker.py          # Cross-encoder reranking
+│   │   ├── article_fetcher.py   # Full article retrieval
+│   │   ├── chunker.py           # 512-token document chunking
+│   │   ├── document_store.py    # Persistent chunk storage
+│   │   └── document_ingestor.py # Article processing pipeline
+│   └── social/                  # Proactive ingestion
+│       ├── reddit_listener.py   # asyncpraw Reddit polling
+│       ├── rss_listener.py      # RSS feed polling
+│       ├── queue_manager.py     # Async task queue
+│       ├── dedup.py             # Normalized deduplication
+│       └── base_listener.py     # Abstract listener base
+├── frontend/                    # Next.js conversational UI
+│   └── app/
+│       ├── page.tsx             # WebSocket chat interface
+│       └── components/          # ResultBubble, ThinkingBubble etc
+├── tests/                       # Test suite
+├── test_cases.py                # 15 live API tests
+├── EVALUATION.md                # Full evaluation report
+├── TECHNICAL_REPORT.md          # System design report
+├── Dockerfile                   # HuggingFace Spaces deployment
+├── docker-compose.yml           # Local development
+└── requirements.txt             # Python dependencies
 ```
 
 ---
 
-## 🔧 Configuration
+## 💡 Solution Approach
 
-### Environment Variables
+**Why NLI Zero-Shot Classification?**
+No large labeled social media claim dataset exists publicly.
+NLI generalizes to any claim type without training data —
+satisfying the zero-shot constraint in the requirements.
 
-```bash
-# OpenAI API
-OPENAI_API_KEY=sk-...
+**Why Live Web Search Instead of Vector Database?**
+Fact-checking requires current information. A pre-built
+vector index cannot contain today's news. Serper.dev
+retrieves fresh evidence at query time. RAG pattern
+preserved — retrieve then generate.
 
-# Serper Web Search
-SERPER_API_KEY=...
+**Why Hybrid Retrieval?**
+Web search alone returns ranked URLs. Fetching full articles,
+chunking, and cross-encoder reranking ensures the most
+relevant passages reach GPT. This reduces hallucination
+compared to using article summaries alone.
 
-# Reddit Integration
-REDDIT_CLIENT_ID=...
-REDDIT_CLIENT_SECRET=...
-REDDIT_USER_AGENT=YourBot/1.0
-
-# Optional: Redis for distributed cache
-REDIS_URL=redis://localhost:6379
-
-# Optional: Logging
-LOG_LEVEL=INFO
-```
-
-### Configuration File (config.py)
-
-```python
-# Model settings
-BART_MODEL = "facebook/distilbart-mnli-12-3"
-EMBEDDER_MODEL = "facebook/dpr-question_encoder-single-nq-base"
-GPT_MODEL = "gpt-3.5-turbo"
-
-# Retrieval settings
-CHUNK_SIZE = 512
-CHUNK_OVERLAP = 50
-TOP_K_SOURCES = 3
-SERPER_TIMEOUT = 5  # seconds (optimized from 10)
-
-# Cache settings
-CACHE_TTL_HOURS = 24
-CLEANUP_INTERVAL = 3600  # seconds
-
-# Confidence thresholds
-BART_CONFIDENCE_THRESHOLD = 0.85  # Skip GPT if above
-```
+**Why WebSocket Instead of REST for UI?**
+WebSocket allows the UI to show each pipeline stage as it
+executes — normalizing, classifying, retrieving, generating.
+This provides transparency into the pipeline and better
+perceived performance.
 
 ---
 
-## 🚦 Getting Help
+## ⚠️ Known Limitations
 
-### Common Issues
-
-**Issue**: OPENAI_API_KEY not found
-```bash
-# Verify .env file exists and contains:
-echo $OPENAI_API_KEY
-# If empty, add to .env and run:
-source .env  # Linux/Mac
-# On Windows PowerShell:
-Get-Content .env | ForEach-Object { $name, $value = $_.split('='); Set-Item -Path Env:\$name -Value $value }
-```
-
-**Issue**: Serper API timeout
-```
-The system automatically switches to fallback sources if Serper times out after 5s.
-Check SERPER_API_KEY validity and rate limits at https://serper.dev/dashboard
-```
-
-**Issue**: FAISS build errors
-```bash
-pip install faiss-cpu  # or faiss-gpu for CUDA support
-```
-
-**Issue**: Node modules outdated
-```bash
-cd frontend && npm ci && npm run build
-```
+1. **Latency** — 6.1s average exceeds 5s target on CPU free tier
+2. **UNVERIFIABLE** — System underuses this verdict, defaults to FALSE
+3. **Nuanced facts** — Some TRUE claims marked FALSE due to retrieval
+   of articles with caveats (e.g. "technically Mauna Kea is taller")
 
 ---
 
-## 📈 Performance Tuning
+## 📄 License
 
-### Reducing Latency Further
+MIT License
 
-1. **Increase BART threshold** (0.85 → 0.90)
-   - Skips GPT on more claims (saves 1-2s)
-   - Risk: Slightly lower accuracy on edge cases
+**Models**: cross-encoder/nli-MiniLM2-L6-H768, 
+sentence-transformers/all-MiniLM-L6-v2,
+cross-encoder/ms-marco-MiniLM-L-6-v2 (Apache 2.0)
 
-2. **Reduce sources** (3 → 2)
-   - Faster reranking and fewer to read
-   - Risk: Less comprehensive coverage
-
-3. **Cache aggressively**
-   - Extend TTL to 48-72 hours for repeated queries
-   - Risk: Stale evidence on fast-changing topics
-
-4. **Use GPU acceleration**
-   - Larger embedding models (laggy on CPU)
-   - Requires NVIDIA GPU + CUDA
-
-### Scaling for High Volume
-
-1. **Deploy multiple backend instances** behind load balancer
-2. **Use Redis** for distributed cache instead of in-memory
-3. **Batch processing** for social media feeds
-4. **Queue system** (Celery) for async tasks
-5. **CDN** for static frontend assets
+**APIs**: OpenAI GPT-3.5-turbo, Serper.dev
 
 ---
 
-## 🤝 Contributing
-
-### Development Setup
-
-```bash
-# Format code
-black backend/ frontend/
-
-# Type checking
-mypy backend/ --ignore-missing-imports
-
-# Linting
-flake8 backend/ --max-line-length=100
-
-# Run tests with coverage
-pytest tests/ --cov=backend --cov-report=html
-```
-
-### Adding New Models
-
-1. **Claim Detector**: Edit `backend/claim_detector.py`, add new classifier
-2. **Evidence Retriever**: Add to `backend/retrieval/hybrid_retriever.py`
-3. **Response Generator**: Extend `backend/rag_generator.py`
-
----
-
-## 📄 License & Attribution
-
-**Models Used**:
-- BART: facebook/distilbart-mnli-12-3 (Meta, CC-BY-NC 2.0)
-- DPR: facebook/dpr-question_encoder-single-nq-base (Meta, CC-BY-NC 2.0)
-- GPT-3.5-turbo: OpenAI (requires API key)
-
-**APIs**:
-- Serper.dev: Web search
-- OpenAI: LLM inference
-- Reddit/RSS: Social data sources
-
----
-
-## 📞 Support
-
-**Documentation**: See [EVALUATION.md](EVALUATION.md) for detailed test results and metrics  
-**Issues**: Create GitHub issue with error logs  
-**Questions**: Check FAQ section below  
-
-### FAQ
-
-**Q: How accurate is the fact-checking?**  
-A: 88% on test dataset. Dual-stage design (BART + GPT) ensures high precision. Depends on source quality and claim complexity.
-
-**Q: Can I use custom models?**  
-A: Yes. Replace model paths in `config.py` and `claim_detector.py`. Requires retraining on your domain.
-
-**Q: Is this production-ready?**  
-A: Yes. Includes caching, error handling, monitoring, and comprehensive tests. See [EVALUATION.md](EVALUATION.md) for full assessment.
-
-**Q: What's the cost?**  
-A: Primarily OpenAI API ($0.50-2.00 per month for low volume). Serper API used only for web search (~$0.02 per query in batch).
-
-**Q: Can it detect hallucinations?**  
-A: Yes, through evidence grounding. Every response requires sourced evidence. Confidence score reflects certainty level.
-
----
-
-## 🎯 Next Steps
-
-1. ✅ Review [EVALUATION.md](EVALUATION.md) for test results
-2. ⏳ Deploy to Render (backend) + Vercel (frontend)
-3. ⏳ Record 3-5 minute demo video
-4. ⏳ Submit GitHub link + video to recruiter
-
----
-
-**Version**: 1.0.0  
-**Last Updated**: March 16, 2026  
-**Status**: Production-Ready ✅
-
----
-
-Made with ❤️ for accurate information verification
+**Version**: 1.0.0 | **Last Updated**: March 17, 2026 | **Status**: Production
