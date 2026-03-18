@@ -7,7 +7,7 @@ sdk: docker
 pinned: false
 ---
 
-# 🔍 Fact-Check & Q&A Social Media Bot
+# Fact-Check & Q&A Social Media Bot
 
 An intelligent social media monitoring bot that detects factual claims in posts, verifies them through real-time web search, and responds with AI-generated verdicts grounded in retrieved evidence.
 
@@ -15,14 +15,14 @@ An intelligent social media monitoring bot that detects factual claims in posts,
 
 ---
 
-## 🔗 Live Demo
+##  Live Demo
 - **Frontend**: https://social-media-ai-agent-bice.vercel.app
 - **Backend API**: https://midhunpa-fact-check-bot.hf.space
 - **API Docs**: https://midhunpa-fact-check-bot.hf.space/docs
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -65,16 +65,16 @@ npm run dev
 ✅ **Full Evaluation Suite** — BLEU, ROUGE, FEVER, MRR, F1 all implemented  
 
 ### Advanced Features
-🔍 **Smart Deduplication** — SHA-256 normalized cache prevents reprocessing  
-⚡ **Request Caching** — Repeated claims return in under 1ms  
-🎯 **Cross-Encoder Reranking** — Scores chunks by relevance to claim  
-📊 **Live Metrics Endpoint** — /evaluate computes metrics from real logs  
-🐳 **Docker Deployment** — Models baked into image, no cold-start downloads  
-🔄 **Async Throughout** — All blocking calls in thread pool executor  
+**Smart Deduplication** — SHA-256 normalized cache prevents reprocessing  
+**Request Caching** — Repeated claims return in under 1ms  
+**Cross-Encoder Reranking** — Scores chunks by relevance to claim  
+**Live Metrics Endpoint** — /evaluate computes metrics from real logs  
+**Docker Deployment** — Models baked into image, no cold-start downloads  
+**Async Throughout** — All blocking calls in thread pool executor  
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 ```
 Social Media Post (or Reddit/RSS feed)
         ↓
@@ -119,7 +119,7 @@ Social Media Post (or Reddit/RSS feed)
 
 ---
 
-## 🧠 Technology Stack
+##  Technology Stack
 
 | Layer | Technology | Purpose |
 |---|---|---|
@@ -136,7 +136,7 @@ Social Media Post (or Reddit/RSS feed)
 
 ---
 
-## 📊 Evaluation Results
+## Evaluation Results
 
 ### Live API Test Results (15 Tests)
 
@@ -227,7 +227,7 @@ Sends stage events as processing occurs:
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run Live API Tests (15 posts)
 ```bash
@@ -246,7 +246,7 @@ pytest tests/ -v
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 ### Backend — HuggingFace Spaces (Docker)
 All ML models baked into Docker image at build time.
@@ -281,7 +281,7 @@ docker-compose up --build
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 ```bash
 OPENAI_API_KEY=sk-...
 SERPER_API_KEY=...
@@ -299,7 +299,7 @@ RSS_FEEDS=https://feeds.arstechnica.com/arstechnica/index
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 fact-check-bot/
 ├── backend/
@@ -343,7 +343,7 @@ fact-check-bot/
 
 ---
 
-## 💡 Solution Approach
+##  Solution Approach
 
 **Why NLI Zero-Shot Classification?**
 No large labeled social media claim dataset exists publicly.
@@ -370,7 +370,7 @@ perceived performance.
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 1. **Latency** — 6.1s average exceeds 5s target on CPU free tier
 2. **UNVERIFIABLE** — System underuses this verdict, defaults to FALSE
@@ -379,7 +379,7 @@ perceived performance.
 
 ---
 
-## 📄 License
+##  License
 
 MIT License
 
